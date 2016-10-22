@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shop</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/content/shangcheng.css">
+
+	<title>Bootstrap 实例 - 基本的胶囊式导航菜单</title>
+   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="/scripts/jquery.min.js"></script>
+   <script src="/bootstrap/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../plugin/datepicker/WdatePicker.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<iframe name="header_fram" marginwidth=0 marginheight=0 width=100% src="header.html" height="100px" frameborder=0 scrolling=no seamless></iframe>
+
+
+
+
+	<div id="search">
+		<div id="sousuo">
+  			<ul class="nav nav-tabs" style="width:800px;">
+  				<li><a href="#" style="color:white">商品</a><li>
+          <li><a href="#1" style="color:white">商店</a><li>
+  				
+			</ul>
+			<input type="text" class="form-control" id="usr" style="width:800px; height:50px" ">
+			<button type="button" class="btn btn-info" style="width:100px; height:50px; ">搜索</button>
+  		</div>
+    	
+
+</div><!--search-->
+<div id="liebiao" style=" width:70%; display:none" >
+
+<div id="sx1">
+<div id="sx1-1">
+ <div class="btn-group-vertical">
+  <button type="button" class="btn btn-default" style="width:150px;" onclick="yy(this)">国家</button>
+  <button type="button" class="btn btn-default" style="width:150px;" onclick="yy(this)">品牌</button>
+  <button type="button" class="btn btn-default" style="width:150px;" onclick="yy(this)">价格区间</button>
+  <button type="button" class="btn btn-default" style="width:150px;" onclick="yy(this)">款式</button>
+  <button type="button" class="btn btn-default" style="width:150px;" onclick="yy(this)">类别</button>
+</div>
+
+
+	
+
+</div>
+<div id="sx1-2">
+
+	<div class="sxx" id="国家">
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">加拿大</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">美国</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">印度</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">俄罗斯</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">法国</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">中国</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">日本</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">韩国</button>
+	</div>
+	<div class="sxx" id="品牌" style="display:none">
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">LV</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">GUCCI</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">PRADA</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">LSY</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">KENZO</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">VERSACE</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">FENDI</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">IPHONE</button>
+		
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">APPLE</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">MK</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">CHANNEL</button>
+	</div>
+	<div class="sxx" id="价格区间" style="display:none">
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">$0~$200</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">$201~$500</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">$501~$1000</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">$1001~$5000</button>
+	</div>
+	<div class="sxx" id="款式" style="display:none"><button type="button" class="btn btn-info btn-sm" style="margin-top:10px">$0~$200</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">款式1</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">款式2</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">款式3</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">款式4</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">款式5</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">款式6</button>
+		</div>
+	<div class="sxx" id="类别" style="display:none">
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">类别1</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">类别2</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">类别3</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">类别4</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">类别5</button>
+		<button type="button" class="btn btn-info btn-sm" style="margin-top:10px">类别6</button>
+	</div>
+
+	
+
+
+</div>
+
+<div id="sx1-3">
+<button type="button" class="btn btn-default" style=" width:100px; float:right; margin-right:50px;" id="bb">关闭</button>
+</div>
+
+</div><!--sx1-->
+
+
+
+
+
+</div><!--liebiao-->
+
+<div id="zhong">
+
+<div id="fadan">
+    		<form class="form-inline">
+    		<div class="form-group">
+    			
+    			
+    			<button type="button" class="btn btn-warning" style="width:100px;" id="lb">筛选</button>
+
+  			</div>
+  			</form>
+		</div>
+
+	<div id="left">
+			
+			
+			
+		</div><!--left-->
+		
+		<div id="mid">
+			
+				<div class="pic">
+				<a href="shangchengdetail.html">
+				<img src="../img/shop/1.jpg" alt=""></a>
+				<p></p>
+				<p>Dior $5000</p>
+				<p>商家所在地：法国</p>
+				</div>
+
+				<div class="pic">
+				<a href="shangchengdetail"><img src="../img/shop/2.jpg" alt=""></a>
+				<p></p>
+				<p>LV $3000</p>
+				<p>商家所在地：法国</p>
+				<img src="../img/shop/ren.gif" alt="">
+				</div>
+
+				<div class="pic"><a href="shangchengdetail.html"><img src="../img/shop/3.jpg" alt=""></a>
+				<p></p>
+				<p>GUCCI $1500</p>
+				<p>商家所在地：法国</p>
+				</div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/4.jpeg" alt=""></a><p></p><p>VERCACE $1000</p><p>商家所在地：法国</p>
+				</div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/5.jpg" alt=""></a><p></p><p>FENDI $400</p><p>商家所在地：法国</p>
+				</div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/6.jpg" alt=""></a><p></p><p></p>PRADA $6000<p>商家所在地：法国</p></div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/7.jpg" alt=""></a><p></p><p>MIUMIU $1000</p><p>商家所在地：法国</p>
+				</div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/8.jpg" alt=""></a><p></p><p>CHLOE $120</p><p>商家所在地：法国</p></div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/9.png" alt=""></a><p></p><p>YSL $120</p><p>商家所在地：法国</p>
+				</div>
+
+				<div class="pic"><a href="shangchengdetail"><img src="../img/shop/10.jpg" alt=""></a><p></p><p>KENZO $250</p><p>商家所在地：法国</p></div>
+				
+				<div class="yema">
+					<ul class="pagination pagination-sm">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+				</div>
+
+			
+			
+		</div><!--mid-->
+		<div id="wenzi"></div>
+
+		<div class="right">
+
+		
+		</div><!--right-->
+
+
+
+
+</div><!--zhong-->
+<div id="xia">
+<iframe name="footer_frame" marginwidth=0 marginheight=0 width=100% src="footer.html" frameborder=0 scrolling=no seamless></iframe>	
+	</div> 
+</body>
+<script language=javascript>
+  var arr=new Array()
+  arr[0]='../img/shangcheng/BK1.JPG'
+  arr[1]='../img/shangcheng/earth1.jpg'
+  arr[2]='../img/shangcheng/BK2.JPG'
+  arr[3]='../img/shangcheng/BK3.JPG'
+  arr[4]='../img/shangcheng/BK4.jpg'
+  arr[5]='../img/shangcheng/BK5.jpg' 
+var img=document.getElementById("search")
+
+img.style.backgroundImage="url("+arr[4]+")";
+img.style.backgroundPosition="center center"; 
+ var i=0
+var int=setInterval("changepic()",3000)
+function changepic()
+  {
+  	
+  // var t=Math.round(Math.random()*4)  
+  if(i<5){
+  img.style.background=arr[i]
+  img.style.backgroundImage="url("+arr[i]+")";
+  img.style.backgroundPosition="center center"; 
+  // img.style.backgroundRepeat="no-repeat";
+	i=i+1
+	}else{
+		i=0
+	}
+	
+var liebiao=document.getElementById('liebiao')
+var lb=document.getElementById('lb')
+
+
+lb.onclick=function  () {
+
+  lb.style.display='none'
+
+	 liebiao.style.display='block'
+
+}
+var g=document.getElementById('gb')
+g.onclick=function () {
+	liebiao.style.display='none'
+	 /* body... */ 
+}
+
+var tc=document.getElementById('tc')
+
+var z=document.getElementsByClassName('containerx')
+
+tc.onclick=function () {
+	z[0].style.display='none'
+	window.location='shangcheng.html'
+
+	 /* body... */ 
+}
+
+  
+  }
+
+  var bb=document.getElementById('bb')
+  bb.onclick=function () {
+    liebiao.style.display='none'
+    lb.style.display='block'
+     /* body... */ 
+  }
+
+// --------------------------------------------------------
+var sx=document.getElementsByClassName('sxx')
+
+function yy (obj) {
+	for (var i = 0; i < sx.length; i++) {
+		
+		if (obj.innerHTML==sx[i].getAttribute("id")
+		)  
+		{
+			sx[i].style.display='block'
+		}
+	
+	else{
+
+		sx[i].style.display='none'
+	}
+	
+		
+	}
+}
+	
+// ------------------------------------------------------------
+for (var i = 0; i < sx.length; i++) {
+
+
+	if (condition) {
+		// statement
+		sx[i].style.display='block'
+	}
+	
+}
+
+
+
+</script>
+
+<script language="javascript" type="text/javascript" src="WdatePicker.js"></script>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<style>
+  .yh{
+    background: #DEADF7;
+    display:inline-block;
+  }
+</style>
+<body>
+
+<div class="container" style="margin-top:80px;">
+  <h5 >订单号:FDKAFJ</h5>
+  <h5 >商品信息：LV</h5>
+  <h5 id="sp">商品金额:$500</h5>
+  <h5 id="bc">报酬金额:$200</h5>
+<div class="container">
+  
+  <form role="form">
+    <div class="form-group">
+      <label for="sel1">请选择您的付款方式</label>
+      <select class="form-control" id="sel1">
+        <option id="qe">全额支付</option>
+        <option id="dk" onclick="a()">小额贷款</option>
+      </select>
+      <br>
+      
+    </div>
+  </form>
+<div id="hd" style="width:100%;height:0px;overflow:hidden;">
+   <label class="radio-inline"><input type="radio" name="optradio" value="0.3" onclick="b(this)">30%</label>
+<label class="radio-inline"><input type="radio" name="optradio" value="0.4" onclick="b(this)">40%</label>
+<label class="radio-inline"><input type="radio" name="optradio" value="0.5" onclick="b(this)">50%</label>
+<h5 id="yf"></h5>
+<h5><a href="xieyi.html">您已阅读并使用贷款协议</a></h5> 
+
+</div>
+</div>
+
+  <h5 style="text-align:right">我的账号余额：$1000</h5>
+  
+  
+  <button  type="button" class="btn btn-primary" style="float:left;">确认使用账号支付</button>
+  <button  type="button" class="btn btn-default"  >充值</button>
+  <div class="container" style="margin-top:60px;">
+  <div class="container" id="czb" style="height:700px">
+  
+ <label  class="col-sm-2 control-label" style="float:left;">请选择银行</label>
+  <div id="yinhang" class="clo-sm-10">
+    <button type="button" class="btn btn-default" class="yh" id="yh1">RBC</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh2">BMO</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh3">TD</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh4">SCOTIIA</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh5">FADF</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh6">AMB</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh7">KEY</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh8">PAYPAL</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh9">DFA</button>
+    <button type="button" class="btn btn-default" class="yh" id="yh10">FAD</button>
+    </div>
+  
+       
+       
+  <form class="form-horizontal" role="form">
+  <div class="form-group" style="margin-top:50px">
+      <label class="col-sm-2 control-label" style="float:left;">充值金额</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="xingming" type="text" >
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label" style="float:left;">姓名</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="xingming" type="text" >
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputnumber" class="col-sm-2 control-label">账号</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="zhanghao" type="text">
+      </div>
+    </div>
+    
+      <div class="form-group">
+        <label class="col-sm-2 control-label">国家</label>
+        <div class="col-sm-10">
+          <input type="text" id="guojia" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">地址</label>
+        <div class="col-sm-10">
+          <input type="text" id="address" class="form-control">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="col-sm-2 control-label">邮编</label>
+        <div class="col-sm-10">
+          <input type="text" id="address" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputnumber" class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-10">
+          <input type="text" id="mima" class="form-control">
+        </div>
+      </div>
+        
+         <div class="form-group">
+        <label for="inputnumber" class="col-sm-2 control-label">CVR</label>
+        <div class="col-sm-10">
+          <input type="text" id="cvr" class="form-control">
+        </div>
+      </div>
+
+      <button  type="button" class="btn btn-primary" style="float:right;">确认充值</button>
+
+
+
+  </form>
+</div>
+
+</div>
+</body>
+<script>
+  var optradio=document.getElementsByName('optradio')
+  var yf=document.getElementById('yf')
+  var sp=document.getElementById('sp')
+  var bc=document.getElementById('bc')
+  var DK=document.getElementById('dk')
+  var hd=document.getElementById('hd')
+  var qe=document.getElementById('qe')
+  var cz=document.getElementById('cz')
+  var czb=document.getElementById('czb')
+  var y=sp.innerHTML
+  var  k=bc.innerHTML
+  var w=parseInt(y.substr(6))
+  var z=parseInt(k.substr(6))
+  var sum=w+z
+  function b(obj){
+
+     var j=parseFloat(obj.value); 
+     var n=sum*j
+     yf.innerHTML="应付金额：$"+n
+  }
+ 
+qe.innerHTML="全额支付:$"+sum
+
+  function a () {
+
+    hd.style.height="50px"
+     /* body... */ 
+  }
+  qe.onclick=function () {
+    hd.style.height="0px"
+     /* body... */ 
+  }
+
+
+
+
+</script>
+</html>
+

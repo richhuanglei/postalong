@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+</head>
+
+<style>
+  #imgarea{
+    background: #DBDBDE;
+    height: 200px;
+
+  }
+
+
+
+</style>
+
+
+<body>
+
+<div id="box" style="width:80%;height:600px; margin-top:100px; margin-left:10%;">
+
+<div class="container" >
+  <h2 style="text-align:center;margin-bottom:50px;">修改商品信息</h2>
+  <form class="form-horizontal" role="form">
+    <h4>商品号码:WFXS2156</h4>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="spname">商品:</label>
+      <div class="col-sm-10">
+        <input type="spname" class="form-control" id="spname" placeholder="商品名称">
+      </div>
+    </div>
+      
+      <div class="form-group">
+  <label class="control-label col-sm-2" for="pinpai">类别:</label>
+  <div class="col-sm-10">
+  <select class="form-control" id="pinpai">
+    <option></option>
+    <option>电子</option>
+    <option>衣服</option>
+    <option>家具</option>
+    <option>零食</option>
+  </select>
+  </div>
+</div>
+
+       <div class="form-group">
+  <label class="control-label col-sm-2" for="pinpai" >选择品牌:</label>
+  <div class="col-sm-10">
+  <select class="form-control" id="pinpai">
+    <option></option>
+    <option>松下</option>
+    <option>华为</option>
+    <option>苹果</option>
+    <option>三星</option>
+  </select>
+  </div>
+</div>
+        
+  <div class="form-group">
+  <label class="control-label col-sm-2" for="kuanshi" >选择款式:</label>
+  <div class="col-sm-10">
+  <select class="form-control" id="kuanshi">
+    <option></option>
+    <option>iphone6</option>
+    <option>iphone4</option>
+    <option>iphone6+</option>
+    <option>iphone5</option>
+  </select>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="control-label col-sm-2" for="yanse" >选择颜色:</label>
+  <div class="col-sm-10">
+  <select class="form-control" id="yanse">
+    <option></option>
+    <option>红</option>
+    <option>黄</option>
+    <option>蓝</option>
+    <option>绿</option>
+  </select>
+  </div>
+</div>
+
+
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="miaoshu">商品描述:</label>
+      <div class="col-sm-10">
+      <textarea class="form-control " rows="4" id="comment"></textarea>
+      </div>
+      </div>
+      
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="price" >价格:</label>
+      <div class="col-sm-10">          
+        <input type="price" class="form-control" id="price" placeholder="请输入价格">
+      </div>
+    </div>
+
+       
+<label class="control-label col-sm-2">上传图片</label>
+<div id="imgarea" class="col-sm-10">
+
+
+<div class="col-sm-10">
+<input id="input-fa" name="inputfa[]" type="file" multiple class="file-loading" style="margin-top:175px; margin-left:-30px;">
+</div>
+</div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-info" onclick="window.location.href='yulan.html'" style="margin-top:20px;">提交预览</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div><!--box-->
+
+</body>
+
+
+</html>

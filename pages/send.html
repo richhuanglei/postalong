@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>互递首页</title>
+	
+	
+   
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/content/send.css">
+    
+    <script type="text/javascript" src="../js/public/main.js"></script>
+    <script type="text/javascript" src="../js/content/send.js"></script>
+    <script type="text/javascript" src="../js/content/help.js"></script>
+    <script language="javascript" type="text/javascript" src="../plugin/datepicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="../plugin/editor/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="../plugin/editor/xheditor-1.1.14-zh-cn.min.js"></script>	
+     
+</head>
+	 
+<body>
+
+
+	<div class="header">
+		<div class="auto">
+			<img class="headlogoImg" src="../img/public/headlogo.png">
+			<img src="../img/public/logo2.png" height="50" width="150" style="margin-bottom: 30px;">
+			<ul class="nav-menu fr">
+				<li><a  class="current" href="home.html">首页</a></li>
+				<li><a href="service.html">功能简介</a></li>
+				<!--<li><a href="dynamic.html">动态消息</a></li>-->
+				<li><a href="api.html">开放平台API</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="help.html">帮助</a></li>
+				<li>
+					<select onchange="window.location=this.value;">
+						<option value="Language" selected>Language</option>
+						<option value="../pages/home.html">中文</option>
+						<option value="../ZT_en/pages/home.html">ENGLISH</option>
+						<option value="한국의  ">한국의 </option>
+						<option value="Français">Français</option>
+						<option value="Русский язык">Русский язык</option>
+						<option value="日本語">日本語</option>
+					</select>
+					
+				</li>
+			</ul>
+			
+		</div>
+	</div><!--header-->
+	
+    
+    <div id="wrap">
+    <div id="content">  
+            <div id="tab_bar">  
+                <ul>  
+                    <li id="tab1" onclick="myclick(1)" style="background-color:#C6C6C6">  
+                        <label for="exampleInputName2">输入信息</label>
+                    </li>  
+                    <li id="tab2" onclick="myclick(2)">  
+                        <label for="exampleInputName2">信息列表</label>
+                    </li>  
+                    <li id="tab3" onclick="myclick(3)">  
+                        <label for="exampleInputName2">信息修改</label>
+                    </li>  
+                    <li id="tab4" onclick="myclick(4)">  
+                        <label for="exampleInputName2">信息删除</label>
+                    </li>  
+                     
+                </ul>  
+            </div> 
+
+            <div class="tab_css" id="tab1_content" style="display: block">  
+                <div><!--tab1 star-->
+		<form class="form-inline">
+
+		<div id="consignerwrap">
+				<div id="consigner">
+				<label for="exampleInputName2">发货人姓名</label>
+				<input type="text" class="form-control" placeholder="发货人姓名" readonly>							
+				<label for="exampleInputEmail2">发货人电话</label>
+				<input type="tel" class="form-control" placeholder="发货人电话" readonly>
+				<label for="exampleInputEmail2">取货时间</label>
+				<input  type="text" class="form-control" onfocus="WdatePicker({dateFmt:'yyyy年MM月dd日 HH时mm分ss秒'})" style="width:300px"/>
+			</div><!--consigner-->				
+				<div id="consigneraddr">
+				<label for="exampleInputEmail2">发货人地址</label>
+			<input type="text" class="form-control"  placeholder="接货地址" size="100px">					
+			</div><!--consigneraddr-->
+			</div><!--consignerwrap-->
+				
+				
+			<div id="consigneewrap">
+			<div id="consigneeinfo">
+				
+				<label for="exampleInputName2">接货人姓名</label>
+				<input type="text" class="form-control" placeholder="收货人姓名">
+				<label for="exampleInputEmail2">接货人电话</label>
+				<input type="tel" class="form-control"  placeholder="收货人电话">
+				<label>接货时间</label>
+				<input  type="text" class="form-control" onfocus="WdatePicker({dateFmt:'yyyy年MM月dd日 HH时mm分ss秒'})" style="width:300px"/>
+				
+				</div><!--consignee-->
+					
+			<div id="consigneeaddr">
+			<label for="exampleInputEmail2">接货人地址</label>
+				<input type="text" class="form-control" placeholder="接货地址" size="100px">
+			</div><!--consigneeaddr-->
+			</div><!--consigneewrap-->
+				
+				
+				
+				<div id="goods">
+					<label for="exampleInputEmail2">物品名称</label>
+					<input type="text" class="form-control" placeholder="物品名称" style="width:300px"/>
+					<label for="exampleInputEmail2">物品重量</label>
+					<input type="text" class="form-control" placeholder="物品重量">
+					<label for="exampleInputEmail2">物品价值</label>
+					<input type="number" class="form-control" placeholder="物品价值">
+					<label for="exampleInputEmail2">数量</label>
+					 <input type="text" id="num" name="num" value="1" class="form-control" style="width:100px">
+   					<div id="goodspic">
+					<div class="box">
+     <a href="javascript:void(0);"  class="link">图片上传浏览</a>
+     <input type="text" name="copyFile"  class="textbox" />     
+     <input type="file" class="uploadFile" name="upload"
+     onchange="getFile(this,'copyFile')" />
+</div> 
+					</div><!--goodspic-->
+					<div id="goodssel">
+					<label for="exampleInputEmail2">物品描述</label>
+					<select onchange="window.location=this.value;" class="form-control" >
+						<option value="" selected >贵重物品</option>
+						<option value="">不能挤压</option>
+						<option value="">轻拿轻放</option>
+						<option value="">易碎物品</option>
+					</select>
+					</div>
+					<div id="goodsdes">
+					<textarea name="content"  class="xheditor {skin:'o2007blue'}" rows="20" cols="120"></textarea>
+					<div id="t"></div>
+					<p>
+					<label for="exampleInputEmail2">距离</label><input type="text" class="form-control" placeholder="距离">
+					<label for="exampleInputEmail2">参考报酬</label><input type="text" class="form-control" placeholder="参考报酬">
+					<label for="exampleInputEmail2">实际报酬</label><input type="text" class="form-control" placeholder="实际报酬">
+					</p>
+					<div id="t"></div>
+					<p><input type="checkbox" checked="true"> 我已认真阅读《发单规则》，并同意其条款。</p>
+					</div><!--goodsdes-->
+
+				</div><!--goods-->
+				<div id="button">
+					<button type="submit" class="btn btn-default">添加新物品</button>
+				</div>
+			</form>
+			</div> <!--tab1--> </div>  <!--tab11-->
+			<div class="tab_css" id="tab2_content">  
+             
+		
+				<div id="list">
+					
+					<table>
+						<tr>
+							<td>发货人姓名</td>
+							<td>发货人电话</td>
+							<td>收货人姓名</td>
+							<td>收货人电话</td>
+							<td>物品名称</td>
+							<td>物品重量</td>
+							<td>件数</td>
+							<td>货物描述</td>
+						</tr>
+						<tr>
+						
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td style="border:1px solid red">
+							<button class="reduce btn btn-default">-</button>
+							<input type="text" class="num form-control" name="num" value="0" style="width:60px">
+							<button class="increase btn btn-default">+</button>
+							</td>
+							<td>dfdf</td>
+						</tr>
+
+						<tr>
+						
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td style="border:1px solid red">
+							<button class="reduce btn btn-default">-</button>
+							<input type="text" class="num form-control" name="num" value="0" style="width:60px">
+							<button class="increase btn btn-default">+</button>
+							</td>
+							<td>dfdf</td>
+						</tr>
+						<tr>
+						
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td style="border:1px solid red">
+							<button class="reduce btn btn-default">-</button>
+							<input type="text" class="num form-control" name="num" value="0" style="width:60px">
+							<button class="increase btn btn-default">+</button>
+							</td>
+							<td>dfdf</td>
+						</tr>
+						<tr>
+						
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td style="border:1px solid red">
+							<button class="reduce btn btn-default">-</button>
+							<input type="text" class="num form-control" name="num" value="0" style="width:60px">
+							<button class="increase btn btn-default">+</button>
+							</td>
+							<td>dfdf</td>
+						</tr>
+					</table>
+				</div><!--list-->
+				
+		
+            </div>  <!--tab_css-->
+            <div class="tab_css" id="tab3_content">  
+                <div>页面三</div>  <!--tab2-->
+            </div>  <!--tab22-->
+            <div class="tab_css" id="tab4_content">  
+                <div>页面四</div>  <!--tab4-->
+            </div>  <!--tab44-->
+             
+            </div> <!--content--> 
+          
+    
+    </div> <!--wrap-->
+	
+   		
+
+		<iframe name="footer_frame" marginwidth=0 marginheight=0 width=100% src="footer.html" frameborder=0 scrolling=no seamless></iframe>	
+	
+</body>
+ 
+</html>

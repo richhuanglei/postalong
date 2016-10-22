@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<style>
+
+.img1{
+	border-radius: 10%;
+	width: 400px;
+	height: 370px;
+
+}
+
+.img2{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
+.shang{
+	width: 100%;
+	height: 100px;
+	/*background: #BDB7B7;*/
+}
+.zhong{
+	width: 100%;
+	height: 800px;
+	background: #F6F6F6;
+}
+#detailbox{
+	width: 1000px;
+	height: 600px;
+	/*background:#92CDE1;*/
+	margin-left: 400px;
+	float: left;
+	margin-top: 80px;
+	
+	
+}
+
+.box1{
+	float: left;
+	width: 500px;
+	height: 600px;
+	/*border:1px solid red;*/
+	background: #D9DCDB;
+}
+
+.box2{
+	float: right;
+	width: 500px;
+	height: 600px;
+	/*border: 1px solid blue;*/
+	background: #D9DCDB;
+}
+
+
+
+.xia{
+	width: 100%;
+	height: 100px;
+	/*background: #EEF3C1;*/
+}
+
+.pic{
+	float: left;
+	width: 400px;
+	height: 350px;
+	/*background: #E8DBF4;*/
+	margin-top: 50px;
+	margin-left: 49px;
+}
+
+.profile{
+	float: left;
+	width: 400px;
+	height: 100px;
+	/*background: #F8A4B4;*/
+	margin-top: 50px;
+	margin-left: 49px;
+}
+
+.pic2{
+	float: left;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	/*background: #C2F7C8;*/
+	margin-top: 10px;
+	margin-left: 10px;
+	overflow: hidden;
+	text-align: center;
+
+
+}
+
+.contact{
+	float: right;
+	width: 290px;
+	height: 80px;
+	/*background: #CF7EE9;*/
+	margin-top: 10px;
+	margin-right: 0;
+}
+
+
+
+.list{
+	float: right;
+	width: 400px;
+	height: 300px;
+	/*background:#E0D3C4;*/
+	margin-top: 50px;
+	margin-right: 49px;
+	align:center;
+}
+
+
+.qiangdan{
+	float: left;
+	width: 500px;
+	height: 50px;
+	/*background: #E6C4A5;*/
+	/*display: inline-block;*/
+	margin-top: 50px;
+	margin-left: 100px;
+
+}
+
+.zhuangtai{
+	float: right;
+	width: 400px;
+	height: 200px;
+	margin-top: 150px;
+	margin-right: 50px;
+	color: grey;
+}
+
+
+	
+
+
+</style>
+
+
+
+<body>
+	<div class="shang">
+		<iframe name="header_frame" marginwidth=0 marginheight=0 width=100% src="header.html" frameborder=0 scrolling=no seamless></iframe>
+	</div>
+	<div class="zhong">
+		<div id="detailbox">
+			<div class="box1">
+				<div class="pic"><img class="img1"src="../img/shopdetail/2.jpg" alt=""></div>
+				<div class="profile">
+				<div class="pic2"><img class="img2"src="../img/shopdetail/头像2.png" alt=""></div>
+				<div class="contact">
+					
+					<ul class="list-group">
+  						<li class="list-group-item">ALEX</li>
+  						<li class="list-group-item">用户评论</li>
+
+	
+					</ul>
+				</div>
+				
+					
+				</div>
+				</div><!--box1-->
+			<div class="box2">
+				
+				<div class="list">
+					<ul class="list-group">
+  						<li class="list-group-item">收货人：Frank</li>
+  						<li class="list-group-item">收货人地址：中国北京*******</li>
+  						<li class="list-group-item">收货人联系方式:*******</li>
+
+  						<li class="list-group-item list-group-item-danger">截止日期：07/25/2016</li>
+
+  						<li class="list-group-item">物品名称:LV</li>
+  						<li class="list-group-item">物品颜色：咖啡</li>
+
+  						<li class="list-group-item list-group-item-info">报酬：$150</li>
+  						
+  						<li class="list-group-item list-group-item-warning" id ="test" onload="abc()">我的议价：$160</li>
+  						
+					</ul>
+				</div>
+				<div class="zhuangtai">
+				    
+				    <marquee direction="left"><h4>议价状态：等待确认</h4></marquee> 
+                    
+					
+				</div>
+				
+				</div><!--box2-->
+			</div>
+		
+	</div><!--zhong-->
+	<div class="xia">
+		<iframe name="footer_frame" marginwidth=0 marginheight=0 width=100% src="footer.html" frameborder=0 scrolling=no seamless></iframe>	
+
+	</div>
+</body>
+<script>
+
+	var str=window.location.href
+
+	var word=str.substr(parseInt(str.indexOf('?')+1),parseInt(str.length))
+	var price=document.getElementById("test")
+	price.innerText='我的议价：$'+word
+	
+</script>
+
+</html>

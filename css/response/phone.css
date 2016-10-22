@@ -1,0 +1,29 @@
+/*phone小于640 px*/
+		@media screen and (max-width:640px){
+		
+		.contact h2{
+		font-size:0.6em;
+		}	
+		.contact a{
+		font-size:0.6em;
+		}	
+		#content p{
+		font-size:0.6em;
+		}
+		.advantage .advWrap .WrapHead .textLine #textC{
+		font-size:1em;
+		}
+		
+		.header .auto ul li {
+		display:none;
+		
+		}
+		.auto p{
+		display:none;
+		}
+		.botnLogo{
+		display:none;
+		}
+	
+		
+		}

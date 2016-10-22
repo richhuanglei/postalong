@@ -1,0 +1,108 @@
+/*数量加减*/
+#num{
+		float: left;
+		width: 30px;
+		height: 20px;
+		text-align: center;
+		line-height: 20px;
+	}
+	#jia{
+		float: left;
+		width: 20px;
+		height: 20px;
+		background: #F1F1F1;
+		text-align: center;
+		line-height: 20px;
+		cursor: pointer;
+		font-weight: bolder;
+	}
+	#jian{
+		float: left;
+		width: 20px;
+		height: 20px;
+		background: #F1F1F1;
+		text-align: center;
+		line-height: 16px;
+		cursor: pointer;
+		font-weight: bolder;
+	
+	}
+/**********/
+#content{
+	width:80%;
+	height:500px;
+	margin:auto;
+}
+
+#content .leftcontent,#content .middlecontent,#content .rightcontent{
+width: 32%;
+height: 100%;
+margin:1px 1px;
+float: left;
+}
+#content .leftcontent h1{
+	font-size:300%;
+	color:#26B796;
+	margin-bottom: 20px;
+}
+#content .leftcontent .id{
+	float:left;
+	width: 20%;
+
+}
+#content .leftcontent .dianpu{
+	float:right;
+	width: 78%;
+	height: 80px;
+	text-align: center;
+	font-size:200%;
+	color: #26B796;
+	
+}
+#content .leftcontent .contact{
+
+	float:left;
+	margin-top: 50px;
+}
+
+#content .leftcontent .shangpin{
+
+	width: 90%;
+	height: 270px;
+	float:left;
+	margin:4px auto;
+}
+/*中间的盒子*/
+#content .middlecontent p{
+
+	margin-top: 30px;
+	color: #26B796;
+	font-size: 200%;
+}
+#content .middlecontent input{
+	
+	width:80%;
+	margin:auto;
+	margin-top:30px;
+	border:1px solid #26B796;
+}
+#content .rightcontent p{
+	color: #26B796;
+	font-size: 200%;
+
+}
+#content .rightcontent input{
+	width:80%;
+	margin:auto;
+	margin-top:40px;
+	border:1px solid #26B796;
+
+}
+#content .rightcontent button{
+
+	width: 50%;
+	background: #FFCC02;
+	color:#FFFFFF;
+	margin: 30px auto;
+
+}

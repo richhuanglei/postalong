@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<style>
+	body{
+	background-color:rgba(112,112,112,0.4);
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+   /* position:absolute;
+    top:0px;
+    left:0px;
+   */
+	}
+	#child1{
+			margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 10%;
+			right: 10%;
+			top: 1%;
+			bottom: 1%;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			z-index: 100;	
+			box-shadow: 10px 10px 10px #161B1A;
+			}
+	 #child1 #top{
+	 	width: 90%;
+	 	height: 16%;
+	 	margin-left:5%;
+	 	margin-right: 5%;
+	border-bottom: 1px solid #000000;
+	
+	}
+	 #child1 #top .lefttop{
+		width: 20%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+		margin-top: 28px;
+		 }
+	 #child1 #top .righttop{
+		width: 45%;
+		height: 63px;
+		float: right;
+		line-height:63px; 
+		margin-top: 28px;
+		 }	
+	 #child1 #top .righttop img{
+	 	width: 55%;
+	 	height: 36px;
+	 	line-height:90px; 
+	 } 
+	 #child1 #middle{
+			width: 90%;
+			height: 22%;
+			margin-left:5%;
+			margin-right: 5%;
+			border-bottom: 1px solid #000000;
+				}
+	#child1 #middle .middletop{
+
+		width: 100%;
+		height: 60%;
+		margin-top: 20px;
+						}
+	#child1 #middle .middletop .middletopleft{
+		width: 25%;
+		height: 100%;
+		float: left;
+		margin-left: 10%;
+		margin-top:4px;
+	}
+
+	#child1 #middle .middletop .middletopleft span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#child1 #middle .middletop .middletopright span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#child1 #middle .middletop .middletopleft img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#child1 #middle .middletop .middletopmiddle{
+		width: 20%;
+		height: 100%;
+		float: left;
+		
+		
+	}
+	#child1 #middle .middletop .middletopright img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#child1 #middle .middletop .middletopright{
+		width: 30%;
+		height: 100%;
+		float:right;
+		margin-right: 10%;
+		margin-top:4px;
+	}
+
+	#child1 #middle .middlebottom{
+		width: 100%;
+		height: 30%;	
+	}
+	#child1 #middle .middlebottom .middlebottomleft{
+		width: 25%;
+		height: 100%;
+	
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#child1 #middle .middlebottom .middlebottomright{
+		width: 30%;
+		height: 100%;
+
+		float:right;
+		margin-right: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#child1 #footer{
+	width: 90%;		
+	height: 53%;			
+	margin-left:5%;
+	margin-right: 5%;
+	
+	}
+	#child1 #footer .footerup{
+		width: 100%;
+		height: 24%;
+		
+	}
+	#child1 #footer .footerup .footerup-up{
+		width: 100%;
+		height: 50%;
+	}
+	#child1 #footer .footerup .footerup-up .footerup-up-left{
+		width: 50%;
+		height: 100%;
+		float:left;
+		line-height: 29px;
+	}
+	#child1 #footer .footerup .footerup-up .footerup-up-right{
+		width: 50%;
+		height: 100%;
+		float: left;
+		line-height: 29px;		
+	}
+	#child1 #footer .footerup .footerup-down{
+		width: 100%;
+		height: 50%;
+		}
+	#child1 #footer .footerup .footerup-down .footerup-down-left{
+		width: 30%;
+		height: 100%;
+		float: left;
+		margin-left: 5%;
+		
+	}
+	#child1 #footer .footerup .footerup-down .footerup-down-middle{
+		width: 30%;
+		height: 100%;
+		float: left;
+		
+	}
+	#child1 #footer .footerup .footerup-down .footerup-down-right{
+		width: 30%;
+		height: 100%;
+		float: left;
+		margin-right: 5%;
+		
+	}
+	
+	#child1 #footer .footermiddle{
+		width: 100%;
+		height: 60%;
+
+		}
+	#child1 #footer .footermiddle .footermiddle-left{
+		width: 50%;
+		height: 100%;
+		float: left;
+		background: #F2F2F2;
+		border-bottom-left-radius:30px;
+		border-top-left-radius:30px;
+		padding-left: 6%;
+		padding-top: 10px;
+
+	}
+	#child1 #footer .footermiddle .footermiddle-left input{
+		width: 70%;
+	}
+	#child1 #footer .footermiddle .footermiddle-right{
+		width: 50%;
+		height: 100%;
+		float: left;
+		background: #F2F2F2;
+		border-bottom-right-radius:30px;
+		border-top-right-radius:30px;
+		padding-top: 30px;
+	}
+	#child1 #footer .footermiddle .footermiddle-right input{
+		width: 50%;
+		margin-top: 30px;
+		margin-left:30%;
+	}
+
+	#child1 #footer .footerbottom{
+		width: 100%;
+		height: 20%;
+	}
+
+	#child1 #footer .footerbottom .cancel{
+		width: 20%;
+		height: 63px;
+		background: #949599;
+		color:#FFFFFF;
+		margin-left: 20%;
+		margin-top: 20px;
+		font-size: 20px;
+		border:0px;
+		border-radius: 26px;
+		box-shadow: 10px 10px 10px #ADADAD;
+	}
+	#child1 #footer .footerbottom .pay{
+		width: 20%;
+		height: 63px;
+		background: #21B796;
+		color:#FFFFFF;
+		margin-left: 20%;
+		margin-top: 20px;
+		font-size: 20px;
+		border:0px;
+		border-radius: 26px;
+		box-shadow: 10px 10px 10px #ADADAD;
+	}
+
+
+</style>
+<body>
+	
+	<div id="child1">
+		<div id="top">
+			<div class="lefttop"><span>物品名称：蓝莓</span></div>
+			<div class="righttop"><span>订单号：1111111111111 <img alt="待付款" src="../img/fa/待付款.png"></span></div><!--righttop-->
+		</div><!--top-->
+		<div id="middle">
+			<div class="middletop">
+				<div class="middletopleft">
+					<img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
+				</div><!--middletopleft-->
+				<div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
+				<div class="middletopright">
+					<img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
+				</div><!--middletopright-->
+			</div><!--middletop-->
+			<div class="middlebottom">
+				<div class="middlebottomleft">
+					<span>取货时间：2016-8-8 12:20</span>
+				</div><!--middlebottomleft-->
+				<div class="middlebottomright">
+					<span>送达时间：2016-8-8 6:30</span>
+				</div><!--middlebottomright-->
+			</div><!--middlebottom-->
+		</div><!--middle-->
+		<div id="footer">
+			
+			<div class="footerup">
+				<div class="footerup-up">
+					<div class="footerup-up-left">
+						<p>订单号：3333333333333</p>
+					</div><!--footerup-up-left-->
+					<div class="footerup-up-right">
+						<p>金额：￥400</p>
+					</div><!--footerup-up-right-->
+				</div><!--footerup-up-->
+				<div class="footerup-down">
+					<div class="footerup-down-left">使用余额：<input type="radio" class="radio-inline "></div>
+					<div class="footerup-down-middle">使用信用卡:<input type="radio" class="radio-inline"></div>
+					<div class="footerup-down-right">使用微信:<input type="radio" class="radio-inline"></div>
+				</div><!--footerup-down-->
+			</div><!--footerup-->
+			<div class="footermiddle">
+				<div class="footermiddle-left">
+					<p>姓名</p>
+					<input type="text" class="form-control"><br>
+					<p>输入卡号</p>
+					<input type="text" class="form-control"><br>
+					<p>安全吗</p>
+					<input type="text" class="form-control">
+
+				</div><!--footermiddle-left-->
+				<div class="footermiddle-right">
+					<p>有效期</p>
+					<input type="text" class="form-control" placeholder="年">
+					<input type="text" class="form-control" placeholder="月">
+				</div><!--footermiddle-right-->
+			</div><!--footermiddle-->
+			<div class="footerbottom">
+				<button class="btn-lg cancel">取消</button>
+				<button type="submit" class="btn-lg pay">支付</button>
+			</div><!--footerbottom-->
+		</div><!--footer-->
+	</div><!--child1-->
+	
+</body>
+</html></title>
+</head>
+<body>
+	
+</body>
+</html>

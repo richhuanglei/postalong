@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title description>互递首页</title>
+	<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/content/home.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/content/home.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+   <body>
+    <div id="grayBack" onclick="cancelLogin()"></div>
+    <div id="login">
+      <h3>用户登录</h3>
+          <div id="login_form">
+            <p><label>用户名：</label> <input type="text" class="input" name="user" id="user"></p>
+            <p><label>密 码：</label> <input type="password" class="input" name="pass" id="pass"></p>
+          <div class="sub">
+              <a href="send.html"><input type="button" class="btn" value="登 录"></a>
+          </div>
+      </div>
+    </div>
+    
+	<div class="header">
+		<div class="auto">
+			<img class="headlogoImg" src="../img/public/headlogo.png">
+			<img src="../img/public/logo2.png" height="50" width="150" style="margin-bottom: 30px;">
+			<ul class="nav-menu fr" >
+				<li><a  class="current" href="#">首页</a></li>
+				<li><a href="service.html">功能简介</a></li>
+				<li><a href="api.html">开放平台API</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="help.html">帮助</a></li>
+				<li>
+				<select onchange="window.location=this.value;">
+					<option value="Language" selected>Language</option>
+					<option value="../pages/home.html">中文</option>
+					<option value="../ZT_en/pages/home.html">ENGLISH</option>
+					<option value="한국의  ">한국의  </option>
+					<option value="Français">Français</option>
+					<option value="Русский язык">Русский язык</option>
+						<option value="日本語">日本語</option>
+				</select>
+			
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="banner" >
+		<img src="../img/public/bannerbg.png" style="max-width: 100%;height: auto;width: auto\9;" usemap="#download">
+	<map name= "download">
+				<!-- x1,y1,x2,y2	Specifies the coordinates of the left, top, right, bottom corner of the rectangle (for shape="rect") -->
+					<area shape="rect" target="_blank" coords="990,320,1130,600" href="" alt="安卓">
+					<area shape="rect" target="_blank" coords="1200,320,1330,600" href="" alt="苹果">
+					<area shape="rect" target="_blank" coords="1400,320,1550,600" href="" alt="微信">
+                    
+                </map>
+	
+    </div>
+	    <div class="container">
+
+		<div class="indexContain">
+		
+		<div class="advantage">
+			<div class="advWrap">
+				<div class="WrapHead clearfix">
+					<div class="pull-left imgLine">
+						<img src="../img/home/index_03.png">
+					</div>
+					<div class="textLine">
+						<p id="textC">功能</p>
+						<p id="textE">FEATURES</p>
+					</div>
+					<div class="pull-right imgLine">
+						<img src="../img/home/index_05.png">
+					</div>
+				</div>
+				
+				<div class="advBody">
+					<ul class="clearfix">
+					
+						<li class="advBodyFirst">
+							<a href="#" data-toggle="modal" data-target="#myModal" ><img src="../img/home/index11_07.png" class="serviceButton"></a>
+							<div class="advtext">
+								<h2 >发，需求</h2>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="text-align:left;">请登录</h4>
+      </div>
+      <div class="modal-body">
+         <div class="form-group">
+  <label for="usr" style="text-align:left;" >Name:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd" style="text-align:left;">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+  <button type="button" class="btn btn-default" style="margin-top:25px;" onclick="window.location.href=''">登录</button>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+								<p>大家都在等着帮您呢</p>
+							</div>
+						</li>
+						<li class="advBodySecond">
+							<img src="../img/home/index12_07.png" class="serviceButton">
+							<div class="advtext">
+								<h2>送，爱心</h2>
+								<p>每个人都有可分享的资源</p>
+							</div>
+						</li>
+						<li class="advBodyThree">
+							<a href="#" data-toggle="modal" data-target="#myModal" ><img src="../img/home/index13_07.png" class="serviceButton"></a>
+							<div class="advtext">
+								<h2 data-toggle="modal" data-target="#myModal">收，满意</h2>
+								<p> 帮了自己，也是帮了他人</p>
+							</div>
+							
+						</li>
+						<li class="advBodyFour">
+                            <a href="#" class="loginPop" onclick="windowSign()"><img src="../img/home/index14_07.png" class="serviceButton"></a>
+							<div class="advtext">
+								<h2>定，行程</h2>
+								<p>我到哪，您就能到哪</p>
+							</div>
+						</li>
+						<li class="advBodyFive">
+							<img src="../img/home/index15_07.png" class="serviceButton" onclick="window.location.href='shopindex.html'">
+							<div class="advtext">
+								<h2 >购，全球</h2>
+								<p>您想买的，我就可以买到</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div><!--advantage-->
+		
+		<div class="back">
+			<img src="../img/home/background.png" style="height:100%; max-width:100%; height: auto; width: auto;">
+		</div><!--back-->
+		
+				
+	</div><!--class=indexContain-->
+	
+
+	<!------------------------------------------------------------------------------------------------>
+				
+				<div class="contact" >
+			
+				<div id="menu">
+					<h2>联系我们</h2>
+				<ul >
+					<li onclick="changecountry(this)">中国</li>
+					<li onclick="changecountry(this)">美国</li>
+					<li onclick="changecountry(this)">加拿大</li>
+					<li onclick="changecountry(this)">韩国</li>
+					<li onclick="changecountry(this)">日本</li>
+					<li onclick="changecountry(this)">俄国</li>
+				</ul>
+					
+				
+					</div><!--menu-->
+					<div id="t"></div>
+			
+		<div id="content">
+			<!-- China -->
+			<div class="box" style="display:none"><div class="s1">
+			<a target="_blank" href="https://www.google.ca/maps/place/%E4%B8%A4%E6%B1%9F%E6%98%9F%E7%95%8C/@29.6153296,106.5024603,17z/data=!3m1!4b1!4m5!3m4!1s0x36eccce217d9a89f:0x20112860d5f03a58!8m2!3d29.615325!4d106.504649?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+       			<p>中国</p>
+            </div><!--s1-->
+            <div class="s2">
+			<img src="../img/about/gre2.png">
+				
+					<p>info@postalong.com</p>
+			</div>
+			<div class="s3">
+				<img src="../img/about/gre3.png">
+			
+				<p>778-400-5788</p>
+			</div>
+			</div><!--box-->
+			<!----------美国---------->
+			<div class="box" style="display:none"><div class="s1">
+			<a target="_blank" href="https://www.google.ca/maps/place/%E7%BE%8E%E5%9B%BD%E7%88%B1%E8%8D%B7%E5%8D%8E%E7%BA%BD%E7%BA%A6%E9%82%AE%E6%94%BF%E7%BC%96%E7%A0%81:+50238/@40.8516854,-93.2686866,15z/data=!3m1!4b1!4m5!3m4!1s0x87e9175fdc81fa0f:0x3e508b796d85b60e!8m2!3d40.8516701!4d-93.2599318?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+       
+				<p>美国</p>
+            </div>
+            
+			<div class="s2">
+			<img src="../img/about/gre2.png">
+			
+					<p>info@postalong.com</p>
+			</div>
+			<div class="s3">
+			<img src="../img/about/gre3.png">
+			<p>778-400-5788</p>
+			</div><!--class=s3-->
+			</div><!--class=box-->
+			<!-- Canada -->
+
+			<div class="box"><div class="s1">
+			<a target="_blank" href="https://www.google.ca/maps/place/1622+Boundary+Rd,+Burnaby,+BC+V5K+4V4/@49.2703153,-123.0256143,17z/data=!3m1!4b1!4m2!3m1!1s0x548670d4df3148b9:0x7be849e86eff2cc7"><img src="../img/about/gre1.png" ></a>
+          
+			<p>加拿大</p>
+            </div>
+            
+			<div class="s2">
+			<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+			</div>
+			<div class="s3">
+			<img src="../img/about/gre3.png">
+			<p>778-400-5788</p>
+			</div><!--class=s3-->
+			</div><!--class=box-->
+			<!-- 韩国 -->
+			<div class="box" style="display:none"><div class="s1">
+			<a target="_blank" href="https://www.google.ca/maps/place/%E6%9C%9D%E9%B2%9C/@37.9311294,123.1765343,6z/data=!3m1!4b1!4m5!3m4!1s0x356263108b3d1c3b:0x86416151fc4a3997!8m2!3d37.6639976!4d127.9784585?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+            <p>韩国</p>
+            </div>
+            
+			<div class="s2">
+			<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+			</div>
+			<div class="s3">
+			<img src="../img/about/gre3.png">
+			<p>778-400-5788</p>
+			</div>
+			</div>
+			<!-- 日本 -->
+			<div class="box" style="display:none"> 
+            <div class="s1">
+			
+			<a target="_blank" href="https://www.google.ca/maps/place/%E6%97%A5%E6%9C%AC%E4%B8%9C%E4%BA%AC%E9%83%BD/@35.6735408,139.5703046,11z/data=!3m1!4b1!4m5!3m4!1s0x605d1b87f02e57e7:0x2e01618b22571b89!8m2!3d35.6894875!4d139.6917064?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+            <p>日本</p>
+            </div>
+            
+			<div class="s2">
+			<span></span>
+			<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+			</div>
+			<div class="s3">
+			
+			<img src="../img/about/gre3.png">
+			<p>778-400-5788</p>
+			</div><!--class=s3-->
+			</div><!--class=box-->
+			<!----------俄国---------->
+			<div class="box" style="display:none"> 
+            <div class="s1">
+			<a target="_blank" href="https://www.google.ca/maps/place/Russian+Mosaica+Heritage+Festival/@39.9495954,-75.1650788,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c62f7e74587b:0x459983718e24b48c!8m2!3d39.9495913!4d-75.1628901?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+            <p>俄国</p>
+            </div>
+            
+			<div class="s2">
+			<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+			</div>
+			<div class="s3">
+			<img src="../img/about/gre3.png">
+			<p>778-400-5788</p>
+			</div><!--class=s3-->
+			</div><!--class=box-->
+		</div><!--id=content-->
+			
+			</div><!--class=contact-->	
+					
+			<!------------------------------------------------------------------------------>
+		</div><!--class=container-->
+	<div class="footer clearfix">
+		<div class="auto">
+		
+		
+
+			<div class="footer-section">
+                <img src="../img/public/bottomLogo.png" class="fl btmlogos" usemap="#linkToOther">
+                <map name= "linkToOther">
+				<!-- x1,y1,x2,y2	Specifies the coordinates of the left, top, right, bottom corner of the rectangle (for shape="rect") -->
+					<area shape="rect" target="_blank" coords="0,0,38,50" href=" https://twitter.com/PostalongTech?lang=zh-cn" alt="twitter page">
+					<area shape="rect" target="_blank" coords="38,0,87,50" href="https://www.linkedin.cn/start/edit-profile?trk=uno-reg-join-join-now" alt="linkedin page">
+					<area shape="rect" target="_blank" coords="87,0,135,50" href="http://weibo.com/p/1005055839493601/home?from=page_100505_profile&wvr=6&mod=data&is_all=1#place" alt="weibo page">
+                    <area shape="rect" target="_blank" coords="135,0,195,50" href="https://www.instagram.com/postalong/?hl=zh-cn" alt="instagram page">
+                    <area shape="rect" target="_blank" coords="195,0,254,50" href="https://www.facebook.com/%E4%BA%92%E9%80%92%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8Postalong-Technology-Inc-1703657119912840/?ref=bookmarks
+" alt="facebook page">
+                </map>
+			</div>
+			
+		
+			<div class="footer-section" style="float: right;">
+				<img src="../img/public/botnLogo.png" class="botnLogo fr">
+			</div>
+			
+            <div class="footer-section" style="margin-top:44px; font-size: 18px;margin-left: 20px;">
+				客服电话： 778-400-5798 
+			</div>
+            
+			<p class="fl btmpresent clearfix">Copyright ©2014-2016 All Rights reserved. 互递科技有限公司postalong technology inc. (www.postalong.com)版权所有</p>
+			
+		</div><!--class=auto-->
+	</div><!--class=footer-->
+</body>
+</html>

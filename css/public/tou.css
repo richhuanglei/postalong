@@ -1,0 +1,96 @@
+
+
+
+		.languagesize select{
+		width: 80%;
+		}
+ul.nav-menu li a.current {
+    border-bottom: 4px grey solid;
+}
+
+		
+	.tou{
+		background-color: lightgrey;
+	}
+
+.logo img{
+			height: 40px;
+			padding-top: 10px;}
+
+	
+ul.nav-menu{
+	
+  line-height: 50px;  
+  float: right; 
+}
+ul.nav-menu li{
+   display: inline-block;
+  
+}
+ul.nav-menu li a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	padding-left: 0px;
+		padding-right: 5px;
+
+}
+
+
+.tousharesize{
+	padding-right: 5px;
+}
+.toulanguagesize{
+	padding-right: 5px;
+}
+
+/*xs*/
+	@media  (max-width:768px){
+		
+		.nav-menu{
+			display:none;
+		}
+		#btn-2{
+			height: 50px;
+			overflow: visible;
+		}
+		
+		
+	}
+/*sm*/
+	@media (min-width:768px) and (max-width:992px){
+	
+
+ul.nav-menu li a{
+		font-size: small;
+		padding-right: 2px;
+	}
+
+.logo img{
+			height: 40px;
+			padding-top: 10px;
+			}
+
+
+		.formcontral:{padding:0px;}
+
+	}
+
+
+	/*md*/
+	@media (min-width:992px) and (max-width:1200px){
+	
+	.logo img{
+			height: 40px;
+			padding-top: 10px;
+	}
+	ul li a{
+		font-size: 12px;
+	}
+			
+	}
+	li{
+		padding-right: 0px;
+
+	}
+	

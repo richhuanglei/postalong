@@ -1,0 +1,200 @@
+input::-webkit-input-placeholder {
+color: black !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: black !important;  
+}
+
+
+.toptitle{
+	width: 90%;
+	border-bottom: solid 1px black;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+
+}
+.toptitle h2{
+	display: inline;
+}
+.fapost {
+	float:right;
+	padding: 2px;
+	font-size: medium;
+	line-height: 1.1;
+	background: lightgrey;
+	border: solid 1px white;
+	box-shadow: 1px 2px 1px grey;	
+	margin-top: -2px;
+}
+
+.fapostform{
+	width: 80%;
+	background: lightgrey;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.form-control{
+	padding:0;
+	padding-left:6px;
+	height:30px;
+}
+.formbottom{
+margin-bottom: 0;
+}
+.formbottom1{
+margin-bottom: 5px;
+}
+.form-group input{
+	background: lightgrey;
+	border:solid 1px gray;
+}
+.form-inline .form-group {
+	width: 49%;
+}
+.form-inline .form-group .form-control{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.form-inline .form-group .formbottom{
+	
+	margin-bottom: 0px;
+}
+
+.staffinfo{
+	display: inline-block;
+	width:49%;
+	
+	vertical-align: top;
+}
+.staffinfo1{
+	display: inline-block;
+	width:49%;
+	
+	vertical-align: top;
+}
+
+
+.staffimg {
+	width: 80%;
+	border-radius: 10px;
+	overflow: hidden;
+	
+	margin-bottom: 20px;
+
+}
+.staffimg img{
+	width: 100%;
+}
+
+.staffimg1{
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	
+	margin-bottom: 0px;
+
+}
+.staffimg1 img{
+	width: 100%;
+}
+
+.fabu{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 100%;
+	box-shadow: 1px 2px 1px grey;	
+}
+
+
+.shortinput{
+	width: 80%;
+}
+
+.longinput{
+	width: 95%;
+}
+.fapostformb{
+	margin-bottom: 20px;
+}
+.halfinput{
+width: 49%;
+display: inline-block;
+margin-bottom: 0;
+}
+.form-groupp{
+	margin-bottom: 10px;
+	height: 30px;
+}
+.form-groupp p{
+	margin-top: 5px;
+	font-size: normal;
+}
+.plusimg img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.fapostformwhite{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2%;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.checkbox1{
+	width: 49%;
+	display: inline-block;
+}
+
+
+.checkbox2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.fabu1{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 100%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+}
+.fabu3{
+	background: #21b796;
+	border:1px solid white;
+	color: white;
+	width: 80%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+	margin-left: 15px;
+}
+
+.fabu2{
+	background: lightgrey;
+	border:1px solid white;
+	color: white;
+	width: 80%;
+	height: 29px;
+	box-shadow: 1px 2px 1px grey;	
+	margin-left: 15px;
+}
+

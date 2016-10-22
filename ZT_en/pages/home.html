@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Postalong Homepage</title>
+	<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/content/home.css">
+   </head>
+	<style>   
+		
+		/*1000px以上屏幕*/
+		@media screen and {
+		
+		}
+		@media screen and (min-width: 1000px){
+		
+		
+		
+		}
+		/*pad 640-1000*/
+		@media screen and (min-width:600px) and (max-width:1000px){
+		
+		.header .auto ul li {
+		font-size: 1em;
+		
+		}
+		.auto p{
+		display:none;
+		}
+		}
+		/*phone小于640 px*/
+		@media screen and (max-width:640px){
+		
+		.contact h2{
+		font-size:0.6em;
+		}	
+		.contact a{
+		font-size:0.6em;
+		}	
+		#content p{
+		font-size:0.6em;
+		}
+		.advantage .advWrap .WrapHead .textLine #textC{
+		font-size:1em;
+		}
+		
+		.header .auto ul li {
+		display:none;
+		
+		}
+		.auto p{
+		display:none;
+		}
+		.botnLogo{
+		display:none;
+		}
+		
+		
+		}
+		
+		
+	</style>
+    
+<body>
+    <div id="grayBack" onclick="cancelLogin()"></div>
+    <div id="login">
+      <h3>用户登录</h3>
+          <div id="login_form">
+            <p><label>用户名：</label> <input type="text" class="input" name="user" id="user"></p>
+            <p><label>密 码：</label> <input type="password" class="input" name="pass" id="pass"></p>
+          <div class="sub">
+              <a href="send.html"><input type="button" class="btn" value="登 录"></a>
+          </div>
+      </div>
+    </div>
+    
+	<div class="header">
+		<div class="auto">
+			<img class="headlogoImg" src="../img/public/headlogo.png">
+			<img src="../img/public/logo2.png" height="50" width="150" style="margin-bottom: 30px;">
+			<ul class="nav-menu fr">
+				<li><a  class="current" href="#">Home page</a></li>
+				<li><a href="service.html">Features</a></li>
+				<li><a href="api.html">API</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="help.html">Customer services</a></li>
+				<li>
+				<select onchange="window.location=this.value;">
+					<option value="Language" selected>Language</option>
+					<option value="../../pages/home.html">中文</option>
+					<option value="../ZT_en/pages/home.html">ENGLISH</option>
+					<option value="한국의  ">한국의  </option>
+					<option value="Français">Français</option>
+					<option value="Русский язык">Русский язык</option>
+						<option value="日本語">日本語</option>
+				</select>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="banner" >
+		<img src="../img/public/bannerbg.png" style="max-width: 100%;
+    height: auto;
+    width: auto\9;">
+
+	
+    </div>
+	    <div class="container">
+
+		<div class="indexContain">
+		
+		<div class="advantage">
+			<div class="advWrap">
+				<div class="WrapHead clearfix">
+					<div class="pull-left imgLine">
+						<img src="../img/home/index_03.png">
+					</div>
+					<div class="textLine">
+				             <p id="textE">FEATURES</p>
+					</div>
+					<div class="pull-right imgLine">
+						<img src="../img/home/index_05.png">
+					</div>
+				</div>
+				
+				<div class="advBody">
+					<ul class="clearfix">
+					
+						<li class="advBodyFirst">
+							<a href="#" class="loginPop" onclick="windowSign()"><img src="../img/home/index11_07.png" class="serviceButton"></a>
+							<div class="advtext">
+								<h2 class="headAdvtext">POST / YOUR NEED</h2>
+								<p class="contextAdvtext">We are waiting to help</p>
+							</div>
+						</li>
+						<li class="advBodySecond">
+							<img src="../img/home/index12_07.png" class="serviceButton">
+							<div class="advtext">
+								<h2 class="headAdvtext">DELIVERY / HELPING OTHERS</h2>
+								<p class="contextAdvtext">EVERYBODY has something to share</p>
+							</div>
+						</li>
+						<li class="advBodyThree">
+							<a href="#" class="loginPop" onclick="windowSign()"><img src="../img/home/index13_07.png" class="serviceButton"></a>
+							<div class="advtext">
+								<h2 class="headAdvtext">RECEIVE / SATISFACTION</h2>
+								<p class="contextAdvtext">While helping others, help yourself</p>
+							</div>
+							
+						</li>
+						<li class="advBodyFour">
+                            <a href="#" class="loginPop" onclick="windowSign()"><img src="../img/home/index14_07.png" class="serviceButton"></a>
+							<div class="advtext">
+								<h2 class="headAdvtext">BOOKING / TRIP</h2>
+								<p class="contextAdvtext">Wherever I go, you go</p>
+							</div>
+						</li>
+						<li class="advBodyFive">
+							<img src="../img/home/index15_07.png" class="serviceButton">
+							<div class="advtext">
+								<h2 class="headAdvtext">SHOPPING / THE WORLD</h2>
+								<p class="contextAdvtext">Whatever you want, you can get</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="back">
+			<img src="../img/home/background.png" style="height:100%; max-width:100%; height: auto; width: auto;">
+		</div>
+		
+
+											<!--		
+		<div class="product">
+			<div class="proWrap">
+				
+				<div class="proDescribe">
+					<h2><p style="color: #79c648;font-size:28px;margin-bottom:18px;">平台小，功能全，使用简单</p>想到就发， 即时，随便</h2>
+					<p style="color: #79c648">我的需求，我是谁？他是谁？</p>
+					<p style="color: #79c648">如何联系我？如何联系他？</p>
+					<p style="color: #79c648">我想付出的报酬，您怎么想？</p>
+				</div>
+			</div>
+		</div>
+		<div class="pay">
+			<div class="payWrap">
+				<div class="payImg"></div>
+				<div class="payDescribe">
+					<h2><span style="color: #79c648;">顺路看看</span><p style="color:#000000;font-size:25px;">一键搜索，自动推送，</p></h2>
+					<p style="color: #79c648;font-size:28px;">我能帮到谁？</p>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<div class="achieve">
+			<div class="achWrap">
+				<div class="achDescribe">
+					<h2><span style="color: #FFFFFF;">范围广，速度快，安全可靠</span><p style="font-size:25px; color: #000000">想要就到，及时方便</p></h2>
+					<p style="color: #000000;font-size:18px;">他刚发，我刚要，您就到</p>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="trip">
+			<div class="tripWrap clearfix">
+				<div class="tripImg"><img src="../img/home/trip.png"></div>
+				<div class="tripDescribe">
+					<p style="margin-bottom: 18px; font-size: 22px; color: #79c648; font-weight: bold;">告诉别人您去哪，分享的不仅是快乐</p>
+					<h2><span style="color: #79c648;">远在天崖，近在咫尺,</span><p style="color: #000000; font-size: 22px; font-weight: normal;">有了我</p><p style="color: #000000; font-size: 22px; font-weight: normal;">再远的地方也触手可及</p></h2>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="product">
+			<div class="proWrap2">
+					<div class="proDescribe">
+					<p style="color: #000000; font-size: 20px; margin-top: 50px;">没有您逛不到的商店</p><p style="color: #000000; font-size: 20px; margin-top: 18px;">没有您买不到的东西</p><p style="color: #000000; font-size:22px;margin-top: 25px;">有了我</p></h2>
+					<p style="color: #79c648; font-size: 28px; font-weight: bold;margin-top: 25px;">买遍全球任何一个角落</p>
+				</div>
+				    
+			</div>
+		</div>
+		
+		-->
+		
+	</div>    <!--indexContain-->
+			<!--------------------------------------------contact start---------------------------------------------------->
+			
+			<div class="contact" >
+				
+				<div id="menu">
+					<h2>Contact Us</h2>
+					
+					<p id="country"><a href="javascript:;">China</a><a href="javascript:;">USA</a><a href="javascript:;">Canada</a><a href="javascript:;">Korea</a><a href="javascript:;">Japan</a><a href="javascript:;">Russa</a></p>
+					
+				</div>
+				<div id="t"></div>
+				<!----------中国----------------->
+				<div id="content">
+					<div class="box"> 
+						<div class="s1">
+							<a target="_blank" href="https://www.google.ca/maps/place/%E4%B8%A4%E6%B1%9F%E6%98%9F%E7%95%8C/@29.6153296,106.5024603,17z/data=!3m1!4b1!4m5!3m4!1s0x36eccce217d9a89f:0x20112860d5f03a58!8m2!3d29.615325!4d106.504649?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+							
+							
+							<p>China</p>
+						</div>
+						<div class="s2">
+							<img src="../img/about/gre2.png">
+							
+							<p>info@postalong.com</p>
+						</div>
+						<div class="s3">
+							<img src="../img/about/gre3.png">
+							
+							<p>778-400-5788</p>
+						</div><!--class=s3-->
+					</div><!--class=box-->
+					<!----------美国---------->
+					<div class="box" style="display:none"> 
+						<div class="s1">
+							<a target="_blank" href="https://www.google.ca/maps/place/%E7%BE%8E%E5%9B%BD%E7%88%B1%E8%8D%B7%E5%8D%8E%E7%BA%BD%E7%BA%A6%E9%82%AE%E6%94%BF%E7%BC%96%E7%A0%81:+50238/@40.8516854,-93.2686866,15z/data=!3m1!4b1!4m5!3m4!1s0x87e9175fdc81fa0f:0x3e508b796d85b60e!8m2!3d40.8516701!4d-93.2599318?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+							
+							<p>USA</p>
+						</div>
+						
+						<div class="s2">
+							<img src="../img/about/gre2.png">
+							
+							<p>info@postalong.com</p>
+						</div>
+						<div class="s3">
+							<img src="../img/about/gre3.png">
+							<p>778-400-5788</p>
+						</div><!--class=s3-->
+					</div><!--class=box-->
+					<!---------加拿大----------->
+					<div class="box" style="display:none"> 
+						<div class="s1">
+							<a target="_blank" href="https://www.google.ca/maps/place/1622+Boundary+Rd,+Burnaby,+BC+V5K+4V4/@49.2703153,-123.0256143,17z/data=!3m1!4b1!4m2!3m1!1s0x548670d4df3148b9:0x7be849e86eff2cc7"><img src="../img/about/gre1.png" ></a>
+							
+							<p>Canada</p>
+						</div>
+						
+						<div class="s2">
+							<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+						</div>
+						<div class="s3">
+							<img src="../img/about/gre3.png">
+							<p>778-400-5788</p>
+						</div><!--class=s3-->
+					</div><!--class=box-->
+					<!---------韩国----------->
+					<div class="box" style="display:none"> 
+						<div class="s1">
+							<a target="_blank" href="https://www.google.ca/maps/place/%E6%9C%9D%E9%B2%9C/@37.9311294,123.1765343,6z/data=!3m1!4b1!4m5!3m4!1s0x356263108b3d1c3b:0x86416151fc4a3997!8m2!3d37.6639976!4d127.9784585?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+							<p>Korea</p>
+						</div>
+						
+						<div class="s2">
+							<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+						</div>
+						<div class="s3">
+							<img src="../img/about/gre3.png">
+							<p>778-400-5788</p>
+						</div><!--class=s3-->
+					</div><!--class=box-->
+					<!---------日本----------->
+					<div class="box" style="display:none"> 
+						<div class="s1">
+							
+							<a target="_blank" href="https://www.google.ca/maps/place/%E6%97%A5%E6%9C%AC%E4%B8%9C%E4%BA%AC%E9%83%BD/@35.6735408,139.5703046,11z/data=!3m1!4b1!4m5!3m4!1s0x605d1b87f02e57e7:0x2e01618b22571b89!8m2!3d35.6894875!4d139.6917064?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+							<p>Japan</p>
+						</div>
+						
+						<div class="s2">
+							<span></span>
+							<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+						</div>
+						<div class="s3">
+							
+							<img src="../img/about/gre3.png">
+							<p>778-400-5788</p>
+						</div><!--class=s3-->
+					</div><!--class=box-->
+					<!----------俄国---------->
+					<div class="box" style="display:none"> 
+						<div class="s1">
+							<a target="_blank" href="https://www.google.ca/maps/place/Russian+Mosaica+Heritage+Festival/@39.9495954,-75.1650788,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c62f7e74587b:0x459983718e24b48c!8m2!3d39.9495913!4d-75.1628901?hl=zh-CN"><img src="../img/about/gre1.png" ></a>
+							<p>Russia</p>
+						</div>
+						
+						<div class="s2">
+							<img src="../img/about/gre2.png"><p>info@postalong.com</p>
+						</div>
+						<div class="s3">
+							<img src="../img/about/gre3.png">
+							<p>778-400-5788</p>
+						</div><!--class=s3-->
+					</div><!--class=box-->
+				</div><!--id=content-->
+				
+			</div><!--class=contact-->	
+			
+			<!------------------------------------------------------------------------------------------------>
+	
+	</div> <!--container-->
+	
+	<div class="footer clearfix">
+		<div class="auto">
+		
+		<!--
+			<div class="footer-section">
+				<ul class=“text”>
+				<h3>帮助中心</h3>
+					<li>-
+						<a href="">常见问题</a>
+					</li>
+					<li>-
+						<a href="">管理条例</a>
+					</li>
+					<li>-
+						<a href="">提现赔付须知</a>
+					</li>
+					<li>-
+						<a href="">安全提醒</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<ul class="text">
+				<h3>最新动态</h3>
+					<li>-
+						<a href="">公司动态</a>
+					</li>
+					<li>-
+						<a href="">媒体关注</a>
+					</li>
+				</ul>
+			</div>-->
+
+			<div class="footer-section">
+                <img src="../img/public/bottomLogo.png" class="fl btmlogos" usemap="#linkToOther">
+                <map name= "linkToOther">
+                  <!-- x1,y1,x2,y2	Specifies the coordinates of the left, top, right, bottom corner of the rectangle (for shape="rect") -->
+					<area shape="rect" target="_blank" coords="0,0,38,50" href=" https://twitter.com/PostalongTech?lang=zh-cn" alt="twitter page">
+					<area shape="rect" target="_blank" coords="38,0,87,50" href="https://www.linkedin.cn/start/edit-profile?trk=uno-reg-join-join-now" alt="linkedin page">
+					<area shape="rect" target="_blank" coords="87,0,135,50" href="http://weibo.com/p/1005055839493601/home?from=page_100505_profile&wvr=6&mod=data&is_all=1#place" alt="weibo page">
+                    <area shape="rect" target="_blank" coords="135,0,195,50" href="https://www.instagram.com/postalong/?hl=zh-cn" alt="instagram page">
+                    <area shape="rect" target="_blank" coords="195,0,254,50" href="https://www.facebook.com/%E4%BA%92%E9%80%92%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8Postalong-Technology-Inc-1703657119912840/?ref=bookmarks
+" alt="facebook page">
+                </map>
+			</div>
+		
+			<div class="footer-section" style="float: right;">
+				<img src="../img/public/botnLogo.png" class="botnLogo fr">
+			</div>
+			
+            <div class="footer-section" style="margin-top:44px; font-size: 18px;margin-left: 20px;">
+				customer service： 778-400-5798 
+			</div>
+            
+			<p class="fl btmpresent clearfix">Copyright ©2014-2016 All Rights reserved. postalong technology inc. (www.postalong.com)Copyright</p>
+			
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="../js/iframe/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/public/main.js"></script>
+<script type="text/javascript" src="../js/content/home.js"></script>

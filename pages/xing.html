@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<!-- ------------Author:Henry 2016/7/26---------------------- -->
+<html>
+<head>
+<meta http-equiv="Menu-content-type" Menu-content="text/html; charset=utf-8">
+<title>行</title>
+<!-- 下面为bootstrap -->
+<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!-- 下面为日历控件 -->
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script>
+ 
+  </script>
+</head>
+<style>
+	#header{
+		width: 100%;
+		height: 90px;
+		}
+	/************************************上面是头部信息************************************************************/
+	#content{
+		display: inline-block;
+		width: 100%;
+		margin:0 auto;
+		
+		}
+	/*******************上面是内容区定义********************************************/
+	#content .search{
+		
+		height: 400px;
+		
+		background-image: url(../img/xing/xing.png);	//背景图
+		 background-repeat:no-repeat;	
+		 background-position: center bottom;	
+		
+			
+	}
+	#content .search .leftlink{
+		float:left;
+		margin-top: 0px;
+		padding-top:10px;
+		width: 5%;
+		height: 380px;
+		}
+	#content .search .leftlink .leftlinkmenu{
+
+		width: 60px;
+		height: 60px;
+		border-radius:50%;		
+		margin:auto;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 60px;
+		background:#FFFFFF;
+		opacity: 0.5;
+		
+		font-weight: bold;
+	}
+	#content .search .leftlink .leftlinkmenu a:link{
+		color: #BFEAE1;
+	}
+	#content .search .leftlink #menuxing a:hover{
+		color: #64B7A1;
+	}
+	#content .search .leftlink #menuxing{
+	width: 60px;
+		height: 60px;
+		border-radius:50%;
+		margin:auto;
+		margin-top: 10px;
+		text-align: center;
+		line-height: 60px;
+		background:#FFFFFF;
+		opacity: 1;
+		
+		font-weight: bold;
+
+	}
+	
+/****************上面是search里面左边的六个圆的样式**************************************/
+	
+
+	#content .search .inputsearch{
+		float: right;
+		margin-top: 0px;
+		width:95%;
+		height: 400px;
+		/*border: 1px solid yellow;*/
+		float:right;
+		
+	}
+	#content .search .inputsearch .pageintroduce{
+
+		float:left;
+		width: 95%;
+		height: 120px;
+		color: #FFFFFF;
+		font-size: 600%;
+		font-weight:bold;
+		line-height: 120px;
+		padding-left: 8%;
+		}
+	#content .search .inputsearch .searchbuttonwrap{
+
+	float:left;
+		width: 95%;
+		height: 280px;
+		padding-top:180px;
+
+	}
+
+	#content .search .inputsearch #searchbutton{
+		background: #21B796;
+		color:white;
+		height:60px;
+		width:40%;
+		margin-left:25%;
+		border-radius:30px;
+		border: 1px solid white;
+		font-size: 260%;
+		line-height: middle;
+	}
+	
+	/******************************上面是内容区右边搜索样式****************************************************/
+	
+	#content .leftcontent{
+		margin-top: 10px;
+		margin-left: 1%;
+		margin-right: 2px;
+		float:left;
+		width: 18%;
+		height: 750px;
+		background:#BFEAE1;
+	}
+	#content .leftcontent .leftheader{
+		width: 100%;
+		height: 40px;
+		background: #21B796;
+		text-align: center;
+		line-height: 40px;
+		font-size: 20px;
+		color: white;
+	}
+	/****************上面是左上页眉****************************/
+	#content .leftcontent .wrapmenu{
+		width: 100%;
+		height: 80px;
+		
+
+	}
+	 #content .leftcontent .wrapmenu .Menu-title{
+	 			float:left;
+	 			cursor:pointer;
+                width:100%;
+                height:80px;				
+                background:#BFEAE1;
+                color:#B77858;
+                
+               
+            }
+            #content .leftcontent .wrapmenu .Menu-title ul li{
+				display: inline-block;
+            	padding-top: 30px;            
+                 font-size: 20px;
+                 word-spacing: 10%;
+                line-height: 20px;
+				color: white;
+            	list-style: none;
+            }
+            #wenzi{
+            	display: inline-block;
+            	width:18%;
+            }
+
+   
+      #content .leftcontent .wrapmenu .Menu-content{
+      			float: right;
+              	width:48%;
+              	height: 300px;
+              	padding-top: 30px;
+              	background: #BFEAE1;
+              	
+              	
+               
+            }
+            #content .leftcontent .wrapmenu .Menu-content ul{
+            	list-style: none;
+
+            }
+            #content .leftcontent .wrapmenu .Menu-content ul li a{
+            	font-size: 18px;
+            	font-weight:bold;
+            	color: white;
+            	text-align: center;
+            }
+      
+    
+      /*********************上面是左上菜单设置*****************************************/
+      #content #cityinput{
+      	width: 100%;
+      	height: 250px;
+      	margin-top: 200px;
+      	padding-top: 100px;
+      
+      }
+      #content #cityinput input{
+      	width: 90%;
+      	height: 40px;
+      	vertical-align: middle;
+      	border-radius: 30px;
+      	margin-left:5%;
+      	margin-top: 20px;
+      }
+      #content #newsearch{
+      	margin-top:50px;
+      	width: 60%;
+      	height: 50px;
+      	margin-left:19%;
+      	margin-right: 20%;
+      	margin-bottom: 50px;
+		color:#FFFFFF;
+      	background:#21B796;
+      	font-size: 22px;
+      	border-radius: 30px;
+      	border: 0;
+     
+      }
+	/***********************上面是左侧搜索样式，下面都是右侧*********************************/
+	#content .wrap{
+		margin:10px auto;
+		width: 90%;
+		height: 85%;
+		
+	}
+	#content .rightcontent{
+		margin-top: 10px;
+		float:left;
+		width: 80%;
+		height: 750px;
+		background: #BFEAE1;
+	}
+	/****************************上面是右边内容区定义********************************************************/
+	#content .rightcontent .result{
+		float:left;
+		margin:10px 1%;
+		width: 23%;
+		height: 300px;
+		background: white;
+		border-radius: 20px;
+
+	}
+	#content .rightcontent .result .begin{
+		width: 90%;
+		height: 70px;
+		margin:10px auto;
+		border: 1px solid #EFF0ED;
+	}
+	#content .rightcontent .result .begin img{
+		width: 25%;
+		height: auto;
+	}
+	#content .rightcontent .result  .rightcontentwrap{
+		width: 75%;
+		height: 68px;
+		float: right;
+
+	}
+	#content .rightcontent .result .rightcontentwrap .rightcontentup{
+		width: 100%;
+		height: 33px;
+		text-align: center;
+		color: #A75E40;
+		font-weight: bold;
+		
+	}
+	#content .rightcontent .result  .rightcontentwrap .rightcontentdown{
+		width: 100%;
+		height: 33px;
+		text-align: center;
+		color: #A75E40;
+		
+
+	}
+	#content .rightcontent .result  .rightcontentwrap .detailinformation {
+		text-align: center;
+		
+
+	}
+	#content .rightcontent .result .end{
+		width: 90%;
+		height: 100px;
+		margin:10px auto;
+		border: 1px solid #EFF0ED;
+	}
+	#content .rightcontent .result .end img{
+		width: 25%;
+		height: auto;
+
+	}
+	#content .rightcontent .result .contact{
+		width: 90%;
+		height: 80px;
+		margin:10px auto;
+		border: 1px solid #EFF0ED;
+	}
+	#content .rightcontent .result .contact img{
+		width: 25%;
+		height: auto;
+	}
+	#content .rightcontent .result .contact .contactcontent{
+		width: 75%;
+		height: 80px;
+		float: right;
+		text-align: center;
+		color:#A4593B;
+		font-weight: bold;
+		
+		line-height: 2;
+		
+
+	}
+
+
+	/*****************************上面是右边内容区查询结果定义*********************************************/
+	#content .rightcontent .fenye{
+		width: 80%;
+		height: 50px;
+		margin: 5px auto;
+		text-align: center;
+
+	}
+	
+      /******************************上面是内容区右边定义********************************************/
+	#footer{
+		width: 100%;
+		margin-left:10px;
+	}
+	
+/*************************************下面是模式详细内容****************************/
+.modal .modal-dialog .modal-content .modal-body .detailspecification{
+	width: 100%;
+	height: 90px;
+	/*border:1px solid #B3B4B6;*/
+	margin-bottom: 20px;
+
+
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftcontentwrap{
+
+	width: 22%;	
+	float: left;
+
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftcontentwrap .leftmodalup{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftcontentwrap .leftmodaldown{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightcontentwrap{
+
+	width: 22%;
+	height: 90px;
+	float: right;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .modalmiddle {
+	width: 23.6%;
+	height: 80px;
+	float: left;
+	}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .modalmiddle img{
+	width: 100%;
+	height: 78px;
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightcontentwrap .rightmodalup{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightcontentwrap .rightmodaldown{
+
+	width: 100%;
+	height: 40px;
+	
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftimage{
+	width: 15%;
+	float:left;
+
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .leftimage img{
+	width: 90%;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightimage img{
+	width: 90%;
+	
+}
+.modal .modal-dialog .modal-content .modal-body .detailspecification .rightimage{
+	width: 15%;
+	
+	
+	float:right;
+
+}
+	
+
+
+
+.modal .modal-dialog .modal-content .modal-body textarea{
+	border-radius:5px;
+	border:1px solid #B3B4B6;
+	padding-left: 3%;
+	padding-top: 5px;
+	
+	}
+
+	/**************下面是help模态的样式*****************/
+	.modal .modal-dialog .modal-content .modal-header .helpleft{
+		width: 35%;
+		height: 100px;		
+		display: inline-block;
+		text-align: center;
+		padding-top: 3%;
+
+	}
+	.modal .modal-dialog .modal-content .modal-header .helpright{
+		width: 30%;
+		height: 100px;
+		padding-left:6%;
+		padding-top:5%;
+		float: right;		
+	}
+	.modal .modal-dialog .modal-content .modal-body .helpcenter{
+
+		width: 100%;
+		
+		
+	}
+	.modal .modal-dialog .modal-content .modal-body .helpcenter .helpcenterbox{
+	width: 30%;
+	height: 170px;
+	display: inline-block;
+	margin:1%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	-webkit-box-shadow: 3px 3px 3px;  
+  -moz-box-shadow: 3px 3px 3px;  
+  box-shadow: 3px 3px 3px;  
+	position:relative;
+	}
+	.modal .modal-dialog .modal-content .modal-body .helpcenter .helpcenterbox .helpcenterboxleft{
+		width: 50%;
+		/*height: 98px;*/
+		border-right: 1px dashed #E5E5E5;
+				
+		position: absolute;
+	top:0px;
+	left:0px;
+
+	}
+
+	.modal .modal-dialog .modal-content .modal-body .helpcenter .helpcenterbox .helpcenterboxright{
+		width: 38%;
+		height: 98px;
+				
+		position: absolute;
+		top:0px;
+		left:61%;
+	}
+
+
+</style>
+<body >
+ <div id="header">
+ <object style="border:0px" type="text/x-scriptlet" data="header.html" width=100%></object>
+ 	
+ </div>   
+ <div id="content">
+ 	<div class="search">
+ 	<div class="leftlink">
+ 		<div class="leftlinkmenu"><a href="">发</a></div>
+ 		
+ 		<div class="leftlinkmenu"><a href="">送</a></div>
+ 	
+ 		<div class="leftlinkmenu"><a href="">收</a></div>
+ 		
+ 		<div class="leftlinkmenu" id="menuxing"><a href="">行</a></div>
+ 		
+ 		<div class="leftlinkmenu"><a href="">购</a></div>
+ 	</div>
+ 		<div class="input-group inputsearch">
+ 		
+			<div class="pageintroduce">行程</div>
+              <div class="searchbuttonwrap">
+               <span class="input-group-btn title">
+                  <button class="btn btn-default" type="button" id="searchbutton" data-toggle="modal" data-target="#myModal">
+                     创建新行程
+                  </button>
+               </span></div><!--searchbuttonwrap-->
+            </div><!-- /inputsearch -->
+     </div><!--search-->
+     
+	<div class="leftcontent">
+		<div class="leftheader"><span>行程</span></div>
+		 
+        <div class="wrapmenu">
+        <div class="Menu-title">
+                <ul>
+                	<li>同城</li>
+                	<div id="wenzi"></div>
+                	<li>城际</li>
+                	<div id="wenzi"></div>
+                	<li>国际</li>
+                </ul>
+                   
+        </div><!--menu-title-->       
+        </div><!--wrapmenu-->
+        <div class="leftheader"><span>我的行程</span></div>
+        <div id="cityinput">
+        	<input type="text" placeholder="输入出发城市">
+        	<input type="text" placeholder="输入到达城市">
+        </div>
+        <button class="btn btn-primary btn-lg" data-toggle="modal" 
+   data-target="#myModal" id="newsearch">
+   搜索
+</button>
+       
+   <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel" style="text-align:center">
+              新建行程
+            </h4>
+         </div>
+         <div class="modal-body">
+           
+           
+            
+            <form action="" role="form">
+            	<div class="form-group"> 
+            	<label for="qi">起点</label>
+            	<input type="text" placeholder="起点" class="form-control" id="qi" >
+            	</div>
+            	<div class="form-group">
+				<label for="zhong">终点</label>
+            	<input type="text" placeholder="终点" class="form-control" id="zhong">
+            	</div>
+            	<div class="form-group">
+            	<label for="starttime">开始时间</label>
+            	<input type="text" id="start" placeholder="开始时间" class="form-control"></p>
+            	
+            	</div>
+            	<div class="form-group">
+            	<label for="endtime">结束时间</label>
+            	<input type="text" id="end" placeholder="结束时间" class="form-control"></p>
+            	
+            	</div>
+
+            	<div class="form-group">
+					<label for="transportation">交通工具</label>
+            		<select name="" id="transportation" class="form-control">
+            		<option value="">步行</option>
+            		<option value="">轿车</option>
+            		<option value="">大货车</option>
+            		<option value="">小货车</option>
+            		<option value="">飞机</option>
+            	</select></div>
+            	<div class="form-group">
+            	<label for="remark">交通工具</label>
+            	<textarea name="" id="remark" cols="30" rows="10" class="form-control"></textarea>
+            	</div>
+
+            </form>
+
+            	
+
+         
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+               提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!--modal-->
+	</div><!--leftcontent-->
+	
+	<div class="rightcontent">
+		<div class="wrap">
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+			<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+			
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+			<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+			
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+				<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+			
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+				<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+			
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+				<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+			
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+				<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+						
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+				<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div>
+			
+			
+			
+		</div>
+		<div class="result">
+		<div class="contact">
+				<span><img src="../img/xing/contact.png" alt="联系人" class=".img-responsive" class=".img-responsive"></span>
+				<div class="contactcontent">
+				<span>发布时间：2016-8-02</span><br>
+				<span>Henry</span>
+				</div>
+			</div>
+			<div class="begin">
+				<span><img src="../img/xing/qi.png" alt="起" class=".img-responsive"></span>
+				<div class="rightcontentwrap">
+					<div class="rightcontentup"><span>加拿大温哥华</span></div>
+					<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+					
+				</div>
+			</div>
+			<div class="end">
+				<span><img src="../img/xing/zhong.png" alt="终" class=".img-responsive"></span>
+			<div class="rightcontentwrap">
+			<div class="rightcontentup"><span>加拿大温哥华</span></div>
+			<div class="rightcontentdown"><span>16-12-30 17:50</span></div>
+			<div class="detailinformation"><span  data-toggle="modal" data-target="#detailinformation" style="cursor:pointer">点击查看详情</span></div>
+			</div>
+			</div><!--end-->
+		
+			
+		</div>
+	</div><!--wrap-->
+	<div class="fenye">
+		<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+	</div>
+	</div><!--rightcontent-->
+	
+ </div><!--content-->
+ <!-- 请帮助模态框 -->
+ <div class="modal fade " id="help" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true" >
+   <div class="modal-dialog">
+      <div class="modal-content" >
+         <div class="modal-header" >
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <div class="helpleft">
+        <h4>发布时间：2016-7-1</h4>
+        <h5><b>Henry</b></h5>
+           </div>
+           <div class="helpright">
+            <button class="btn btn-info btn-lg">新建订单</button>
+          </div>
+         </div>
+         <div class="modal-body">
+         <div class="helpcenter">
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+         	<div class="helpcenterbox">
+         		<div class="helpcenterboxleft">
+         			<b style="color:red">物品名称：</b><br>
+         			<span>苹果手机</span><br>
+         			<b style="color:red">发布时间：</b><br>
+         			<span>2016-4-6</span><br>
+         			<b style="color:red">出发：</b><br>
+         			<span>日本名古屋</span><br>
+         			<b style="color:red">抵达:</b> <br>
+         			<span>中国福建</span>
+         		</div>
+
+         		<div class="helpcenterboxright">
+         			<b style="color:red">数量:</b><br>
+         			<span>2个</span><br>
+         			<span style="background:#FFCC02;color:#FFFFFF">报酬：<br>$50</span><br>
+         			<span style="background:#BF4FAD;color:#FFFFFF">状态：<br>待接单</span><br><br>
+         			<span style="margin-left:30%"><input type="checkbox"></span>
+         		</div>
+         	</div>
+
+         </div>
+         
+        </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#help" data-dismiss="modal">
+               确认
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modaldalog -->
+</div>
+ <!-- 详细信息模态框（Modal） -->
+<div class="modal fade" id="detailinformation" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+             发布时间：2016-6-8
+            </h4><br>
+            <b>Henry</b>
+         </div>
+         <div class="modal-body">
+         <div class="detailspecification">
+
+        <div class="leftimage">
+        	<img src="../img/xing/qi.png">
+        </div>
+        <div class="leftcontentwrap">
+        	<div class="leftmodalup">中国北京</div>
+        	<div class="leftmodaldown">2016-7-26</div>
+        </div>
+			<div class="modalmiddle"><img src="../img/xing/xingplane.gif" alt=""></div>	
+        
+         <div class="rightcontentwrap">
+         	<div class="rightmodalup">加拿大温哥华</div>
+        	<div class="rightmodaldown">2016-8-5</div>
+         </div>	
+         <div class="rightimage"><img src="../img/xing/zhong.png"> </div>
+         </div>
+        
+            
+           
+            	<textarea name="remark" id="" cols="82" rows="10" placeholder="备注"></textarea>
+           
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#help" data-dismiss="modal">
+               请帮忙
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+ <div id="footer"><object data="footer.html" type="text" width="100%"></object></div>
+</body>
+
+<script src="../js/iframe/jquery.js"></script>
+<script>
+
+
+$(".Menu-title ul li:contains('同城');").hover(function() {
+	$(".Menu-title ul li:contains('同城');").css('color', '#21B796');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$(".Menu-title ul li:contains('同城');").css('color', '#FFFFFF');
+	/* Stuff to do when the mouse leaves the element */
+});
+
+$(".Menu-title ul li:contains('城际');").hover(function() {
+	$(".Menu-title ul li:contains('城际');").css('color', '#21B796');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$(".Menu-title ul li:contains('城际');").css('color', '#FFFFFF');
+	/* Stuff to do when the mouse leaves the element */
+});
+
+$(".Menu-title ul li:contains('国际');").hover(function() {
+	$(".Menu-title ul li:contains('国际');").css('color', '#21B796');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$(".Menu-title ul li:contains('国际');").css('color', '#FFFFFF');
+	/* Stuff to do when the mouse leaves the element */
+});
+// 下面是左上角发送收行购背景
+$('.leftlinkmenu:eq(0)').hover(function() {
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(0)').css('opacity', '1');
+	$('.leftlinkmenu:eq(3)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(0)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(0)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(3)').css('opacity', '1');
+});
+
+$('.leftlinkmenu:eq(1)').hover(function() {
+	$('.leftlinkmenu:eq(1)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(1)').css('opacity', '1');
+	$('.leftlinkmenu:eq(3)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(1)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(1)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(3)').css('opacity', '1');
+});
+
+$('.leftlinkmenu:eq(2)').hover(function() {
+	$('.leftlinkmenu:eq(2)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(2)').css('opacity', '1');
+	$('.leftlinkmenu:eq(3)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(2)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(2)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(3)').css('opacity', '1');
+});
+
+$('.leftlinkmenu:eq(4)').hover(function() {
+	$('.leftlinkmenu:eq(4)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(4)').css('opacity', '1');
+	$('.leftlinkmenu:eq(3)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	/* Stuff to do when the mouse enters the element */
+}, function() {
+	$('.leftlinkmenu:eq(4)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(4)').css('opacity', '0.5');
+	$('.leftlinkmenu:eq(3)').css('background', '#FFFFFF');
+	$('.leftlinkmenu:eq(3)').css('opacity', '1');
+});
+
+
+
+
+</script>
+</html>

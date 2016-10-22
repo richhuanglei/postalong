@@ -1,0 +1,398 @@
+/* 通用类 */
+
+body{
+	font-family: Microsoft Yahei;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	clear: both;
+    overflow: hidden;
+    zoom: 1;
+}
+.hide{
+	display: none;
+}
+
+/*主框架样式*/
+.header{
+	width: 100%;
+	position: relative;
+ 
+}
+.container{
+  overflow: hidden;
+}
+.auto{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+img.headlogoImg{
+
+  height: 80px;
+  width: 80px;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+ul.nav-menu{
+  margin-top: 0;
+  margin-right: 13px;
+  line-height: 105px;
+  max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+ul.nav-menu li{
+  margin-left: 6px;
+  display: inline-block;
+  font-size: 18px;
+}
+ul.nav-menu li a{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  color: black;
+
+}
+
+ul.nav-menu li a.current{
+  border-bottom: 4px #fff solid;
+}
+
+.footer{
+	width: 100%;
+	height: auto;
+	background-color: #3d3e43;
+  overflow: hidden;
+  zoom:1;
+}
+
+.footer-section{
+	float: left;
+        display: inline-block;
+	margin-right: 10px;
+	margin-left: 15%;
+	color: #bfbfbf;
+}
+
+.footer-section h3{
+	color: #bfbfbf;
+	font-size: 18px;
+	padding: 4px;
+}
+
+.footer-section a{
+	color: #bfbfbf;
+	font-size: 13px;
+	font-family: Microsoft Yahei;
+}
+
+img.btmlogos{
+  margin-top: 41px;
+  width: 216px;
+}
+img.btmtext{
+  margin-top: -37px;
+}
+p.btmpresent{
+  margin-top: -18px;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  color: #bfbfbf;
+  font-size: 12px;
+  font-family: Tahoma;
+}
+span.special{
+  color: #3dc698;
+}
+
+img.botnLogo{
+  margin-top: 30px;
+  margin-right: 42px;
+  margin-bottom: 30px;
+  height: 80px;width: 80px;
+}
+/* banner轮播样式 */
+.banner{
+	position: relative;
+	width: 100%;
+
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: solid #fff;
+	border-top: solid #fff;
+}
+
+.banner2{
+	position: relative;
+	width: 100%;
+
+	overflow: hidden;
+
+	border-bottom: solid #fff;
+
+}
+
+.list{
+	position: absolute;
+	width: 500%;
+	height: 549px;
+	z-index: 1;
+}
+
+.list .section{
+	height: 549px;
+	float: left;
+	position: relative;
+  background-size: 100% 100%;
+}
+.buttons{
+	position: absolute;
+	left: 45%;
+	bottom: 33px;
+	z-index: 2;
+}
+.buttons span{ 
+	cursor: pointer; 
+	float: left; 
+	width: 38px; 
+	height: 4px; 
+	background: #909398; 
+	margin-right: 5px;
+}
+.buttons .on{
+	background-color: #fff;
+}
+
+/* 轮播背景 */
+.banner1{
+	background-image: url(../../img/public/bannerbg.jpg);
+  
+}
+
+.banner3{
+	background-image: url(../../img/public/bannerbg.jpg);
+ 
+}
+
+/* 轮播内内容样式 */
+.textContain{
+	position: absolute;
+  top: 138px;
+}
+.textContain div{
+	overflow: hidden;
+	margin: 30px 3px;
+}
+.tc2{
+  margin-top: 30px;
+	line-height: 45px;
+}
+.tc3{
+  margin-top: 24px;
+}
+.textContain p{
+	font-size: 22px;
+	color: #fff;
+}
+.bannerImg{
+	position: absolute;
+  top: 72px;
+	right: -23px;
+
+}
+.phoneLogo{
+  margin-left: 30px;
+}
+.tc3 img{
+  cursor: pointer;
+}
+
+/* 轮播内内容动画 */
+.animated {
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+.aniShow .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+
+
+
+.aniShow .fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.aniShow .fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.aniShow .bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+/* 动画定义 */
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+  
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+

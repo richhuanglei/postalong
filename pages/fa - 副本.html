@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- ------------Design:Frank; Coding:Henry.---------------------- -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>发</title>
+
+<!-- bootstrap -->
+<link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+<script src="../css/bootstrap/js/jquery.min.js"></script>
+<script src="../css/bootstrap/js/bootstrap.min.js"></script>
+<!-- -------->
+
+<link rel="stylesheet" href="../css/content/fa.css">
+<link rel="stylesheet" type="text/css" href="../css/content/发.css">
+<link rel="stylesheet" type="text/css" href="../css/content/try.css">
+<link rel="stylesheet" type="text/css" href="../css/public/wei.css">
+</head>
+<body >
+ <div id="header">
+ <object style="border:0px" type="text/x-scriptlet" data="header.html" width=100%></object>
+ 	
+ </div>   
+ <div id="content" class="container">
+ <div class="search">
+ 	<div class="leftlink">
+ 		<div class="leftlinkmenu" id="menuwhite"><a href="fa.html">发</a></div>
+ 		
+ 		<div class="leftlinkmenu"><a href="song.html">送</a></div>
+ 	
+ 		<div class="leftlinkmenu"><a href="shou.html">收</a></div>
+ 		
+ 		<div class="leftlinkmenu"><a href="xing.html">行</a></div>
+ 		
+ 		<div class="leftlinkmenu"><a href="gou.html">购</a></div>
+ 	</div>
+ 		<div class="input-group inputsearch">
+ 		
+			<div class="pageintroduce">发；需求</div>
+              <div class="searchbuttonwrap">
+               <span >
+                  <button class="btn btn-default " type="button" id="searchbutton">
+                     创建新订单
+                  </button></span>
+                  <span>
+                  <input type="text" placeholder="输入订单号">
+
+                  
+               </span></div><!--searchbuttonwrap-->
+            </div><!-- /inputsearch -->
+ </div>
+ <!--下面五个为菜单，刚打开页面时是纵向显示相关记录，为了美观每个菜单最多显示两行不能多了。页面打开后任意点击某个菜单，下面内容就变为相应内容，如点击“运送中”，下面就全显示“运送中”的内容，记录过多带分页。-->
+ <!-- 
+待接单有两种情况：待接单，议价中
+待付款有一种情况：待付款
+运送中有两种情况：已取货，未取货
+已完成有两种情况：已完成，待评价
+已取消有一种情况：已取消
+所有情况都通过，../img/fa文件夹下的相应图片显示出来
+  -->
+	<div id="pageheaderwrap">
+   <ul class="nav nav-pills ">
+	<li class="dropdown pageheader" >
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			待接单 <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="#">待接单</a></li>
+			<li><a href="#">议价中</a></li>
+		</ul>
+		</li>
+	<li class="pageheader"><a href="#">待付款</a></li>
+	<li class="dropdown pageheader">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			运送中 <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="#">已取货</a></li>
+			<li><a href="#">未取货</a></li>
+		</ul>
+		</li>
+		<li class="dropdown pageheader">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			已完成 <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="#">已完成</a></li>
+			<li><a href="#">待评价</a></li>
+		</ul>
+		</li>
+		<li class="pageheader"><a href="#">已取消</a></li>	
+</ul>
+</div>
+ <!-- 	<div class="pageheader"><a href="">待接单</a></div>
+ 	<div class="pageheader"><a href="">待付款</a></div>
+ 	<div class="pageheader"><a href="">运送中</a></div>
+ 	<div class="pageheader"> <a href="">已完成</a></div>
+ 	<div class="pageheader"><a href="">已取消</a></div> -->
+
+
+ 	<!-- smallcontent -->
+  
+   <div class="smallcontentwrap">
+ 	<div class="smallcontent djd">
+ 	<div class="smallcontentleft">
+ 		
+ 		<!-- 
+ 		GoodsName:物品名称
+ 		PublishTime:发布时间
+ 		Begin：发货地址
+ 		Destination：目的地
+		右边黄标签数字是报酬
+		右边下面是状态有五种不同图片
+ 		 -->
+ 			<div class="GoodsName"><b>BlueBerry</b></div>
+ 			<div class="PublishTime">2016-8-9</div>
+ 			<div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%">Vancouver</span>
+ 			</div>
+ 			<div class="Destination">
+			<span><img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%">长沙</span>
+ 			</div>
+ 		</div><!--smallcontent-->
+ 		<div class="smallcontentright">
+ 			<div class="smallcontentrightUp">
+ 			<div class="smallcontentrightupbox">$60</div>
+ 			</div>
+ 			<div class="smallcontentrightDown">
+ 			<div class="smallcontentrightdownbox">
+      <!-- 如果有单子，这个图片变为议价中 -->
+      <div class="flag">待接单</div>
+ 			</div>
+ 			</div>
+ 		</div><!--smallcontentright-->
+ 	</div><!--smallcontent-->
+ 	<div class="smallcontent dfk">
+ 	<div class="smallcontentleft">
+ 		
+ 			<div class="GoodsName"><b>BlueBerry</b></div>
+ 			<div class="PublishTime">2016-8-9</div>
+ 			<div class="Begin"><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%">
+ 			<span>Vancouver</span>
+ 			</div>
+ 			<div class="Destination">
+			<img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%">
+			<span>武汉</span>
+ 			</div>
+ 		</div><!--smallcontent-->
+ 		<div class="smallcontentright">
+ 			<div class="smallcontentrightUp">
+ 			<div class="smallcontentrightupbox">$60</div>
+ 			</div>
+ 			<div class="smallcontentrightDown">
+ 			<div class="smallcontentrightdownbox">
+      <div class="flag5">待付款</div>
+ 			</div>
+ 			</div>
+ 		</div><!--smallcontentright-->
+ 	</div><!--smallcontent-->
+ 	<div class="smallcontent yqh">
+ 	<div class="smallcontentleft">
+ 		
+ 			<div class="GoodsName"><b>BlueBerry</b></div>
+ 			<div class="PublishTime">2016-8-9</div>
+ <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%">Vancouver</span>
+ 			</div>
+ 			<div class="Destination">
+			<span><img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%">福州</span>
+ 			</div>
+ 		</div><!--smallcontent-->
+ 		<div class="smallcontentright">
+ 			<div class="smallcontentrightUp">
+ 			<div class="smallcontentrightupbox">$60</div>
+ 			</div>
+ 			<div class="smallcontentrightDown">
+ 			<div class="smallcontentrightdownbox">
+      <div class="flag3">已取货</div>
+ 			</div>
+ 			</div>
+ 		</div><!--smallcontentright-->
+ 	</div><!--smallcontent-->
+ 	<div class="smallcontent ywc">
+ 	<div class="smallcontentleft">
+ 		
+ 			<div class="GoodsName"><b>BlueBerry</b></div>
+ 			<div class="PublishTime">2016-8-9</div>
+ 			<div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%">Vancouver</span>
+ 			</div>
+ 			<div class="Destination">
+			<span><img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%" >南京</span>
+ 			</div>
+ 		</div><!--smallcontent-->
+ 		<div class="smallcontentright">
+ 			<div class="smallcontentrightUp">
+ 			<div class="smallcontentrightupbox">$60</div>
+ 			</div>
+ 			<div class="smallcontentrightDown">
+ 			<div class="smallcontentrightdownbox">
+      <div class="flag6">已完成</div>
+ 			</div>
+ 			</div>
+ 		</div><!--smallcontentright-->
+ 	</div><!--smallcontent-->
+ 	<div class="smallcontent 已取消">
+ 	<div class="smallcontentleft">
+ 		
+ 			<div class="GoodsName"><b>BlueBerry</b></div>
+ 			<div class="PublishTime">2016-8-9</div>
+ 			<div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%">Vancouver</span>
+ 			</div>
+ 			<div class="Destination">
+			<span><img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%">天津</span>
+ 			</div>
+ 		</div><!--smallcontent-->
+ 		<div class="smallcontentright">
+ 			<div class="smallcontentrightUp">
+ 			<div class="smallcontentrightupbox">$60</div>
+ 			</div>
+ 			<div class="smallcontentrightDown">
+ 			<div class="smallcontentrightdownbox">
+        <div class="flag7">已取消</div>
+ 			</div>
+ 			</div>
+ 		</div><!--smallcontentright-->
+ 	</div><!--smallcontent-->
+ 	<div class="smallcontent">
+  <div class="smallcontentleft">
+    
+   
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%" >Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%">北京</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <div class="flag1">议价中</div>
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent">
+  <div class="smallcontentleft">
+    
+  
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:20%;height:70%">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:20%;height:70%">杭州</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$80</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <div class="flag5">待付款</div>
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent wqh">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">上海</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <div class="flag8">未取货</div>
+      
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent dpj">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">云南</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+      <div class="flag4">待评价</div>
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+  <div class="smallcontent yqx">
+  <div class="smallcontentleft">
+    
+    <!-- 
+    GoodsName:物品名称
+    PublishTime:发布时间
+    Begin：发货地址
+    Destination：目的地
+    右边黄标签数字是报酬
+    右边下面是状态有五种不同图片
+     -->
+      <div class="GoodsName"><b>BlueBerry</b></div>
+      <div class="PublishTime">2016-8-9</div>
+      <div class="Begin"><span><img src="../img/fa/qi.png" alt="起点" style="width:35px;height:35px">Vancouver</span>
+      </div>
+      <div class="Destination">
+      <span><img src="../img/fa/zhong.png" alt="终点" style="width:35px;height:35px">西安</span>
+      </div>
+    </div><!--smallcontent-->
+    <div class="smallcontentright">
+      <div class="smallcontentrightUp">
+      <div class="smallcontentrightupbox">$60</div>
+      </div>
+      <div class="smallcontentrightDown">
+      <div class="smallcontentrightdownbox">
+        <div class="flag7">已取消</div>
+      
+      </div>
+      </div>
+    </div><!--smallcontentright-->
+  </div><!--smallcontent-->
+	</div><!--smallcontentwrap-->
+ </div><!--content-->
+<div class="footer clearfix">
+    <div class="auto">
+
+      <div class="footer-section">
+                <img src="../img/public/bottomLogo.png" class="fl btmlogos" usemap="#linkToOther">
+                <map name= "linkToOther">
+                    <area shape="rect" target="_blank" coords="60,0,103,40" href="http://weibo.com/5839493601/profile?topnav=1&wvr=6&is_all=1" alt="sina page">
+                    <area shape="rect" target="_blank" coords="134,0,164,40" href="https://www.facebook.com/post.along/" alt="facebook page">
+                </map>
+      </div>
+    
+      <div class="footer-section" style="float: right;">
+        <img src="../img/public/botnLogo.png" class="botnLogo fr">
+      </div>
+      
+            <div class="footer-section" style="margin-top:44px; font-size: 18px;margin-left: 20px;">
+        客服电话： 778-400-5798 
+      </div>
+            
+      <p class="fl btmpresent clearfix">Copyright ©2014-2016 All Rights reserved. 互递科技有限公司postalong technology inc. (www.postalong.com)版权所有</p>
+      
+    </div>
+  </div><!--footer-->
+ <script src="../js/content/fa.js"></script>
+</body>
+</html>

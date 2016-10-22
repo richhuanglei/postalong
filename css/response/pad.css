@@ -1,0 +1,11 @@
+	/*pad 640-1000*/
+		@media screen and (min-width:600px) and (max-width:1000px){
+		
+		.header .auto ul li {
+		font-size: 1em;
+		
+		}
+		.auto p{
+		display:none;
+		}
+		}

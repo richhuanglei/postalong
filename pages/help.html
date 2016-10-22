@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custmer Service</title>
+	<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/content/help.css">
+
+</head>
+<body>
+	<div class="header">
+		<div class="auto">
+			<img class="headlogoImg" src="../img/public/headlogo.png">
+			<img src="../img/public/logo2.png" height="50" width="150" style="margin-bottom: 15px;">
+			<ul class="nav-menu fr">
+				<li><a href="home.html">Home page</a></li>
+				<li><a href="service.html">Features</a></li>
+				<li><a href="api.html">API</a></li>
+				<li><a href="online.html">About us</a></li>
+				<li><a class="current" href="#">Customer services</a></li>
+				<li>
+				<select onchange="window.location=this.value;">
+					<option value="Language" selected>Language</option>
+					<option value="../pages/home.html">中文</option>
+					<option value="../ZT_en/pages/home.html">ENGLISH</option>
+					<option value="한국의  ">한국의  </option>
+					<option value="Français">Français</option>
+					<option value="Русский язык">Русский язык</option>
+					<option value="日本語">日本語</option>
+				</select>
+				</li>		
+			</ul>
+			
+		</div>
+	</div>
+	<div class="banner2">
+    
+</div>
+	<div class="container">
+		<div class="helpContain">
+			<div class="helpSide">
+
+				<div class="hSHead">
+					<h1>Help</h1>
+					
+					<span></span>
+				</div>
+				<ul class="hSbody">
+					<li class="hSactive" data-href="comProblem" onclick="shiftToHSactive()">Common question</li>
+					<li data-href="plan" onclick="shiftToPlan()">Privacy Policy</li>
+					<li data-href="instruction"  onclick="shiftToInstruction()">Download Instructions</li>
+					<li data-href="regedit"  onclick="shiftToRegedit()">Registration Rules</li> <!--************************************************-->
+					<li data-href="ruler"  onclick="shiftToRuler()"> Order Posting Rules</li>
+					<li data-href="delivery"  onclick="shiftToDelivery()">Carriers Application rules</li>
+				</ul>
+			</div>
+			<div class="helpWrap">
+				<div class="comProblem show wrapContain">
+					<ul>
+						<li class="wrapFirst">
+							<a href="#">
+							   <h3>1. How can I become a carrier?</h3>
+							   <p>Upload your identity information to our app, then wait for our system to approve. If it is approved, then you can be a carrier to help others.</p>
+						    </a>
+						</li>
+						<li>
+							<a href="#">
+							   <h3>Forgot your password?</h3>
+							   <p>Click the [forget password?] on the home page of our app, and then you will get the verification code from your phone, use this code to set a new password.</p>
+						    </a>
+						</li>
+						<li>
+							<a href="#">
+							   <h3>3. Can I cancel an order that is already published?</h3>
+								<p>If the order has not been bargained, it can be cancelled.
+									If the order has already bargained, it can be cancelled, but some points will be deducted from our app account.
+									If the order has already paid, it cannot be cancelled.
+								</p>
+						    </a>
+						</li>
+						<li>
+							<a href="#">
+							   <h3>4. Can the carrier cancel an order which he has accepted for himself?</h3>
+								<p>The carrier can cancel the order for which he has accepted for himself, but has not yet been paid. It will deduct some points from our app account.
+									If the order has already paid, it cannot be cancelled.
+								</p>
+						    </a>
+						</li>
+						<li>
+							<a href="#">
+							   <h3>5. How can I confirm who the receiver is?</h3>
+							   <p>Before the transaction, the carrier needs to type the code from receiver, and get the approval from our system. If it is correct, that means the receiver is confirmed, and you can finish the transaction.</p>
+						    </a>
+						</li>
+						<li>
+							<a href="#">
+							   <h3>6. What if the receiver does not get the verification code?</h3>
+							   <p>The receiver can contact the consignor, and get the verification code from the consignor.</p>
+						    </a>
+						</li>
+                        <li>
+							<a href="#">
+							   <h3>7. What if I cannot find the address on the map, or if the address is typed, the map cannot open it?</h3>
+							   <p>You can click to search, and type the address that you want. If the address does not automatically match, our system cannot calculate the reference price for services.</p>
+						    </a>
+						</li>
+                        <li>
+							<a href="#">
+							   <h3>8. If the product has some damage, how can the problem be fixed?</h3>
+							   <p>Carriers should take photos of the product, and directly contact the consigner to discuss how to solve the problem. Friend reminder: carriers should take extra care themselves and the products in their possession.</p>
+						    </a>
+						</li>
+					</ul>
+				</div>
+				<div class="plan wrapContain">
+					<ul>
+						<li class="wrapFirst">
+							<a href="#">
+							   <h3>Privacy protection provisions</h3>
+							   <p>&#160&#160&#160&#160&#160&#160&#160&#160We attach great importance to user’s privacy, so please read carefully. This "Privacy Policy" will tell you that when using our services, how we will collect, use and protect information. This Privacy Policy will be interoperable with Postalong's expanding functions and scope of services, and may be updated at any time. We welcome you to review this Privacy Policy, and we welcome your feedback and comments. Your use or continued use of our Postalong platform service, means that we have agreed in accordance with this "Privacy Policy" to collect, use and protect your information. </p>
+						    </a>
+						</li>
+						<li>
+							<a href="#">
+							   <h3>Information We May Collect</h3>
+							   <p>Information which you provide
+
+                                </br>1. When you register as a mutual delivery network (Postalong) user, we ask you to provide registration information. Registration information may include your real name, gender, photo, address, nationality, telephone number, email address and credit card number.
+                                </br>2.Share the information that you provide through our service to others, and when you use our services to store information.
+
+                                </br>Others share your information
+
+                                </br>Offered to share information about you when you use our services to other parties
+
+                                </br>We get your information
+
+                                </br>When you use the Services, we may collect the following information:
+
+                                </br>1. Log information, refers to technical information when you use our services, the system may via cookies, web beacon or other automatic acquisition mode, comprising:
+
+                                </br>(1) the device or software information, such as version and device identification code to your mobile device, web browser or other programs to access configuration information for services that we provide, your IP address and mobile equipment used;
+
+                                </br>(2) To communicate your message, for example, had communications on your account through our service;
+
+                                </br>(3) Information (metadata) you shared through our services, such as shooting or uploading photos, photo date, time or place and so on.
+
+                                </br>2. The location means that you turn on your device positioning function and use information about your location we offer location-based services, the collection includes:
+
+                                </br>   (1) Your use of our services via a mobile device with positioning capabilities via GPS or WiFi, etc. to collect your location information;
+
+                                </br>   (2) You or other users provide real-time information for your geographic location, 
+								such as your location information that you provided, and is contained in your account information,
+								or others that you share your uploaded display with, giving your current geographic location or other information, 
+								and retagging information that you or others shared through photos included.
+
+                                </p>
+                                
+						    </a>
+						</li>
+                        
+                        <li>
+							<a href="#">
+							   <h3>How We May Use Information</h3>
+							   <p>We may collect the information used for the following purposes
+
+                                    </br>1. To provide you with services to keep in touch with you;
+
+                                    </br>2. When we provide services for authentication, customer service, security, archiving  and backup purposes, to ensure the safety of products and services we provide to you;
+
+                                    </br>3. To help us design new services, and improve our existing services;
+
+                                    </br>4. Data for statistical data analysis and other anonymous;
+
+                                    </br>5. Software Certification or manage software upgrades;
+                                </p>
+                                
+						    </a>
+						</li>
+                        <li>
+							<a href="#">
+							   <h3>How Do You Access and Control Your Own Personal Information</h3>
+							   <p>&#160&#160&#160&#160&#160&#160&#160&#160We use the phone number as the user name to identify you, you can only use your account through your phone number and password. If you leak the password, you may lose your personally identifiable information, and may lead to judicial action against you.
+When you access, update, correct and delete your registration information or other personal information, we may ask you to authenticate to protect account security
+</p>
+                                
+						    </a>
+						</li>
+                        <li>
+							<a href="#">
+							   <h3>Information Security</h3>
+							   <p>&#160&#160&#160&#160&#160&#160&#160&#160We only keep your personal information within the time limits and legal requirements during the object of the "Privacy Policy" required.
+Postalong guarantees not to disclose your registration information, account information and transaction information to the public or to any third party. However, with the exception of the following circumstances: obtaining public or disclose relevant information before your permission; to protect you from any imminent danger to your life, health or property of; in accordance with the provisions of law or policy and public or disclosed; to provide you services that require to be public or disclosed; prevent significant harm to the rights of others; Postalong to protect their own interests and open; to promote the public interest, and the sound of your vital interests; we found that you violated Postalong registration agreement Terms of use or any other provision of related services; according to the user registration agreement or other agreement and publicly disclosed.
+                             </br>&#160&#160&#160&#160&#160&#160&#160&#160You need to understand that in some countries, regions or organizations may not enact strict laws and regulations to protect your information. Within these areas or organization, we will continue in the manner described in this clause to process your information.
+							 <br>&#160&#160&#160&#160&#160&#160&#160&#160You need to know, in some cases, the law requires disclosure of information pursuant to judicial or other government subpoenas, warrants, or orders, may need to disclose personal information.<br>
+                             </br>&#160&#160&#160&#160&#160&#160&#160&#160You understand that our website or the corresponding system repair, maintenance or upgrades may lose, damage or leak your registration information, account information or transaction information, and does not require Postalong to undertake any responsibility. We use a variety of security technologies and procedures to prevent information loss, misuse, unauthorized disclosure or reading. But please understand that due to technical limitations, malicious means may exist in the Internet industry, even though we do everything to strengthen security measures to ensure that the information is safe, we cannot always guarantee one hundred percent security. You need to understand that you access our systems and communications networks used by the service, and it may be due to factors outside the controllable range and our problems.</p>  
+						    </a>
+						</li>
+                        <li>
+							<a href="#">
+							   <h3>Disclaimer</h3>
+							   <p>&#160&#160&#160&#160&#160&#160&#160&#160In addition to the Disclaimer Privacy Terms specified above, the following cases are when Postalong also does not bear any responsibility: any personal information disclosed because your shared your user password with others for your registered account, any personal information due to force majeure hacker attack, computer virus invasion or attack, because of government regulation causing temporary closure affecting the normal operation of the network caused by leakage, loss, theft or tampering; because the link with the site of the present personal data caused by the disclosure of other sites and any legal disputes and consequences resulting therefrom.
+                                </p>    
+						    </a>
+						</li>
+                        <li>
+							<a href="#">
+							   <h3>Contact Us:</h3>
+							   <p>&#160&#160&#160&#160&#160&#160&#160&#160Postalong will always be committed to the full protection of your privacy, under the premise to provide you with better service. If after you read this Privacy Policy and our privacy practices, you have question or any comments and suggestions, please feel free to contact us:
+								   </br>Customer Service Tel: 778-400-5798
+								   Tel: 778-400-5788
+								   </br>
+
+                                    </br>Toll Free：1-800-589-0168
+
+                                    </br>Company website: www.postalong.com
+
+                                    </br>E-mail：info@postalong.com
+                                </p>
+						    </a>
+						</li>
+					</ul>
+				</div>
+				<div class="insurance wrapContain">
+					<ul>
+						<li class="wrapFirst">
+							<a href="#">
+							   <h3>自由快递人是否在开通城市都可以接单？</h3>
+							   <p>是，点击左上角的城市，即可查看人人快递当前已经开通的城市。</p>
+						    </a>
+						</li>
+					</ul>
+				</div>
+                
+             <!--*******************************************************-->           
+                <div class="instruction wrapContain" id="instruction">
+					<ul>
+						<li class="wrapFirst">
+						
+<img src="../img/help/download.png" width="750" height="660">
+
+						</li>
+						
+					</ul>
+				</div>
+<!--*******************************************************-->
+<div class="new wrapContain"id= "regedit" style="display:none">
+
+       
+         
+
+<h3>Registration Agreement</h3>
+<p>
+Version: 2016.3.10<br>
+	Ownership and the operation authority of the provided services are clearly attributed to Postalong Services Company. This Registration Agreement defines the legal and complete terms between the Postalong services company, and its customers, who are supposed to make use of the services provided by Postalong delivery services platform. All registered users are, by default, regarded as having accepted all terms and conditions listed in this agreement. 
+	If any of the terms in this agreement are NOT agreed to by the user, this particular user is NOT allowed to use any services provided by Postalong delivery services platform. The agreement also covers all relevant terms to be published or to be updated. Once released or updated, the terms become an inseparable part of this Registration Agreement right away.
+	
+</p>
+<h3>1.   Definitions</h3>
+<p>
+1.1 The Postalong  services platform, covers but is not limited to the websites with the domain name "postalong.com" and all applications named with "PostalongAPP". It is to provide users with Internet information services and online transaction services, such as, the user information management, the information browsing and query, the assistance and deal making of the delivery, the queries and management of the orders, the negotiations on the shipment cost, shipping fee collection and payment, and dispute mediation. Postalong services platform itself is not directly involved in any trading between any users. Any conflicts between the users, caused during the process, should seek a reasonable solution by themselves, or ask for the mediation assistance from Postalong service platform.<br>
+1.2 Carriers (services provider): are definid as the delivery service provider. Under this Agreement, the carriers precisely refer to those who have already logged into Postalong services or who have downloaded Postalong APP and voluntarily registered Postalong services, and has the capability to complete the delivery order in person. Those who successfully complete delivery orders should be able to get the appropriate services remuneration according to Postalong platform. At any time, the relationship between the carriers (services provider) and the Postalong is NEITHER a relationship as a labor, NOR a relationship of employment.<br>
+1.3  Services Orders: refer to the delivery request information posted on the Postalong information platform, which the carriers (services provider) will be able to notice. The delivery services request information contains but limited to the consignor's (accept services) personal information, the information about the goods to be delivered, the address where the carrier to pick-up, the address where the goods to be sent, and the services fee. As long as the carrier (services provider) accepts and confirms to take a particular services task, the delivery services contract is activated and takes effect right away. As a services contract between the consignor (accept services) and the carrier (services provider), the order is a formal documentation as a proof of the obligations and responsibilities of both sides. There are two copies of the same order when both, which are consignor and carrier, make the negotiated agreement (such as the collection of the delivery fee, conditional delivery, etc.), both the consignor and the carrier should keep one copy of the order as his/her own evidence.<br>
+</p>
+<h3>2.   Verification and Acceptance of Service Terms</h3>
+<p>
+2.1 Before using Postalong services platform, please read carefully all the relevant terms listed in this Agreement. If you have any doubts about this Agreement, please do NOT hesitate to consult Postalong's customer service. Even if the user does not carefully read the terms in this Agreement, as long as the user uses Postalong's platform, this Agreement will take effect on the user. Therefore, any user should NEITHER declare the invalidity of this Agreement from his/her own side, NOR rescind this Agreement, due to the reasons that the user himself/herself hasn't read over this Agreement carefully or the user hasn't gotten the answers to his/her questions from Postalong customer service.<br>
+2.2 In order to become a registered user of Postalong services platform, all users must agree on all the terms listed in this Agreement, and finish the registration. Following the instructions displayed on the registration page to fill in the registration form, read the Registration Agreement carefully and agree on it, then submit your application to finish the registration. Whenever the user is using the services provided by Postalong services platform, the user is under restriction of this aggrement. <br>
+2.3 The carrier must be verified as the natural person, corporate juridical person, or any other organizations authorized by law, who must has/have full capacity for civil conduct and responsibility. It's NOT allowed for the carrier NOT to be responsible for the duties from law or this Agreement when using Postalong platform. If the carrier is NOT qualified, Postalong services platform has the right to terminate or even cancel the user's registered account. Any loss caused by the carrier's qualification, gives Postalong services platform the right to claim for compensation (including but not limited to reimbursement, compensation, the penalty fee, litigation expense, investigation expense, and lawyer's fee, etc.).<br>
+2.4 It is the user's responsibility to ensure the integrity, authenticity and legality of his/her personal information provided during registration. Postalong services platform reserves the right to verify the completeness and effectiveness of the user's registration information from time to time, according to the business needs. If any inconsistency has been found, Postalong services platform has the right to suspend or cancel/delete this particular user's account.<br>
+2.5 Once the order has been confirmed, the delivery task should be completed according to the commitment. Postalong services platform is entitled to deduct the commission, fine, suspend the user's account for accepting a delivery order, and not completing it, and can cancel/delete the user's account, etc., as a penalty for NOT complying with the agreement during services and delivery.<br>
+2.6 According to business needs, Postalong services platform reserves the right to reject, suspend or terminate the services and the right to cancel/delete the user's account, within the scope permitted by national law.<br>
+2.7 According to business needs, Postalong services platform reserves the right to add some more terms to this Agreement, modify some of the existing terms in this Agreement, and have the updated Agreement published to the public, within the scope permitted by national law. As long as the registered users continue to use Postalong services, they are regarded as having accepted the modified agreements by default.<br>
+2.8 To ensure the service security and functionality consistency of Postalong services, Postalong services platform reserves the right to update Postalong APP without notifying the registered users, particularly, when upgrading some functionality or changing some restrictions. There may be such a possibility that when upgrading to a newer version of Postalong APP, the old version of Postalong APP does NOT work any longer. In addition, the old version of Postalong APP and the relevant customer services related to the older version of Postalong APP are NOT guaranteed to be maintained by Postalong services platform. 
+	Postalong services platform registered users are always suggested to check and download the latest version of Postalong APP.
+	<br>
+</p>
+<h3>3.   Platform Services</h3>
+<p>
+3.1 For different terminal devices, Postalong services platform may develop different versions of the application. An appropriate version is to be downloaded and installed. Postalong services platform itself does NEITHER guarantee the adaptability, suitability, and availability of the applications on the user's specific terminal device, NOR the service consistency for all application versions.<br>
+3.2 Services provided by Postalong services platform: management of user information, browsing and query of the delivery tasks, deal making and processing of the delivery tasks, services delivery order inquiries and management, acting as an agent for delivery fee negotiation, charging from the consignor or receiver, and payment to the carrier, dispute mediation, some other Internet information services and online transaction services. For detailed service contents, please refer to the effective services that can be provided by Postalong services platform.<br>
+3.3 Postalong services platform will take every effort to ensure the effectiveness and availability of all provided services. When confronting special situations, including, telecommunications failures, hacker attacks or policy changes, which may lead to the ineffectiveness or modification of some or all of the aforementioned services, Postalong services platform registered users are suggested to understand and accept the emergence of such particular situations, and therefore give up the rights to claim the reimbursement from Postalong services platform.<br>
+3.4 The following service equipment must be prepared by the users themselves, and all relevant service expenses must be covered by the users themselves as well.<br>
+（1）Service equipment, including, but not limited to smart phones, computers and other mobile terminals, modems, and other necessary devices to access Internet.<br>
+（2）Service expenses, including, but not limited to Internet access fees, Internet equipment rental fees, Internet traffic charges, payment fee, and other expenses while completing the services tasks.<br>
+3.5 Postalong services platform is given the authority of collecting the services fee from all the registered users. How to pay the services fee and when to finish the payment are clearly declared in some terms of Postalong Agreements. Users should be fully responsible for the delay or failure of the payment caused by the invalidity, incorrectness or incompleteness of their own personal payment account. Users agree on that all fees and taxes caused during the process of payment are the responsibility of the users themselves. Postalong services platform reserves the right to deduce this amount of fee ahead of time.<br>
+3.6 Users agree and understand that, in order to maximize the interests of users, users entrust Postalong services platform to purchase the appropriate commercial insurance, which will be deducted from the collected payment for services. Users may query the insurance policy, insurance purchase history and insurance number, etc. from their accounts.<br>
+3.7 A single, non-transferable and non-exclusive license is given to the users when the relevant client programs are to be downloaded for Postalong services platform. Users will use Postalong services client APPs when they need Postalong services. Hence, users are NEITHER allowed to do reverse engineering, reverse assembling, reverse compiling, or attempting to find out the APP's source code; NOR delete the copyright on the client program or its copies. The relevant client programs and all relevant users' data should be removed right after the user terminates using Postalong services platform.<br>
+3.8 All other rights under this sections and other provisions of this Agreement that are NOT expressly authorized are reserved by Postalong services platform. Postalong's services platform written permission must be obtained in order to execute all these rights. The lack of execution of any of the aforementioned rights does NOT mean the neglect of the rights.<br>
+</p>
+<h3>4.   Account Management</h3>
+<p>
+4.1 Users' accounts are owned by Postalong services platform. After registration, users are given the right of usage of his/her own user's account.<br>
+4.2 After registration, the account information, including, the account name and password, will be generated. Users are allowed to change the password according to Postalong's business rules. Users are suggested to carefully and reasonably keep and use their account name and password, and be responsible for all the activities and events for completing the verification and implementation of the account name and password. Any improper use of users' accounts, or security loopholes are found, shall the users immediately notify Postalong services platform, require Postalong services platform to suspend the relevant services, and report to the public security agency. <br>
+4.3 The notification mentioned in 4.2 must cover the following aspects: case description, relevant preliminary evidence, suggested actions to be taken, the contacts' personal information, etc... Anything missing, the aforementioned notification will be regarded as invalid. Users should understand that it will take some time for Postalong services platform to verify the user's notification and take actions. Postalong services platform will take NO responsibility for any consequences before taking actions.<br>
+4.4The user's account should NOT be leased to others. All the consequences caused by account leasing will be taken responsibility of by the user himself/herself. Once found, Postalong services platform has the right to cancel/delete the account. <br>
+4.5 Users understand and agree that, Postalong services platform has the right to access to the user's registration information, login to the user's registered account, preserve the evidence, including but not limited to the notarization and testimony; at the same time, in order to provide better services for users, Postalong services platform and its affiliates may gratuitously analyze and use the users' registration information and relevant data for business purpose.<br>
+4.6If some registered account has NOT been logged into for a long time, Postalong services platform has the right to reclaim and cancel the user's account, in order to avoid waste of resources. Any loss caused by this type of reclaim or cancel should be taken responsibility of by the users themselves. <br>
+4.7Users understand and agree that it's regarded as having finished its duty to send out the notifications to any one of the registered contact ways from Postalong services platform, including : mailing/living address, telephone(inland line or cell phones), or Email. <br>
+</p>
+<h3>5.   Range and Limitation of Liabilities (important)</h3>
+<p>
+5.1 5.1 Users understand and agree that the opposite party of the delivery contract is a user, instead of Postalong services platform. Defect warranty and payment obligations of the contract are to be undertaken by the users according to the stipulations. As two independent commercial subjects, Postalong services platform is NOT responsible for any warranty or joint responsibilities.<br>
+5.2Before they start providing services, users should review their own authenticity and performance capabilities. It's the carrier's (services provider) responsibility to require the consignor’s (accept services) to express the nature and category of the goods to be delivered, as well as the information of the receivers. As a transaction platform, Postalong services platform is NOT responsible for any warranty or joint responsibilities. In particular, Postalong services platform may NEITHER control the services of quality, safety or even legality of the goods to be delivered, NOR guarantee the authenticity or accuracy of dispensing transactions. Whoever caused the personal injury, property damage or personal injury of any third-party persons or damage of any third-party properties, etc., should take the corresponding legal liability. Postalong services platform does not bear any responsibility. <br>
+5.3 If the carrier and the consignor have made some extra offline deal or conditions and services (such as money collection from services, conditional services delivery, etc.), it's the users own responsibility to keep the relevant evidence, and bear the corresponding legal responsibility within their respective scope of responsibility. Users are NOT allowed to deliver the following goods:<br>
+（1）) Goods prohibited by national laws and regulations for delivery;<br>
+（2）) Goods required special qualification or delivery conditions by national laws and regulations for delivery.<br>
+5.4 Postalong services platform will review the user's registration information and delivery order information only if there is a clear legal requirement, or before or after the following occurrences:<br>
+（1）Should there be a reasonable reason to verify that the particular user or transaction is enormously illegal.<br>
+（2）Should there be a reasonable reason to verify that some users have suspected illegal or improper behavior when using Postalong services platform.<br>
+Users understand and agree that, subject to the conditions and technical data, Postalong services platform may NOT be able to provide a complete review for the aforementioned review.<br>
+5.5 Users understand and agree that, by law or under this Agreement, providing there is a clear obligation to make compensation, the maximum reimbursement from Postalong services platform is the fee for this particular delivery order. Also, Postalong services platform will NOT be responsible for any of the damages caused by the following conditions, including but not limited to loss of profits, goodwill, use, data or other intangible losses:<br>
+（1）Use of services that is NOT provided by Postalong services platform;<br>
+（2）Unauthorized use or change user data by any of the third-parties;<br>
+（3）Service fee and other charges or losses by purchasing goods, samples, data, information, and other alternative behaviors; Post Along distribution platform through the purchase or acquisition of <br>
+（4）Users’ own misunderstanding of Postalong services platform;<br>
+（5）Any losses caused by reasons that is none of Postalong's business services platform.<br>
+5.6 System may crash or not work properly due to the force majeure or other situations beyond the control of Postalong services platform, resulting in the incompleteness or losses of the relevant information and records, etc., which Postalong services platform will NOT take responsibility for. Postalong services platform will try its best to provide good assistance/service, and strive to stop the users from economic losses, or at least deduce the economic losses.<br>
+5.7 Users agree to take the obligation to report to Postalong services platform, whenever any content on Postalong services platform service platform has been found as illegal or not complying with this Agreement. Particularly, whenever the users' legitimate rights have been violated, please inform Postalong services platform right away, and provide the following information and materials:<br>
+（1）URL, index numbers and other details can be retrieved about the violations;<br>
+（2）Users' contact information, including name, address, telephone, and Email address;<br>
+（3）Other relevant information such as the user's ID, business license, etc.<br>
+Any violation proved as true, Postalong services platform will promptly delete the relevant information. Only a formal written infringement notice will be accepted by Postalong services platform via mail, Email or fax. When an emergency happens, the user can inform the customer service over the phone first, Postalong services platform may take the appropriate actions accordingly.<br>
+5.8Users should strictly abide by this Agreement and other agreements and rules released by Postalong services platform. Any Postalong's services platform or third-party's damages or losses caused by the users' violation or misbehavior, should be all taken responsibilities of by the users themselves. Postalong services platform has the right to ask for the reimbursement from the users if the user's violation or misbehavior caused Postalong services platform to take any responsibility.<br>
+5.9 Users understand and agree that, in order to provide some of the relevant services (including but not limited to advertising services, payment services, addressing, location services, etc.), Postalong services platform may collaborate with any third party. In such case, Postalong services platform does NOT guarantee the availability, effectiveness and legitimacy of those third-party services.<br>
+5.10 The relationship between Postalong services platform and the users is NOT any type of employment relationships. The carriers get the commission after finishing the delivery tasks and services, and the commission is provided by the senders. At any time, the user's income (if any) from Postalong services platform, should NOT be regarded as wages, salaries or remuneration, etc.<br>
+5.11Users should purchase commercial insurance EITHER by themselves OR via Postalong services platform, and be fully responsible for any accidents during the process of delivery.<br>
+</p>
+<h3>6.   Storage and Restrictions of User Information</h3>
+<p>
+6.1 Postalong services platform is NOT responsible for any failure of deletion or saving of the users' published delivery tasks/messages. Users should back up their own data all by themselves.<br>
+6.2 After the user account is canceled/deleted, there is NEITHER obligation for Postalong services platform to disclose any information to the user, or reserve the data for this account, NOR obligation to forward any messages to anybody else that has/have NEVER been read or sent out.<br>
+6.3 Users understand and agree that after the termination of this Agreement with the Postalong services platform, Postalong services platform still reserves the following rights:<br>
+（1）Keep user's registration information that has NOT been promptly deleted, and keep the rights to use all messages published on Postalong services platform, until the expiration of the record retention period declared in the law.<br>
+（2）Any violations or breach of this Agreement when using Postalong services platform, Postalong services platform still reserves the right to claim toward the user according to this Agreement.<br>
+（3）It is the user's obligation to keep the confidentiality of this Agreement, without paying anything.<br>
+</p>
+<h3>7.   Ownership of Information and Data</h3>
+<p>
+7.1 All information services and its platform, the ownership and operation right of transaction data are owned by Postalong services platform. Postalong services platform may take any commercial exploitation and development based on its own business needs.<br>
+7.2 Postalong services platform provides the following services: texts, software, sound, pictures, videos, graphics, all contents provided in advertisement, all contents provided in Emails, and all other information provided by Postalong services platform for the users. All contents mentioned above are protected by authorization, trademarks, labels, and other property law. Users are allowed to use the contents after been authorized by Postalong services platform, but NOT allowed to copy or re-create the contents or content-related derivative products. The copyrights of all articles published on Postalong services platform belongs to the original author and Postalong services platform. Anyone who wants to re-print this article or information, you must ask for the permission from the original author or be authorized by Postalong services platform.<br>
+7.3 rights, including but not limited to: the right of reproduction, distribution, rental, exhibition rights, performance rights, screening rights, right to broadcast, right for network transmission, right to film, right for modification, right to translate, right to assembly, and all other transferable rights, of everything that has been published on Postalong services platform, are exclusively transferred to Postalong services platform without payment. It also indicates that Postalong services platform has the right to file a lawsuit on any individual subject infringement and gets full compensation. This Agreement shall extend to any contents published on Postalong services platform and protected by the copyright law, regardless of whether the content is formed before or after signing this Agreement. Meanwhile, Postalong services platform reserves the right to delete all kinds of non-provision-compliant information without notifying the users.<br>
+</p>
+<h3>8.   Users' Code of Conduct</h3>
+<p>
+8.1 Users must strictly obey the service terms and business rules provided, released and updated by Postalong services platform. Written or non-written business rules published by Postalong services platform from time to time, as well as de facto trading patterns or conventions, are also regarded as an important part of this Agreement.<br>
+8.2 Users must commit to the following conventions while using Postalong services platform:<br>
+（1）All behaviors while using Postalong services platform must be comply with the rules and requirements of the National Laws, Regulations, and other regulatory documents. In addition, NONE of the behavior while using Postalong services platform is allowed to be contrary to the public interests or public morals, be harmful to others' legitimate interests or breach any terms or relevant rules of this Agreement. Any violation of the aforementioned promises, users should be independently responsible for all the legal consequences, and ensure that NO damage is brought to Postalong services platform.<br>
+（2) NEVER publish anything strictly prohibited by the national law on Postalong services platform (except a legal permit with sufficient legal effects has been obtained). NEVER publish anything infringing others' intellectual property or relevant legitimate rights. NEVER publish anything violating the public interests, public morality or public orders. NEVER publish any suspected illegal information or anything disobeying this Agreement from all kinds.<br>
+（3）NEVER use any data or information on Postalong services platform for commercial purpose, including but not limited to using the data, disclosing the data or giving license to any third party to use the data, or providing the convenience for any third party to use the data, by any means, such as, copying or disseminating the data without a prior written consent from Postalong services platform. Such obligations last for three years after users terminate the relationship with Postalong services platform.<br>
+（4）NEVER use any device, software or programs to interfere or attempt to interfere the normal operation and any activities being running upon Postalong services platform. Users are NOT allowed to take any actions which may cause an unreasonable overloads imposed on Postalong services platform.<br>
+（5）NEVER post, transmit, disseminate or store any contents that might infringe others' intellectual property, business secrets or other legal rights, including but not limited to viruses, Trojan horses, time bombs, etc., which may be very harmful to Postalong services, or even affect its stability.<br>
+（6）NEVER carry out anything harmful to the computer network security, including but not limited to: use any unauthorized data or login unauthorized server account; delete, modify or add storage information by using public Internet or somebody else's computer system without permission/authorization; attempt to probe, scan or test the vulnerability of Postalong's weakness or  sabotage Postalong's network security without permission/authorization; NEVER attempt to interfere or disrupt the normal operation of Postalong and PostalongAPP.<br>
+（7）NEVER publish anything to jeopardize Postalong's services platform goodwill.<br>
+8.3 Users understand and agree that:<br>
+（1) Any breach of the aforementioned commitments, is Postalong services platform entitled the right to take the appropriate actions or terminate the services according this Agreement, without consent from the users or notifying the users in advance.<br>
+（2）) Any breach of the aforementioned commitments, is Postalong services platform entitled the right to take the appropriate actions or terminate the services according this Agreement, without consent from the users or notifying the users in advance.<br>
+（3）Postalong services platform reserves the right to unilaterally identify whether an act violates or breaches any terms in this Agreement, and takes necessary actions accordingly, to any acts happening upon Postalong services platform by the users, including those that have not occurred but are already influencing Postalong services platform and its users.<br>
+（4）Anything violating the commitments and causing the damages to the third parties by the users' own misbehaviors, the users themselves should take full legal responsibility, and should also guarantee Postalong services platform from bearing any loss or increased costs.<br>
+（5）Any loss, third party claim or penalty from the administration department that happens to Postalong services platform but is caused by the users' violations of the relevant laws or provisions of this Agreement, shall the users indemnify Postalong services platform for the loss and relevant costs, including a reasonable attorneys' fees if there is any.<br>
+8.4 Relevant taxes must be paid according to law if there is any income obtained by using Postalong services platform.<br>
+</p>
+<h3>9.   Jurisdiction and Applicable Law</h3>
+	<p>
+9.1 Formation, implementation, interpretation and dispute settlement of this provision, should apply the local law.<br>
+9.2 The agreement was signed at Vancouver, BC, Canada.<br>
+9.3 Should there be any dispute, the two parties shall negotiate in a friendly manner; when negotiation fails, and either party may file a lawsuit to the court where the nearest Postalong's local services platform agent is.<br>
+9.4The title of each term in this Agreement is just for reading convenience but no actual meaning, and cannot be served as the basis for interpretation.<br>
+9.5For whatever reason, the terms in the Agreement, may be partially invalid or unenforceable, the remaining provisions shall remain valid, and binding on both parties.<br>
+
+ </p>
+    
+</div>
+<!--********************************************************-->
+<!--*******************************************************-->
+<div class="new2 wrapContain">
+    <ul>
+        <li class="wrapFirst" id="ruler" style="display:none">
+			
+<h3>1. Limits of articles to be delivered by POSTALONG:</h3>
+<p>
+1,Weight and volume limit: According to the carriers’ (services provider) physical transport conditions. International orders has to meet the requirement of custom’s regulation of different countries and the rules and regulations of shipping and aviation companies. <br>
+2,Value limit: Please make sure that the value of goods which you declared must be true. If the consignor has any concern or question about the delivery (services) of the goods, Postalong advises that consignor should be directly contact the carrier (services provider) to make sure his services will satisfy him for the task. Tax and other fees related to this order if there any shall be paid by the task publisher (services needed). The arrangement shall be made between the task publisher and the carrier.<br>
+3,Region limit: Restricted to the area of Postalong's services opened.<br>
+4,Additional Limits: You are NOT allowed to publish any task which related to any controlled knives, bow, crossbow, swords (including art crafts) and any other similar information in nature.<br>
+5,All information of goods which are published through Postalong information services platform have to comply with the law and regulation of relevant states and countries.
+</p>
+<h3>2. Restricted and Prohibited Goods</h3>
+			<p>
+1、Firearms, weapons, explosives, fireworks and ammunition: Any types of firearms, weapons, explosives, fireworks and ammunition are strictly prohibited from the delivery using Postalong platform, including: guns, pistols, handguns, machine-guns, bullets, firecrackers, prim cords, dynamites (including black powder), primers, fireworks, etc.<br>
+2、Firearms, weapons, explosives, fireworks and ammunition: Any types of firearms, weapons, explosives, fireworks and ammunition are strictly prohibited from the delivery using Postalong platform, including: guns, pistols, handguns, machine-guns, bullets, firecrackers, prim cords, dynamites (including black powder), primers, fireworks, etc.<br>
+3、Inflammable Liquid: Any types of inflammable liquid are strictly prohibited from delivery using Postalong platform, including: gasoline, paint coat,  painting ink, flavouring, lamp oil, alcohol, adhesive, oxide, etc.<br>
+4、Inflammable Solid: Any types of inflammable solid are strictly prohibited from delivery using Postalong platform, including: phosphorus, asbestos, safety match, celluloid, sulfur, absorbent charcoal, sodium supplied, metallic catalyst, carbonite, calcium, magnesium, barium, alkaline earth metal alloy, etc.<br>
+5、Oxide and Organic Peroxide: Any types of oxide and organic peroxide are strictly prohibited from delivery using Postalong platform, including: iodine, oxygen cylinders and oxygen generators, liquid oxygen as well as medical oxygen devices that utilize liquid oxygen, ammonia sulfate fertilizer, methanol, ketone, resin, etc.<br>
+6、Poisonous and Contagious Materials: Any types of poisonous and contagious materials are strictly prohibited from delivery using Postalong platform, including: blood samples, drugs, pesticide, germicide, bactericide, sanitizer,  dyes, mercury compounds, pharmaceuticals, bacteria, cyanide, arsenic, dichlorvos, virus,  medical disposals, and other acrid poisons, etc.<br>
+7、Radioactive Materials: Any types of radioactive materials with radioactivity higher than 5uSv/h are strictly prohibited from delivery using Postalong platform.<br>
+8、Perishable Materials: Any types of perishable materials are strictly prohibited from delivery using Postalong platform, including: acids, oxides, etc.<br>
+9、Polluted Materials and Those Violates Public Health: Any types of polluted materials and those material that violates public health are strictly prohibited from delivery using Postalong platform, including: corpses, skeletons, ashes, coffins, and pollution, those are apt to damage vehicles, and those are apt to violate public health,  etc.<br>
+10、Live Animals: Any live animals except those allowed by the governmental policy are strictly prohibited from delivery using Postalong platform, including: snakes, beasts, and some other live animals, etc.<br>
+11、Other Hazards: Any types of perishable materials are strictly prohibited from delivery using Postalong platform, including: dry ice, airbags, a magnetic substance (electronic speaker, sound blaster), some cosmetics, liquid state goods, gold brick, silver bullion, currency, film, all kinds of narcotic drugs and relevant products, metal sodium, magnesium, aluminum, chemical and biological products, transferable, tradable securities, etc.<br>
+12、Chemical Products of Natures Unknown: Any types of chemical products of nature’s unknown are strictly prohibited from delivery using Postalong platform.<br>
+13、Other Goods Prohibited by State Laws or with Circulation Restrictions: Any other goods prohibited by state laws or with circulation restrictions are strictly prohibited from delivery using Postalong platform, including: documents and information as state secrets, national currency and counterfeit currency and securities, imitation arms, knives, precious relics and endangered wild animals and their products, tobacco, narcotics, radioactive substances , wine, gold products, wood, and a variety of endangering national security and social and political stability and obscene publications, promotional materials, printed matter; packaging items that they might jeopardize personal safety, pollution or damage to other equipment, etc.<br>
+For more information on restricted/prohibited goods, consult Postalong Customer Service directly at +1 XXX XXX XXXX.
+	</p>
+<h3>3. Exclusion of Articles NOT Covered by the Insurance</h3>
+<p>
+	1、Articles with a price/value higher than 1,000 RMB gold, silver pieces, blocks or platinum inlaid with precious stones and related finished products or diamond jewelry
+	Banknotes, coins, silver coins, checks or credit cards, etc.
+	<br>
+	2、Stocks, bonds, bank drafts, traveler's checks or other securities
+	Collectibles, art, antiques, paintings, gemstones and other articles whose value is hard to determine.
+	<br>
+	3、All kinds of live animals, plants, as well as various types of specimens and fresh food
+	Any fragile items whose value is less than 2,000 RMB can be delivered, but only the loss is insured, while the damage is NOT.
+	<br>
+	4、If want to know more information, please refer to: 
+	http://www.cbsa-asfc.gc.ca/travel-voyage/rpg-mrp-eng.html <br>www.aircanada.com/en/travelinfo/airport/baggage/security.html 
+	<br>
+
+
+			
+			
+			</p>
+            
+        </li>
+    </ul>
+</div>
+<!--********************************************************-->
+<!--*******************************************************-->
+<div class="new3 wrapContain">
+    <ul>
+        <li class="wrapFirst" id="delivery" style="display:none">
+ <p>
+	Before you apply to register as a qualified carrier (services provider) who will use the PostAlong Service Platform (hereinafter referred to as Postalong), we suggest you read this agreement carefully. The agreement establishes a legal obligation between you and Postalong. The carrier (services provider) must be of full civil capacity. The carrier (services provider) can accept or ignore the posted tasks by his own will, after a formal registration and legal verification from Postalong has been completed. As long as the carrier accepts a task(s) and successfully completes the task(s), namely, has the packages/goods or services successfully delivered or provided, an appropriate remuneration from the task publisher (normally, the consignor) will be paid to the carrier (namely, the provider) according to the arrangement. It is the carrier's (services provider) duty to accept or ignore the tasks posted on Postalong, arrange his/her own schedule when to deliver, and how to provide the service in a satisfactory manner.
+As an information platform, we provide the services for our users/customers both to post the delivery (services) information and accept all provide delivery (services). Postalong will NEITHER provide any insurance on the truthfulness or accuracy of the posted delivery tasks, NOR guarantee the legitimacy, security and the quality of the goods to be delivered. The authenticity, legitimacy and effectiveness of delivery information should be evaluated by the user/customer himself/herself, and therefore, the carrier (service provider) should be liable for the losses caused by himself/herself. Whether to believe in the posted delivery tasks, whether to accept or reject the posted delivery requests, etc. all depend on the user's own judgment and responsibility.
+
+	 Please read these terms carefully. If you check “I understand and accept the “Registration Agreement for Carriers”, and pass the legal ID verification from Postalong, you will be regarded as a person with normal legal capacity who will be treated as a qualified carrier (services provider)  and you will be given the right to use the Postalong Information services Platform. Meanwhile, the terms listed in this agreement will constitute a legally binding agreement between both parties, namely, the carrier and the Postalong information platform.
+	 
+</p>
+<h3>1.   Service Mode</h3>
+<p>
+1) After the registration and verification by Postalong, the carrier (services provider) is allowed to take the order and complete the delivery of the services/needs/tasks posted on the Postalong, through mobile phones and other terminals. After the services is completed, the carrier will get the payment for their services from the consigner (services needed) or approved the receiver (accept services) whom will be mentioned in the posted order.<br>
+2) Postalong or the sub-regional administration company designated by Postalong is responsible for the operation and administration of Postalong information services platform.  Postalong or the sub-regional administration company designated by Postalong has the right to authorize the credit to the carrier (services provider) after task completion, or adjust his/her credit. The carrier (services provider) is authorized and only authorized to take some corresponding tasks due to his/her own credit ( except those who use bank account for pre-authorized credit card, please refer to <Bank Card License Agreement> ), and get the corresponding remuneration accordingly.<br>
+3) For tasks voluntarily accepted by the carrier (services provider), Annex I, Annex II and Annex III in this Agreement are to be strictly obeyed. Except Annex I, II, III, there is NO need for the carrier (services provider) to comply with the relevant rules and regulations for Postalong internal management. But, the carrier must NOT break any provisions of the law or this Agreement.
+<br>
+4) Whether to accept the delivery task, how to complete the delivery task, which means by transportation or other facilities to be used, etc. should all be decided by the carrier (services provider) himself/herself. Carriers' commitment: during the process of accepting and completing the delivery tasks, the carrier (services provider) takes the full responsibility of both his/her own personal safety, as well as the safety of the goods to be delivered. Any third-party personal injuries, property damage/loss or anything against the legitimate rights and interests of third-party, is the carrier's (services provider) responsibility, therefore, they must handle all disputes and bear all liability.<br>
+<h3>2.   Registration Expiration Date</h3>
+<p>The term of validity after registration lasts for 1 year. Namely, the period of validity starts from the verification day, and ends until 12 months later.<br></p>
+<h3>3.   Carriers (services provider) Income</h3>
+<p>
+1) Carriers (services provider) can obtain the posted delivery request on the Postalong services platform. After having accepted and completed the delivery task, the carrier will receive payment for his services from the consignor (service’s needs). <br>
+2) Taxes and other expenses upon the carriers' (services provider) income must be taken care of by carriers (services provider) themselves.<br>
+</p>
+
+<h3>4.   Carriers (services provider) Registration Requirements</h3>
+<p>
+1) Must be at least 18 years old and in good health, with full civil capacity and the corresponding ability to work.<br>
+2) All relevant governmental and state laws and regulations provided by Postalong service platform must be abided by.<br>
+3) According to Postalong's requirement, complete  the online learning, pass the online assessment, provide personal information and the information about transportation to be used and other facilities; in addition, take the full responsibility of the authenticity and validity of the order, and legitimacy of vehicles to be used, facilities and equipment, and their security.<br>
+4) Take the full legal responsibilities and civil liabilities of all criminal acts during the process of accepting and completing the delivery tasks, including but not limited to, encroachment, theft, robbery, etc... Postalong is entitled to report all violations to the judiciary and relevant administration departments.<br>
+5) All registered carriers (services provider) must agree that their registered account information should be administrated unified, and the data can be used for Postalong's business statistics, as well as other purposes. Postalong will have the right to monitor the service qualification provided by the carriers (services provider), and have the right to decide whether to delete the carrier's (services provider) registered account or even cancel the carrier's  (services provider) delivery qualification.<br>
+6) During the process of using Postalong services, Postalong's business secrets and Postalong's users’ personal information must be kept confidential. Carriers are allowed to NEITHER read, copy, excerpt or disseminate, disclose, reveal the information, NOR permit others to use the data for the purpose of anything beyond Postalong's own business.<br>
+6) During the process of using Postalong services, Postalong's business secrets and Postalong's users’ personal information must be kept confidential. Carriers are allowed to NEITHER read, copy, excerpt or disseminate, disclose, reveal the information, NOR permit others to use the data for the purpose of anything beyond Postalong's own business.<br>
+</p>
+<h3>5.   Notes for Carriers (services provider) Registered under Partners</h3>
+<p>
+1) After the carrier (who is registered under some particular authorized management agency (hereinafter: the partner)) has read this Agreement and undertaken some delivery tasks, it's deemed by the carrier (services provider) to voluntarily authorize Postalong to transfer the carrier's (services provider) delivery income directly into the partner's bank account. After that, the delivery income will be allocated to the partner and the carrier (services provider) according to this agreement.<br>
+2) Carriers (services provider) registered under some particular partner (consignor) will of course have the priority of being notified with the delivery tasks published by this particular partner.<br>
+3) Without having undertaken any delivery tasks within the last 30 consecutive days, carriers (services provider) registered under partners may be downgraded to ordinary carriers (services provider) and may lose the priority of being notified with the delivery tasks published by the particular partner (evaluated and judged by Postalong ).<br>
+4) It’s the carrier (services provider) who decides whether to collaborate with a partner or terminate the collaboration with a partner. If the collaboration is terminated by the carrier, the priority of being notified with the delivery tasks published by the particular partner is terminated at the same time.<br>
+6.  This Agreement will take effect from after the carrier (services provider) has submitted the registration application from POSTALONG services platform, completed the online learning, finished the online assessment, and passed the ID verification.<br>
+7.  After the expiration of this agreement, if NEITHER the carrier (services provider) himself/herself NOR Postalong has ever canceled the carrier's (services provider) registration account, this agreement will be deemed as valid for another year by default.<br>
+8.  The provision, execution, interpretation and dispute settlement should comply with the local law. If any dispute happens, both sides should try to find a friendly solution. If NOT negotiable, either side may file a lawsuit to the local court where Postalong's headquarter is located.<br>
+
+ </p>
+<h3>1.  Responsibilities of Carriers (services provider)</h3>
+<p>
+1) Self-preparing the facilities that are required for the delivery tasks (such as: vehicles, GPS-enabled smart phones, etc.);<br>
+2) Attend some activities organized by Postalong;<br>
+3) During the process of delivery, accepting the supervision and instruction from Postalong, and complying with the relevant opinions on how to solve any problems.<br>
+4) Installing, registering and using Postalong APPs using cell phones;；<br>
+5) Following the operation process according to Postalong's Operation Work-flow and some key points (Annex II);<br>
+6) After accepting the delivery tasks, the carrier's (services provider) cellphone is supposed to turn on GPS functionality in order to facilitate all four sides, including: the consignor, the receiver, the carrier and Postalong, to track the delivery process.<br>
+7) Provide timely pick-up service and successfully complete the required delivery task from consignor (service’s needs);<br>
+8) Carriers (services provider) must complete the delivery tasks within the given time published from consignor with the delivery messages. All problems caused by going over the time specified for the delivery, including complaints, compensation claiming, or even filing a lawsuit, should be taken care of by the carrier (services provider) himself/herself. Postalong will monitor the delivery tasks, and Postalong will deduct some expenses out from what has been paid to Postalong from the consignor (service’s needs) or the deposit insurance provided by the carrier (services provider), to reimburse the consignor. If the deducted expense is NOT able to cover the loss, it's the carrier's responsibility to cover the rest. Postalong reserves the right for further reimbursement; <br>
+9) Responsible for guaranteeing the safety of tasks and goods covered;<br>
+10) Responsible for timely and accurate information, giving feedback to the relevant departments of Postalong;<br>
+11) When the carrier (services provider) is given a task, the task and all items should be carefully examined, especially valuables or electronic products, and should be done face to face. The party clearly needs to take pictures, where there is information or an issuer specified unit, inspect boxes, make sure the contents match the information given on Postalong services platform, and then seal back up. Such a situation does not confirm the completion and delivery by claimants who are responsible;<br>
+12) Task matter appears damaged or is lost because of carrier, and is due to non-force majeure the carrier (services provider) bears full responsibility;<br>
+13) In the matter of the process, to complete the task of doing things, it should be civilized, polite, and show that Postalong carriers (services provider) have a good attitude.<br>
+  </p>
+<h3>2.  Operational Processes and Some Key Points for Carriers (services provider)</h3>
+<p>
+1) Download and install Postalong APPs onto a smart phone;<br>
+2) Register as a member of Postalong through a smart phone first. After having completed the online learning, passed the assessment, provided all the relevant personal information and verified by Postalong, the member can become a qualified carrier (services provider).<br>
+3) Try to log into PostalongAPP every day in order to always keep an eye on the delivery task information.<br>
+4) According to their own schedule, choose whether to accept the delivery tasks;<br>
+5) Only those carriers who have provided the guaranty by pre-authorized credit card and those who have already gained enough points, namely, line of credit, which is higher than the value of the goods to be delivered, are allowed to accept the corresponding delivery tasks.<br>
+6) When carriers using the pre-authorized credit card to provide the guaranty, the relevant bank will freeze an amount of money no less than the declared value of the goods to be delivered from consignor. If the balance of the relevant bank account is LESS than the declared value, the pre-authorization fails, and the acceptance for this delivery task will be notified as “UNSUCCESSFUL”.<br>
+7)The money will be hold until the completion of the task.<br>
+8) Provide timely on-site services to the consignor according to the delivery tasks published on Postalong after you click “Accept” button.<br>
+9) Double-check the goods to be delivered and have them verified if they are exactly the same as described in delivery task. Negotiate about the goods to be delivered, with the consignor (service’s needs) or goods provider (accept services) face to face, when necessary.<br>
+10) Try to negotiate with the consignor (service’s needs) or task publisher in person first if any issues have ever happened during the period of completing the delivery tasks. Should there be NO solution, file your feedback in a timely manner to Postalong for further negotiation due to Postalong's relevant provisions.<br>
+11) Notify the receiver (accept services) about when and where to receive goods under delivering before the delivery task is completed. Anything related to the services payment fee, notify the consignor (service’s needs) or delivery task publisher to have the delivery fee paid in time.<br>
+12) It is required for the carriers (services provider) to complete the delivery task on time. Complaints, claims and lawsuits from consignor or receiver caused by over-time delivery will be the full responsibility of the carriers (services provider) themselves. Postalong will supervise the whole process of the delivery. A net of fee will be deducted as a penalty for over-time delivery. If the amount of penalty is NOT sufficient to compensate the caused loss, the carriers (services provider) have to cover the remaining part of the loss all by themselves. Postalong reserves the right for further reimbursement from the carrier (services provider);<br>
+13) It's the receiver's (accept services) responsibility to double-check the consignor's (service’s needs) or the delivery task publisher's personal information, including the names, phone contacts, etc.. It's the carrier's (services provider) responsibility to handle the goods under delivery to the receiver (accept services), after having ensured the “Delivery Completed, Confirm” button is clicked either by the receiver (accept services) or by the consignor (service’s needs). <br>
+14) If either refusal to accept the delivered goods by the receiver (accept services), or absence of the receiver (accept services) at the arranged time, the arranged place, or even NO way to get in touch with the receiver, happens, the carrier (services provider) should proactively talk to the consignor (service’s needs) or delivery task publisher.  If NO solution can be found between the carriers and the consigners, please contact Postalong in a timely manner for further negotiation.<br>
+  </p>
+<h3>3.  Carriers' (services provider) Income</h3>
+<p>
+1、1) Online payment from the consignor (service’s needs) or the delivery tasks publisher: either through Internet banks, stripe, wechat, or some other online payments to a unique Postalong account. The carriers (services provider) will get the services commission directly from Postalong after that. <br>
+2) Postalong provides multiple methods, for the users themselves, to choose as their payment preference.
+Withdraw: Direct withdrawal is permitted via personal bank account or some other payment account (relevant fees caused by the malicious cash withdrawal should be taken care of by the users themselves), but the bonus credits/points given by Postalong are NOT allowed to withdrawn. Postalong holds the right for the detailed interpretation.
+<br>
+</p>			
+			
+			
+			
+			
+			
+		
+            
+        </li>
+    </ul>
+</div>
+</div>
+
+		
+	</div></div>
+	<div class="footer clearfix">
+		<div class="auto">
+			<div class="footer-section">
+				<img src="../img/public/bottomLogo.png" class="fl btmlogos" usemap="#linkToOther">
+				 <map name= "linkToOther">
+				<!-- x1,y1,x2,y2	Specifies the coordinates of the left, top, right, bottom corner of the rectangle (for shape="rect") -->
+					<area shape="rect" target="_blank" coords="0,0,38,50" href=" https://twitter.com/PostalongTech?lang=zh-cn" alt="twitter page">
+					<area shape="rect" target="_blank" coords="38,0,87,50" href="https://www.linkedin.cn/start/edit-profile?trk=uno-reg-join-join-now" alt="linkedin page">
+					<area shape="rect" target="_blank" coords="87,0,135,50" href="http://weibo.com/p/1005055839493601/home?from=page_100505_profile&wvr=6&mod=data&is_all=1#place" alt="weibo page">
+                    <area shape="rect" target="_blank" coords="135,0,195,50" href="https://www.instagram.com/postalong/?hl=zh-cn" alt="instagram page">
+                    <area shape="rect" target="_blank" coords="195,0,254,50" href="https://www.facebook.com/%E4%BA%92%E9%80%92%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8Postalong-Technology-Inc-1703657119912840/?ref=bookmarks
+" alt="facebook page">
+                </map>
+			</div>
+		
+			<div class="footer-section" style="float: right;">
+				<img src="../img/public/botnLogo.png" class="botnLogo fr">
+			</div>
+			
+            <div class="footer-section" style="margin-top:44px; font-size: 18px;margin-left: 20px;">
+				Custmer Tel： 778-400-5798 
+			</div>
+				
+			<p class="fl btmpresent clearfix">Copyright ©2014-2016 All Rights reserved. postalong technology inc. (www.postalong.com)Copyright</p>
+			
+		</div></div>
+<!--********************************************************-->
+                
+		
+	
+<script type="text/javascript" src="../js/iframe/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/public/main.js"></script>
+<script type="text/javascript" src="../js/content/help.js"></script>
+</body>
+</html>

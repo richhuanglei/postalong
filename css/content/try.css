@@ -1,0 +1,350 @@
+.flag {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: purple;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag1 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #FFDA41;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+    
+.flag2 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #1F4A66;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+   
+.flag3 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #1F2FE0;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag4 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #21b796;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.flag5 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: darkred;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag5:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+
+.flag6 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #65E4C2;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag6:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.flag7 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #eeeeee;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag7:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag8 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #00738C;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag8:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.star-five {
+   margin: 50px 0;
+   position: relative;
+   display: inline-block;
+   color: #eeeeee;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   /*1*/
+   border-bottom: 35px  solid #eeeeee;         
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+.star-five::before {
+    border-bottom: 40px solid #eeeeee; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -22.5px;
+   left: -32.5px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+
+.star-five::after {
+   position: absolute;
+   display: block;
+   color: #eeeeee;
+   top: 1.5px;
+   left: -52.5px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   /*3*/
+   border-bottom: 35px solid #eeeeee;         
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+/*******************************/
+.change{
+ margin: 50px 0;
+   position: relative;
+   display: inline-block;
+   color: #eeeeee;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   /*1*/
+   border-bottom: 35px  solid #FFB600;         
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+
+}
+.change::before {
+    border-bottom: 40px solid #FFB600; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -22.5px;
+   left: -32.5px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+
+.change::after {
+   position: absolute;
+   display: block;
+   color: #eeeeee;
+   top: 1.5px;
+   left: -52.5px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   /*3*/
+   border-bottom: 35px solid #FFB600;         
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+

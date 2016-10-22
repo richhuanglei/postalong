@@ -1,0 +1,558 @@
+#content{
+	width:80%;
+	height:600px;
+	margin:auto;
+}
+
+#content .leftcontent,#content .middlecontent,#content .rightcontent{
+width: 32%;
+height: 100%;
+margin:1px 1px;
+float: left;
+}
+
+#content .leftcontent h1{
+	font-size:300%;
+	color:#26B796;
+	margin-bottom: 20px;
+}
+#content .leftcontent .id{
+	float:left;
+	width: 20%;
+
+}
+#content .leftcontent .dianpu{
+	float:right;
+	width: 78%;
+	height: 80px;
+	text-align: center;
+	font-size:200%;
+	color: #26B796;
+	
+}
+#content .leftcontent .contact{
+
+	float:left;
+	margin-top: 50px;
+}
+
+#content .leftcontent .shangpin{
+
+	width: 90%;
+	height: 270px;
+	float:left;
+	margin:4px auto;
+}
+/*中间的盒子*/
+#content .middlecontent p{
+
+	margin-top: 30px;
+	color: #26B796;
+	font-size: 200%;
+}
+#content .middlecontent input{
+	
+	width:80%;
+	margin:auto;
+	margin-top:30px;
+	border:1px solid #26B796;
+}
+#content .rightcontent p{
+	color: #26B796;
+	margin-top: 30px;
+	font-size: 200%;
+
+}
+#content .rightcontent #success{
+	color:red;
+}
+#content .rightcontent input{
+	width:80%;
+	margin:auto;
+	margin-top:40px;
+	border:1px solid #26B796;
+
+}
+#content .rightcontent #editor{
+
+	width: 50%;
+	background: #E7E7E8;
+	color:#21B79D;
+	margin: 30px auto;
+
+}
+#content .rightcontent #btn-1{
+
+  width: 50%;
+  background: #FFCC02;
+  color:#FFFFFF;
+  margin: 30px auto;
+
+}
+#content .rightcontent #btn-2{
+
+	width: 50%;
+	background: #21B796;
+	color:#FFFFFF;
+	margin: 30px auto;
+
+}
+/**/
+.flag {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: purple;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag1 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #FFDA41;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+    
+.flag2 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #1F4A66;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+   
+.flag3 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #1F2FE0;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag4 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #21b796;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.flag5 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: darkred;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag5:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+
+.flag6 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #65E4C2;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag6:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.flag7 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #eeeeee;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag7:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.flag8 {
+  width: 106px;
+  height: 30px;
+  position: relative;
+  background: #00738C;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:7px; 
+  margin-top: 20px;
+  float: right;
+
+}
+.flag8:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.star-five {
+   margin: 50px 0;
+   position: relative;
+   display: inline-block;
+   color: #eeeeee;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   /*1*/
+   border-bottom: 35px  solid #eeeeee;         
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+.star-five::before {
+    border-bottom: 40px solid #eeeeee; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -22.5px;
+   left: -32.5px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+
+.star-five::after {
+   position: absolute;
+   display: block;
+   color: #eeeeee;
+   top: 1.5px;
+   left: -52.5px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   /*3*/
+   border-bottom: 35px solid #eeeeee;         
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+/*******************************/
+.change{
+ margin: 50px 0;
+   position: relative;
+   display: inline-block;
+   color: #eeeeee;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   /*1*/
+   border-bottom: 35px  solid #FFB600;         
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+
+}
+.change::before {
+    border-bottom: 40px solid #FFB600; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -22.5px;
+   left: -32.5px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+
+.change::after {
+   position: absolute;
+   display: block;
+   color: #eeeeee;
+   top: 1.5px;
+   left: -52.5px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   /*3*/
+   border-bottom: 35px solid #FFB600;         
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+/*左边*/
+#content .consignee{
+	width: 90%;
+	margin: auto;
+	float:left;
+}
+#content .leftcontent .consignee .shopinfo{
+
+float:left;
+font-size: 150%;
+margin-top: 21px;
+color:#21B796;
+}
+#content .leftcontent .leftinfo {
+
+	float:left;
+	width:49%;
+	height: 80%;
+	margin-top:10px;
+	
+
+}
+#content .leftcontent .rightinfo{
+	float:left;
+	width:48%;
+	height: 80%;
+	margin-top:10px;
+	margin-left:2%; 
+}
+#content .leftcontent .rightinfo p{
+	margin-top: 20px;
+	color:#21B796;
+	font-size: 160%;
+}
+#content .leftcontent .leftinfo .id{
+	float:left;
+	width:40%;
+	height: 80px;
+}
+#content .leftcontent .leftinfo .fadanren{
+	float:left;
+	width:60%;
+	height: 80px;
+	color:#21B796;
+	font-size: 120%;
+	margin-top: 20px;
+}
+#content .leftcontent .leftinfo .shoppic{
+	float:left;
+	width:90%;
+	height: 100px;
+	margin-top:60px;
+
+}
+/**/
+.box1, .box2,.box3,.box4{
+
+  width: 80%;
+  height: 113px;
+  margin:auto;
+  line-height: 113px;
+  float: left;
+  border-bottom: 1px dashed black;
+  font-size: 200%;
+  font-weight: 6px;
+}
+.box2{
+  color:#FFCC40;
+  word-spacing: 9000%;
+}
+.box3{
+  color:#BC0000;
+  padding-top: 40px;
+}
+.box3 input{
+
+  width: 30%;
+  float: left;
+}
+.box3 .wenzi{
+  width: 30%;
+  height: 100px;
+  float: left;
+}
+.box4{
+  
+  word-spacing: 9000%;
+}
+.box5{
+width: 30%;
+  height: 113px;
+  margin:auto;
+  line-height: 113px;
+  float: right;
+  margin-right: 20%;
+  padding-top:40px;
+  font-size: 200%;
+  font-weight: 6px;
+}
+.box5 button{
+  width: 40%;
+  float: left;
+}
+.box5 .wz{
+  width: 20%;
+  height: 100px;
+  float: left;
+}

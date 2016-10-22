@@ -1,0 +1,58 @@
+#content{
+	width: 100%;
+	height: 800px;
+	background: #E2F5F4;
+}
+#content .status{
+	display:none;
+}
+#content .daijiedan{
+	
+	width: 100%;
+	height: 200px;
+	background: #549A9B;
+	
+}
+ #content .yijiazhong{
+	
+	background: #B7E4E2;
+
+}
+#content .daiquhuo{
+	float:left;
+	width: 100%;
+	height: 200px;
+	background: #C544F6;
+}
+.content .yiquhuo{
+	
+	float:left;
+	width: 100%;
+	height: 200px;
+	background: #5734BA;
+	
+}
+#content .daipingjia{
+	float:left;
+	width: 100%;
+	height: 200px;
+	background: #A66D37;
+}
+#content .yiquxiao{
+	float:left;
+	width: 100%;
+	height: 200px;
+	background: #2F479B;
+}
+#content .daifukuan{
+	float:left;
+	width: 100%;
+	height: 200px;
+	background: #81C951;
+}
+#content .yiwancheng{
+	float:left;
+	width: 100%;
+	height: 200px;
+	background: #ED6E6E;
+}

@@ -1,0 +1,232 @@
+/*pic*/
+ * {
+        margin:0;
+        padding:0;
+    }
+    body {
+        font:14px Verdana, Arial, Geneva, sans-serif;
+        color:#404040;
+        background:#fff;
+    }
+    img {
+        border-style:none;
+    }
+    .main{
+        width:300px;
+        height:60px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:-150px;
+        margin-top:-30px;
+    }
+    .box{
+        position:relative;
+        float:left;
+    }
+    input.uploadFile{
+        position:absolute;
+        right:0px;
+        top:0px;
+        opacity:0;
+        filter:alpha(opacity=0);
+        cursor:pointer;
+        width:276px;
+        height:36px;
+        overflow: hidden;
+    }
+    input.textbox{
+        float:left;
+        padding:5px;
+        color:#999;
+        height:24px;
+        line-height:24px;
+        border:1px #ccc solid;
+        width:200px;
+        margin-right:4px;
+    }
+    a.link{
+        float:left;
+        display:inline-block;
+        padding:4px 16px;
+        color:#fff;
+        font:14px "Microsoft YaHei", Verdana, Geneva, sans-serif;
+        cursor:pointer;
+        background-color:#0099ff;
+        line-height:28px;
+        text-decoration:none;
+    }
+
+
+/*空行*/
+/*#t{
+	width: 80%;
+	height: 10px;
+}*/
+/*picbox*/
+#picbox{ margin:10px auto; width:80%; min-height:400px; background:#FF9}
+
+/*tab*/
+  
+              
+            #tab_bar {  
+        margin-left: 30px;
+        margin-bottom: 10px;    
+        padding-top: 20px;
+        padding-bottom: 20px;
+               
+            }  
+            #tab_bar ul {  
+                padding: 0px;  
+              
+                
+                text-align: center;  
+            }  
+              
+            #tab_bar li {  
+                list-style-type: none;  
+                float: left;  
+                width: 20%;  
+               
+               text-align: left;  
+                background-color: #F2F2F2;  
+                font-size: 21px;
+            }  
+              
+            .tab_css {  
+                width:100%;  
+                
+               
+                display: none;  
+                float: left;  
+            }  
+            #tab3_content{
+                width: 100%;
+                height: 800px;
+                border:1px solid #F2F2F2;
+
+            }
+            #tab4_content{
+                width: 100%;
+                height: 800px;
+                border:1px solid #F2F2F2;
+
+            }
+/*table*/
+td{
+
+	width:13.5%;
+}
+table{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+tr:nth-child(even){
+
+		background:#FDE9D9;
+	}
+tr:nth-child(odd){
+
+		background:#fff;
+	}
+.increase,.reduce,.num{
+	vertical-align: top;
+	display:inline-block;
+}
+
+
+#goodsdes,#goodssel{
+	margin:6px auto;
+	width:80%;
+	text-align: center;
+	padding:6px;
+	
+}
+#consigner , #consigneeinfo, #consigneeaddr,#consigneraddr,#goodsdes,#goods{
+		
+		width: 80%;
+		
+		margin:6px auto;
+		}
+#list{
+
+		width: 100%;
+		margin-bottom: 6px;
+		margin-top:20px;
+		}
+#consignerwrap{
+width: 80%;
+display:inline-block;
+margin-bottom: 10px;
+margin-left: 30px;
+padding-top: 20px;
+padding-bottom: 20px;
+background:#FFFFCC;
+}
+#consigneewrap{
+width: 80%;
+margin-bottom: 10px;
+margin-left: 30px;
+padding-top: 20px;
+padding-bottom: 20px;
+background:#CCCCFF;
+}
+
+#goods{
+
+		background:#CCFFCC;
+		width: 80%;
+		margin-left: 30px;
+		margin-bottom: 10px;	
+		padding-top: 20px;
+		padding-bottom: 20px;	
+}
+#goodspic{
+		background: #CCFFCC;
+		width: 80%;
+		margin-bottom: 10px;	
+		padding-top: 20px;
+		padding-bottom: 10px;
+		display:inline-block;	
+}
+
+#button{
+		margin-left: 30px;
+		margin-bottom: 10px;
+		
+}
+.header{
+		width: 100%;
+		height: 112px;
+		margin-bottom:2px;
+		
+}
+
+#wrap{
+		
+		width: 80%;
+		
+		margin:3px auto;
+		
+}
+
+.footer{
+		
+		position:fixed;
+		bottom:2px;
+		left:0px;
+		
+}
+#reportrange{
+		background:yellow;
+		cursor:pointer;
+		padding:5px 10px;
+		border:1px solid #ccc;
+		width:300px;
+		position:absolute;
+		top:0;
+		left:0;
+		background:yellow;
+		
+		}

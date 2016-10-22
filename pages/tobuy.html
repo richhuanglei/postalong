@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<!-- 下面是bootstrap -->
+<link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+<script src="../css/bootstrap/js/jquery.min.js"></script>
+<script src="../css/bootstrap/js/bootstrap.min.js"></script>
+
+ <!-- 下面是样式 -->
+ <link href="../css/content/tobuy.css" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" type="text/css" href="../css/public/wei.css">
+<link rel="stylesheet" href="../css/public/tou.css">
+<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+<script src="../js/content/tobuy.js"></script>
+<body>
+<div class="row tou">
+  
+    <div class="logo  col-sm-1 col-md-1 col-lg-2"><img src="../img/public/mainlogo.png"></div>
+    <div class=" col-sm-11 col-md-11 col-lg-10">
+    <ul class="nav-menu " >
+        <li><a  class="current" href="#">首页</a></li>
+        <li><a  href="#" target="_parent" >登陆</a></li>
+        <li><a href="#" target="_parent">功能简介</a></li>
+        <li><a href="#" target="_parent">开放平台API</a></li>
+        <li><a href="#" target="_parent">关于我们</a></li>
+        <li><a href="#" target="_parent">帮助</a></li>
+        <li><a href="#" target="_parent">我的店铺</a></li>
+        <li class="tousharesize"><select name="sharetofriend" class="form-control">
+          <option value="" class="form-control">分享给朋友</option>
+          <option value="">朋友圈</option>
+          <option value="">微信好友</option>
+          <option value="">新浪微博</option>
+          <option value="">腾讯微博</option>
+          <option value="">QQ空间</option>
+          <option value="">QQ好友</option>
+        </select>
+        </li>
+        <li class="toulanguagesize">
+        <select onchange="window.location=this.value;"  class="form-control ">
+          <option value="Language" selected>Language</option>
+          <option value="../pages/home.html">中文</option>
+          <option value="../ZT_en/pages/home.html">ENGLISH</option>
+          <option value="한국의  ">한국의  </option>
+          <option value="Français">Français</option>
+          <option value="Русский язык">Русский язык</option>
+          <option value="日本語">日本語</option>
+        </select></li>
+        </ul>
+
+  </div>
+ </div> 
+ <div id="content">
+ 	<div class="leftcontent">
+    <h1>商品信息</h1>
+    <div class="id"><img src="../img/gou/id.png" alt="id"></div>
+    <div class="dianpu">
+      <p>卖家：1号店</p>
+      <p>dddddd</p>
+      <div class="contact">
+        <p>地址：加拿大列治文</p>
+        <p>联系方法：8888888</p>
+      </div>
+      
+        <img src="../img/gou/shangpin.png" alt="shangpin" class="shangpin">
+     
+    </div>
+  </div>
+  <div class="middlecontent">
+    <p>商品名称：杰斯白藜芦醇</p>
+    <p>款式：1盒</p>
+    <p>重量：2500g</p>
+    <p>价格：￥50</p>
+    <p><div id="jia">+</div><div id="num">0</div><div id="jian">-</div>
+    <input type="text" placeholder="数量" class="form-control" name="number"></p>
+    <input type="text" placeholder="代付价格" class="form-control">
+    <p>商品描述：便宜，正品
+    </p>
+  </div> 
+  <div class="rightcontent">
+    <p>收货人信息</p>
+    <input type="text" placeholder="收货人" class="form-control">
+    <input type="text" placeholder="收货地址" class="form-control">
+    <input type="text" placeholder="联系方式" class="form-control">
+    <button class="form-control" type="button" id="btn" onclick="a()">预览</button>
+  </div>
+
+
+ 	
+ </div>
+	<div class="footer ">
+    
+
+      <div class="footericon col-lg-6 col-md-6 col-sm-6 col-md-offset-3 col-lg-offset-3 col-sm-offset-3">
+                <img src="../img/public/fb.png" >
+                 <img src="../img/public/weibo.png" >
+                  <img src="../img/public/wechat.png" >
+                   <img src="../img/public/twitter.png" >
+                    <img src="../img/public/instagram.png" >
+                <h1> 客服电话： 778-400-5798 </h1>
+      </div> 
+      
+      
+      <div class=" col-lg-3 col-md-3 col-sm-3">
+        <img src="../img/public/botnLogo.png" class="footerimage">
+      </div>
+      <div class="footerp col-lg-12 col-md-12 col-sm-12">
+      <p>Copyright ©2014-2016 All Rights reserved.  &nbsp 互递科技有限公司postalong technology inc.  &nbsp (www.postalong.com)版权所有</p>
+      </div>
+  
+  </div>
+</body>
+</html>
+<script src="../js/iframe/jquery.js"></script>
+<script>
+  
+  $('#jia').click(function(event) {
+    var i=parseInt($(this).next().html())+1;
+
+  $(this).next().html(i);
+  document.all.number.value=i;
+  });
+  $('#jian').click(function(event) {
+    var j=parseInt($(this).prev().html())-1;
+    if (j<0) {
+      j=0;
+    }
+  $(this).prev().html(j);
+  document.all.number.value=j;
+  });
+
+</script>

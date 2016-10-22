@@ -1,0 +1,120 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="box" class="container col-sm-5" ></div>
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style="margin-top:300px">登入</button>
+
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog"  style="margin-top:300px">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="container">
+      <h4>登录类型</h4>
+       <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">普通用户</button>
+
+      <div id="demo" class="collapse">普通用户为********</div>
+       <button class="btn btn-primary" data-toggle="collapse" data-target="#demo2">商铺用户</button>
+
+      <div id="demo2" class="collapse">商铺用户为********</div>
+
+
+  <form class="form-horizontal" role="form">
+
+    <div class="form-group" style="margin-top:30px">
+      <label class="control-label col-sm-2" for="email" >用户名:</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" id="email" placeholder="请输入您的用户名或邮箱">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">密码:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="pwd" placeholder="请输入密码">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-4">
+        <button type="submit" class="btn btn-default" onclick="window.location.href='shangpu.html'" >登录</button>
+      </div>
+    </div>
+  </form>
+</div>
+    </div>
+
+  </div>
+</div><!--mymodal-->
+
+
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-top:300px">注册新店</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin-top:300px">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="container" >
+      <h1></h1>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">邮箱:</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" id="email" placeholder="请输入您的邮箱">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">密码:</label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="pwd" placeholder="请输入密码">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">店名:</label>
+      <div class="col-sm-4">          
+        <input type="name" class="form-control" id="name" placeholder="请输入您的店名">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="address">地址:</label>
+      <div class="col-sm-4">          
+        <input type="address" class="form-control" id="address" placeholder="请输入商店所在地">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="phone">联系方式:</label>
+      <div class="col-sm-4">          
+        <input type="phone" class="form-control" id="phone" placeholder="联系方式">
+      </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-4">
+        <button type="submit" class="btn btn-default" onclick="window.location.href='tjsp.html'">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+    </div>
+
+  </div>
+</div><!--mymodal-->
+
+</div>
+
+
+</body>
+</html>

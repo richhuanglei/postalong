@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!-- ------------Author:Henry 2016/7/26---------------------- -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>购</title>
+<!-- 下面是bootstrap -->
+<link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+<script src="../css/bootstrap/js/jquery.min.js"></script>
+<script src="../css/bootstrap/js/bootstrap.min.js"></script>
+ <!-- 下面是样式 -->
+ <link href="../css/content/gou.css" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" type="text/css" href="../css/public/wei.css">
+<link rel="stylesheet" href="../css/public/tou.css">
+<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+<link rel="stylesheet" type="text/css" href="../css/content/try.css">
+
+<!-- 下面是日历 -->
+<script language="javascript" type="text/javascript" src="../plugin/datepicker/WdatePicker.js"></script>
+
+
+
+</head>
+
+<body >
+ <div class="row tou">
+  
+    <div class="logo  col-sm-1 col-md-1 col-lg-2"><img src="../img/public/mainlogo.png"></div>
+    <div class=" col-sm-11 col-md-11 col-lg-10">
+    <ul class="nav-menu " >
+        <li><a  class="current" href="#">首页</a></li>
+        <li><a  href="#" target="_parent" >登陆</a></li>
+        <li><a href="#" target="_parent">功能简介</a></li>
+        <li><a href="#" target="_parent">开放平台API</a></li>
+        <li><a href="#" target="_parent">关于我们</a></li>
+        <li><a href="#" target="_parent">帮助</a></li>
+        <li><a href="#" target="_parent">我的店铺</a></li>
+        <li class="tousharesize"><select name="sharetofriend" class="form-control">
+          <option value="" class="form-control">分享给朋友</option>
+          <option value="">朋友圈</option>
+          <option value="">微信好友</option>
+          <option value="">新浪微博</option>
+          <option value="">腾讯微博</option>
+          <option value="">QQ空间</option>
+          <option value="">QQ好友</option>
+        </select>
+        </li>
+        <li class="toulanguagesize">
+        <select onchange="window.location=this.value;"  class="form-control ">
+          <option value="Language" selected>Language</option>
+          <option value="../pages/home.html">中文</option>
+          <option value="../ZT_en/pages/home.html">ENGLISH</option>
+          <option value="한국의  ">한국의  </option>
+          <option value="Français">Français</option>
+          <option value="Русский язык">Русский язык</option>
+          <option value="日本語">日本語</option>
+        </select></li>
+        </ul>
+
+    
+
+  </div>
+ </div> 
+ <div id="content">
+ 	<div class="search">
+ 	<div class="leftlink">
+ 		<div class="leftlinkmenu" onmouseover="a(this)" onmouseout="b(this)"><a href="fa.html" >发</a></div>
+ 		
+ 		<div class="leftlinkmenu" onmouseover="a(this)" onmouseout="b(this)"><a href="song.html">送</a></div>
+ 	
+ 		<div class="leftlinkmenu" onmouseover="a(this)" onmouseout="b(this)"><a href="shou.html">收</a></div>
+ 		
+ 		<div class="leftlinkmenu"  onmouseover="a(this)" onmouseout="b(this)"><a href="xing.html">行</a></div>
+ 		
+ 		<div class="leftlinkmenu" id="menuxing" onmouseover="a(this)" onmouseout="b(this)"><a href="gou.html">购</a></div>
+ 	</div>
+ 		<div class="input-group inputsearch">
+ 		
+			<div class="pageintroduce">购；全球</div>
+              
+     </div><!--search-->
+     
+	<div class="leftcontent">
+<!--form-->
+       <form action="demo-form.php" id="myform"></form>
+  <!-- 搜索商品 -->
+	<div class="leftheader">搜索商品</div>
+  		 
+  <div class="wrapmenu">
+  <div class="wrapheight-1">
+  <input type="text" class="form-control" id="name" placeholder="输入商品名称" form="myform">
+	<input type="text" class="form-control" id="address" placeholder="输入商品所在地" form="myform">
+	<button class="form-control retrive" form="myform">查找</button>
+	<img src="../img/gou/btn.png" alt="发布需求" id="publishimg" class="img-responsive">
+  </div><!--wrapheight-1-->
+  </div><!--wrapmenu-->
+
+  <!-- 帮人代购 -->
+  <div class="leftheader">帮人代购</div>
+  <div class="wrapmenu">
+  <div class="wrapheight-2">
+  <span>请输入你的行程</span>
+  <input type="text" class="form-control" id="start" placeholder="出发城市" form="myform">
+  <input type="text" class="form-control" id="end" placeholder="到达城市" form="myform">
+  <input type="text" id="when" onfocus="WdatePicker({dateFmt:'yyyy年MM月dd日 HH时mm分ss秒'})" class="Wdate form-control" placeholder="到达时间" form="myform">
+  <button class="form-control" id="daigou" form="myform" type="submit">查找</button>
+  </div><!--wrapheight-2-->
+  </div><!--wrapmenu-->
+
+  <!-- 我的需求订单 -->
+  <div class="leftheader">我的需求订单</div>
+  <div class="wrapmenu">
+  <div class="wrapheight-3">
+  <div id="leftbox">         
+  <p><a href="#" id="quanbu">全部</a></p> 
+  <p><a href="#">议价中</a></p>
+  <p><a href="#">待取货</a></p>
+  <p><a href="#">待评价</a></p>
+  <p><a href="#">已取消</a></p>     
+  </div><!--leftbox-->
+  <div id="rightbox">
+  <p><a href="#">待接单</a></p> 
+  <p><a href="#">待付款</a></p>
+  <p><a href="#">已取货</a></p>
+  <p><a href="#">已完成</a></p>              
+  </div><!--rightbox-->
+  </div><!--wrapheight-3-->
+  </div><!--wrapmenu-->
+  
+  <!-- 我的接单 -->
+  <div class="leftheader">我的接单</div>
+    <div class="wrapmenu">
+    <div class="wrapheight-3">
+  <div id="leftbox">         
+  <p><a href="#" id="quanbu">全部</a></p> 
+  <p><a href="#">议价中</a></p>
+ <p><a href="#">待付款</a></p>
+  
+  </div><!--leftbox-->
+  <div id="rightbox">  
+  <p><a href="#">运送中</a></p>
+  <p><a href="#">已完成</a></p>              
+  </div><!--rightbox-->
+  </div><!--wrapheight-3-->
+     </div>  	 
+  </div><!--leftcontent-->
+	
+	<div class="rightcontent">
+  <div class="wrap">
+    <div class="result searchgoods">
+    <div class="picture"><img src="../img/gou/ci.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+      <p >发布时间：</p>
+      <p>2016-9-20</p>
+      <p >商品名称：瓷器</p>
+      <p style="color:#60CBB4;text-decoration:line-through">商品原价：$1000</p>
+      <p style="color:red">现价：$20</p>
+      <p >所在地：美国</p>
+      <p >店名：www</p>
+    </div><!--resultright-->  
+    </div><!--result-->
+    <!-- 分页 -->
+      <div class="fenye">
+    <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+  </div><!--fenye-->
+  </div><!--wrap-->
+  <div class="wrap hidewrap ">
+    <div class="publish-box1">
+     <input type="text" class="form-control" placeholder="输入商品名称"><br>
+     <select name="" id="" class="form-control" >
+    <option value="" disabled selected>选择款式</option>  
+    <option value="hurr">Durr</option>  
+     </select><br>
+     <select name="" id="" class="form-control" >
+    <option value="" disabled selected>截至日期</option>  
+    <option value="hurr">Durr</option>  
+     </select><br>
+      <input type="text" class="form-control" placeholder="重量"><br>
+      <input type="text" class="form-control" placeholder="商品描述"><br>
+    </div>
+    <div class="publish-box2">
+      <input type="text" class="form-control" placeholder="指定商品地址（非必须填写）"><br>
+      <img src="../img/gou/yu.jpg" alt="商品图片" >
+      <input type="file" class="form-control">
+    </div>
+    <div class="publish-box3">
+      <p>收货人信息</p>
+      <input type="text" class="form-control" placeholder="收货人姓名">
+      <input type="text" class="form-control" placeholder="收货人地址">
+      <input type="text" class="form-control" placeholder="收货人联系方式">
+      <input type="text" class="form-control" placeholder="商品价格：￥50">
+      <input type="text" class="form-control" placeholder="报酬：￥5">
+    </div>
+    <div class="publish-box4">
+    <p>类型：自发需求</p>
+    <button class="form-control">预览</button>
+    </div>
+  </div>
+  <div class="wrap hidewrap">
+  <div class="result bangrendaigou">
+  <div class="picture"><img src="../img/gou/mao2.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-9-20</p>
+    </div>
+    <div class="type">自</div>
+      <div class="information">
+      <p>商品名称：紫砂壶</p>
+      <p >商品价格：$1000</p>
+      <p >报酬：$20</p>
+      <p >温哥华-中国</p>
+      <div class="flag weizhi">待接单</div>
+      </div><!--information-->
+    </div><!--resultright-->  
+    </div><!--result-->
+    <div class="result bangrendaigou">
+    <div class="picture"><img src="../img/gou/pot.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-9-2</p>
+    </div>
+    <div class="type">店</div>
+      <div class="information">
+      <p >商品名称：紫砂壶</h2>
+      <p >商品价格：$1000</p>
+      <p >报酬：$5</p>
+      <p >温哥华-中国</p>
+      <div class="flag weizhi">待接单</div>
+      </div><!--information-->
+    </div><!--resultright-->  
+    </div><!--result-->
+
+  <!-- 分页 -->
+    <div class="fenye">
+    <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+  </div><!--fenye-->
+  </div><!--wrap-->
+  <div class="wrap hidewrap">
+    <div class="result myneed">
+  <div class="picture"><img src="../img/gou/tao2.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-9-10</p>
+    </div> 
+    <!-- 下面的八个产品是八个状态，流程不一样 -->
+    <div class="type">自</div>
+      <div class="information">
+      <p >商品名称：陶瓷壶</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$20</p>
+      <p >温哥华-中国</p>
+      <div class="flag weizhi">待接单</div>
+      </div><!--information-->
+    </div><!--resultright-->  
+    </div><!--result-->
+    <div class="result myneed">
+    <div class="picture"><img src="../img/gou/taoci.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-9-22</p>
+    </div>
+    <div class="type">店</div>
+      <div class="information">
+      <p >商品名称：陶瓷盘</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$20</p>
+      <p >温哥华-中国</p>
+      <div class="flag1 weizhi">议价中</div>
+      </div><!--information-->
+    </div><!--resultright-->  
+    </div><!--result-->
+<div class="result myneed">
+   <div class="picture"><img src="../img/gou/tao3.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-9-20</p>
+    </div>
+    <div class="type">自</div>
+      <div class="information">
+      <p >商品名称：陶瓷瓶</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$30</p>
+      <p >温哥华-中国</p>
+     <div class="flag2 weizhi">待取货</div>
+      </div><!--information-->
+    </div><!--resultright--> 
+</div><!--result-->
+<div class="result myneed">
+   <div class="picture"><img src="../img/gou/jian2.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-9-20</p>
+    </div>
+    <div class="type">店</div>
+      <div class="information">
+      <p >商品名称：汉剑</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$10</p>
+      <p >温哥华-中国</p>
+      <div class="flag3 weizhi">已取货</div>
+      </div><!--information-->
+      </div><!--resultright--> 
+</div><!--result-->
+<div class="result myneed">
+  <div class="picture"><img src="../img/gou/buyingzhai.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-8-20</p>
+    </div>
+    <div class="type">店</div>
+      <div class="information">
+      <p >商品名称：步瀛斋</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$1</p>
+      <p >温哥华-中国</p>
+      <div class="flag4 weizhi">待评价</div>
+      </div><!--information-->
+      </div><!--resultright-->
+</div><!--result-->
+<div class="result myneed">
+  <div class="picture"><img src="../img/gou/moto.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间:</p>
+      <p>2016-8-20</p>
+    </div>
+    <div class="type">自</div>
+      <div class="information">
+      <p >商品名称：摩托车</p>
+      <p >商品价格：$11000</p>
+      <p style="color:red">报酬：$1</p>
+      <p >温哥华-中国</p>
+      <div class="flag7 weizhi">已取消</div>
+      
+      </div><!--information-->
+      </div><!--resultright-->
+</div><!--result-->
+<div class="result myneed">
+  <div class="picture"><img src="../img/gou/gaogen.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间:</p>
+      <p>2016-8-20</p>
+    </div>
+    <div class="type">店</div>
+      <div class="information">
+      <p >商品名称：高跟鞋</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$1</p>
+      <p >温哥华-中国</p>
+      <div class="flag5 weizhi">待付款</div>
+      
+      </div><!--information-->
+      </div><!--resultright-->
+</div><!--result-->
+<div class="result myneed">
+  <div class="picture"><img src="../img/gou/zixing.jpg" alt="商品图片" ></div>
+    
+    <div class="resultright">
+    <div class="time">
+      <p >发布时间：</p>
+      <p>2016-8-20</p>
+    </div>
+    <div class="type">店</div>
+    <div class="information">
+      <p >商品名称：自行车</p>
+      <p >商品价格：$1000</p>
+      <p style="color:red">报酬：$1</p>
+      <p >温哥华-中国</p>
+      <div class="flag6 weizhi">已完成</div>
+      
+    </div><!--information-->
+    </div><!--resultright-->
+</div><!--result-->
+<div class="result myneed"></div><!--result-->
+<!-- 分页 -->
+  <div class="fenye">
+    <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+  </div><!--fenye-->
+  </div><!--wrap-->
+  <div class="wrap hidewrap">
+    <div class="orderdetail">订单号：8888888</div>
+    <div class="orderdetail">商品名称：包</div>
+    <div class="orderdetail">买家：peter</div>
+    <div class="orderdetail">代付款</div>
+    <div class="orderdetail">互递人：丁丁</div>
+    <div class="orderdetail">待取货</div>
+
+   <div class="orderdetail">订单号：88899999</div>
+    <div class="orderdetail">商品名称：包</div>
+    <div class="orderdetail">买家：peter</div>
+    <div class="orderdetail">已付款</div>
+    <div class="orderdetail">互递人：丁丁</div>
+    <div class="orderdetail">已取货</div>
+
+     <div class="orderdetail">订单号：2222222</div>
+    <div class="orderdetail">商品名称：包</div>
+    <div class="orderdetail">买家：peter</div>
+    <div class="orderdetail">已付款</div>
+    <div class="orderdetail">互递人：丁丁</div>
+    <div class="orderdetail"></div>
+    <!-- 分页 -->
+      <div class="fenye">
+    <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+  </div><!--fenye-->
+
+  </div><!--wrap-->
+    
+		
+	</div><!--rightcontent-->
+
+ </div><!--content-->
+ 
+ <div class="footer ">
+    
+
+      <div class="footericon col-lg-6 col-md-6 col-sm-6 col-md-offset-3 col-lg-offset-3 col-sm-offset-3">
+                <img src="../img/public/fb.png" >
+                 <img src="../img/public/weibo.png" >
+                  <img src="../img/public/wechat.png" >
+                   <img src="../img/public/twitter.png" >
+                    <img src="../img/public/instagram.png" >
+                <h1> 客服电话： 778-400-5798 </h1>
+      </div>
+    
+      
+      
+      
+      <div class=" col-lg-3 col-md-3 col-sm-3">
+        <img src="../img/public/botnLogo.png" class="footerimage">
+      </div>
+      <div class="footerp col-lg-12 col-md-12 col-sm-12">
+      <p>Copyright ©2014-2016 All Rights reserved.  &nbsp 互递科技有限公司postalong technology inc.  &nbsp (www.postalong.com)版权所有</p>
+      </div>
+  
+  </div>
+</body>
+<script src="../js/content/gou.js"></script>
+<script>
+  $('.leftheader').click(function(event) {
+$('.leftheader').next('.wrapmenu').hide();
+$(this).next('.wrapmenu').slideToggle();
+
+var menu=$(this).html();
+
+switch(menu)
+{
+case "搜索商品":
+
+   $('.rightcontent').children().hide();
+   $('.rightcontent').children('.wrap').eq(0).slideToggle();
+  break;
+case "帮人代购":
+  $('.rightcontent').children().hide();
+  $('.rightcontent').children('.wrap').eq(2).slideToggle();  
+  break;
+case "我的需求订单":
+  $('.rightcontent').children().hide();
+  $('.rightcontent').children('.wrap').eq(3).slideToggle();
+  break;
+case "我的接单":
+  $('.rightcontent').children().hide();
+  $('.rightcontent').children('.wrap').eq(4).slideToggle();
+  break;
+};
+
+})
+  // 点击加号的效果
+  $('#publishimg').click(function(event) {
+     $('.rightcontent').children().hide();
+  $('.rightcontent').children('.wrap').eq(1).show();
+}); 
+  // 查看搜索商品详细信息
+  $('.searchgoods').click(function(event) {
+ 
+window.location.href="购商品信息.html"
+});
+  // 帮人代购
+  $('.bangrendaigou').click(function(event) {
+    $(this).css('cursor', 'pointer');
+   window.location.href="daigou.html"
+  });
+  // 我的需求
+  $('.myneed').click(function(event) {
+    var t=$(this).children('.resultright').children().eq(1).html()
+   
+    var status=$(this).children('.resultright').children('.information').children('.weizhi').html()
+   
+    if (status=="待接单") {
+       window.location.href='goudaijiedan.html'
+
+    }
+     if (status=="议价中") {
+       window.location.href='gouyijiazhong.html'
+
+    }
+    if (status=="待付款") {
+       window.location.href='goudaifukuan.html'
+
+    }
+    if (status=="已完成") {
+       window.location.href='gouyiwancheng.html'
+
+    }
+    if (status=="已取消") {
+       window.location.href='购已取货.html'
+
+    }
+    if (status=="已取货") {
+       window.location.href='已取货.html'
+
+    }
+    if (status=="待取货") {
+       window.location.href='goudaiquhuo.html'
+
+    }
+    if (status=="待评价") {
+       window.location.href='goudaipingjia.html'
+
+    }
+     if (status=="待付款") {
+       window.location.href='goudaifukuan.html'
+
+    }
+     if (status=="待取货") {
+       window.location.href='goudaiquhuo.html'
+
+    }
+      if (status=="待评价") {
+       window.location.href='goudaipingjia.html'
+
+    }
+   // window.location.href='myneed.html?type='+t+'&status='+status
+  });
+   // Get URL 参数
+  function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
+if (GetQueryString("p")==1) {
+   $('.rightcontent').children().hide();
+  $('.rightcontent').children('.wrap').eq(2).show();  
+}
+</script>
+
+</html>

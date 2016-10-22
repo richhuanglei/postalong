@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<style>
+*{
+
+
+
+}
+img{
+	width: 250px;
+	height: 250px;
+}
+	#header{
+		width: 100%;
+		height: 100px;
+		background: yellow;
+	}
+		#footer{
+		width: 100%;
+		height: 100px;
+		background: yellow;
+	}
+		#zhong{
+		width: 80%;
+		height: 1000px;
+		background: #F8F3DA;
+		margin:2px auto;
+		
+	}
+	#left{
+		width: 15%;
+		border:1px solid #107135;
+		display:inline-block;
+		vertical-align: top;
+
+	}
+	#wenzi{
+
+		width: 20px;
+		display: inline-block;
+	}
+	#right{
+		width: 80%;
+		vertical-align: top;
+		border:1px solid blue;
+		display:inline-block;
+		
+	}
+	.pic{
+		border-radius: 4%;
+		width: 250px;
+		height: 250px;
+		/*display: inline-block;*/
+		float: left;
+		overflow: hidden;
+		border:2px solid#C5823A;
+		margin-left: 10px;
+		margin-top:30px;
+	}
+	#wenzi-2{
+		width:10px;
+	}
+	
+	
+	
+	#shaixuan{
+		width: 200px;
+		height: 25px;
+		background:#F8580A;
+		color:white;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	#xuanxiang{
+		width: 200px;
+		height: 800px;
+		background:#87C6E0;
+		color:black;
+		margin:0 auto;
+		text-align:center;
+		padding-top: 10px;
+	}
+	.sel{
+		display: block;
+		text-align: center;
+		border:1px solid red;	
+	}
+
+	#logo .logo{
+		width: 90px;
+		height: 90px;
+		background:#B81818;
+		margin-left: 10%;
+		padding-top: 7.5px;
+	}
+
+	#hudiwang{
+		width: 400px;
+		height: 80px;
+		float:left;
+	}
+	
+	#search{
+		width: 100%;
+		height: 400px;
+		padding-top: 50px;
+	}
+
+	
+
+	#searchbox{
+		font-size: 22px;
+		width: 60%;
+		height: 50px;
+		padding-top:100px;
+		margin-left: 20%;
+		
+		
+	}
+
+	#searchbox .t1:hover{
+		background: #ADA0A0;
+	}
+	
+	.xuanze{
+		width: 88px;
+		height: 30px;
+		display:inline-block;
+		
+		padding-top: 70px;
+	}
+	#sousuo{
+		width: 100%;
+		height: 50px;
+		padding-top: 20px;
+		
+	}
+
+	.background{
+		width: 80%;
+		height: 300px;
+		
+
+	}
+
+
+</style>
+<body>
+	<div id="header">
+		<div id="logo"><img src="logo.png" alt="" class="logo"></div>
+		
+	</div><!--header-->
+	<div id="bar">
+		
+
+
+	</div>
+
+	<div id="search">
+		<div class="background"><img src="4.png" alt="" class="background">
+
+
+
+
+			<div id="searchbox">
+			
+				<div class="xuanze">
+				<p class="btn btn-default btn-lg active">商品</p>
+				</div>
+				<div class="xuanze">
+				<p class="btn btn-default btn-lg active">店铺</p>
+				</div>
+				<div class="xuanze">
+				<p class="btn btn-default btn-lg active">代购</p>
+				</div>
+
+				<div id="sousuo">
+					<input type="text" class="form-control" placeholder="搜索">
+			
+				</div>
+
+		</div><!--searchbox-->
+		</div>
+	</div><!--search-->
+	
+
+	<div id="zhong">
+		<div id="left">
+			<div id="wenzi"></div>
+			<div id="shaixuan"><p>商品筛选</p></div>
+			<div id="wenzi"></div>
+			<div id="xuanxiang">
+				<div id="wenzi"></div>
+
+				<div id="sel">
+					<span class="text-muted s1">国家</span><br>
+						<select name="" class="text-muted form-control">
+							<option class="text-muted">中国</option>
+							<option class="text-muted">日本</option>
+							<option class="text-muted">加拿大</option>
+							<option class="text-muted">美国</option>
+							<option class="text-muted">韩国</option>
+							<option class="text-muted">英国</option>
+							<option class="text-muted">德国</option>
+							</select>
+				</div><!--sel-->
+				<div id="wenzi"></div>
+				<div id="sel">
+					<span class="text-muted s1">品牌</span><br>
+					
+						<select name="" class="text-muted form-control">
+							<option class="text-muted">LV</option>
+							<option class="text-muted">PRADA</option>
+							<option class="text-muted">GUCCI</option>
+							<option class="text-muted">FENDI</option>
+							<option class="text-muted">VERSACE</option>
+							<option class="text-muted">BURBERRY</option>
+							<option class="text-muted">NIKE</option>
+							</select>
+				</div><!--sel-->
+
+				<div id="wenzi"></div>
+				<div id="sel">
+					<span class="text-muted s1">类别</span><br>
+					
+						<select name="" class="text-muted form-control">
+							<option class="text-muted">小包</option>
+							<option class="text-muted">中包</option>
+							<option class="text-muted">单肩包</option>
+							<option class="text-muted">双肩包</option>
+							<option class="text-muted">挎包</option>
+							<option class="text-muted">钱包</option>
+							<option class="text-muted">卡包</option>
+							</select>
+				</div><!--sel-->
+
+				<div id="wenzi"></div>
+
+				<div id="sel">
+					<span class="text-muted s1">颜色</span><br>
+					
+						<select name="" class="text-muted form-control">
+							<option class="text-muted">红</option>
+							<option class="text-muted">橙</option>
+							<option class="text-muted">黄</option>
+							<option class="text-muted">绿</option>
+							<option class="text-muted">青</option>
+							<option class="text-muted">蓝</option>
+							<option class="text-muted">紫</option>
+							</select>
+				</div><!--sel-->
+			</div><!--xuanxiang-->
+		</div><!--left-->
+		<div id="wenzi"></div>
+		<div id="right">
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="2.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			<div class="pic"><img src="1.png" alt=""></div>
+			
+		</div><!--right-->
+
+
+	</div>
+	<div id="footer"></div>
+</body>
+</html>

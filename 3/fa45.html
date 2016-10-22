@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<style>
+	body{
+	background-color:rgba(0,51,102,0.4);
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+   
+	}
+	#child1{
+			margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 10%;
+			right: 10%;
+			top: 10%;
+			bottom: 10%;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			z-index: 100;	
+			box-shadow: 10px 10px 5px #151A19;
+			}
+	 #child1 #top{
+	 	width: 90%;
+	 	height: 16%;
+	 	margin-left:5%;
+	 	margin-right: 5%;
+	border-bottom: 1px solid #000000;
+	
+	}
+	 #child1 #top .lefttop{
+		width: 20%;
+		height: 63px;
+		float: left;
+		line-height:63px; 
+
+		 }
+	 #child1 #top .righttop{
+		width: 45%;
+		height: 63px;
+		float: right;
+		line-height:63px; 
+		
+		 }	
+	 #child1 #top .righttop img{
+	 	width: 55%;
+	 	height: 36px;
+	 	line-height:90px; 
+	 } 
+	 #child1 #middle{
+			width: 90%;
+			height: 26%;
+			margin-left:5%;
+			margin-right: 5%;
+			border-bottom: 1px solid #000000;
+
+	}
+	#child1 #middle .middletop{
+
+		width: 100%;
+		height: 70%;
+			}
+	#child1 #middle .middletop .middletopleft{
+		width: 25%;
+		height: 100%;
+		float: left;
+		margin-left: 10%;
+		margin-top:4px;
+	}
+
+	#child1 #middle .middletop .middletopleft span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#child1 #middle .middletop .middletopright span{
+		line-height: 68px;
+		font-size: 30px;
+		float:left;
+		margin-left: 2%;
+	}
+	#child1 #middle .middletop .middletopleft img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#child1 #middle .middletop .middletopmiddle{
+		width: 20%;
+		height: 100%;
+		float: left;
+		
+		
+	}
+	#child1 #middle .middletop .middletopright img{
+		width: 68px;
+		height: 68px;
+		float:left;
+	}
+	#child1 #middle .middletop .middletopright{
+		width: 30%;
+		height: 100%;
+		float:right;
+		margin-right: 10%;
+		margin-top:4px;
+	}
+
+	#child1 #middle .middlebottom{
+		width: 100%;
+		height: 30%;	
+	}
+	#child1 #middle .middlebottom .middlebottomleft{
+		width: 25%;
+		height: 100%;
+	
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#child1 #middle .middlebottom .middlebottomright{
+		width: 30%;
+		height: 100%;
+
+		float:right;
+		margin-right: 10%;
+		text-align: center;
+		line-height: 31px;
+	}
+	#child1 #footer{
+	width: 90%;		
+	height: 58%;			
+	margin-left:5%;
+	margin-right: 5%;
+	
+	}
+
+	#footer .footerleft{
+		width: 60%;
+		height: 100%;
+		float: left;
+	
+	}
+	#footer .footerleft .footerleftupleft{
+		width: 50%;
+		height: 58%;
+		float: left;
+		}
+	#footer .footerleft .footerleftupright{
+		width: 50%;
+		height: 58%;
+		float: right;
+		/*background: #FFCC02;*/
+	}
+	#footer .footerleft .footerleftupright .footerleftuprightinside{
+		width: 60%;
+		height: 58px;
+		margin-top: 20px;
+		margin-right:20%;
+		float:right;
+		background: #FFCC02;
+		text-align: center;
+		line-height: 58px;
+		color:#FFFFFF;
+		font-weight: bold;
+	}
+	#footer .footerleft .footerleftmiddle{
+		width: 100%;
+		height: 20%;
+		float: left;
+		
+	}
+	#footer .footerleft .footerleftbottom{
+
+		width: 100%;
+		height: 22%;
+		float: left;
+		}
+		#footer .footerleft .footerleftbottom .cancel{
+		margin-left:10%;
+		width: 221px;
+		background:#949599;
+		color: #FFFFFF;
+		margin-top:3px;
+	}
+	#footer .footerleft .footerleftbottom .editor{
+		margin-left:10%;
+		width: 221px;
+		background:#21B796;
+		color: #FFFFFF;
+		margin-top:3px;
+	}
+	#footer .footerright{
+		width: 40%;
+		height: 100%;
+		float: right;
+	
+		}
+	#footer .footerright img{
+		width: 70%;
+		height: 70%;
+		border-radius: 30px;
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+
+</style>
+<body>
+	
+	<div id="child1">
+		<div id="top">
+			<div class="lefttop"><span>物品名称：蓝莓</span></div>
+			<div class="righttop"><span>订单号：1111111111111 <img alt="待接单" src="../img/fa/待接单.png"></span></div><!--righttop-->
+		</div><!--top-->
+		<div id="middle">
+			<div class="middletop">
+				<div class="middletopleft">
+					<img src="../img/fa/qi.png" alt=""><span>日本大阪</span>
+				</div><!--middletopleft-->
+				<div class="middletopmiddle"><br><p>.............................................</p></div><!--middletopmiddle-->
+				<div class="middletopright">
+					<img src="../img/fa/zhong.png" alt=""><span>加拿大温哥华</span>
+				</div><!--middletopright-->
+			</div><!--middletop-->
+			<div class="middlebottom">
+				<div class="middlebottomleft">
+					<span>取货时间：2016-8-8 12:20</span>
+				</div><!--middlebottomleft-->
+				<div class="middlebottomright">
+					<span>送达时间：2016-8-8 6:30</span>
+				</div><!--middlebottomright-->
+			</div><!--middlebottom-->
+		</div><!--middle-->
+		<div id="footer">
+			<div class="footerleft">
+				<div class="footerleftupleft">
+					<p>物品重量：50kg</p>
+					<p>物品价格：$200</p>
+				</div>
+				<div class="footerleftupright">
+					<div class="footerleftuprightinside">
+						报酬：￥60
+					</div>
+				</div>
+				<div class="footerleftmiddle">
+					物品描述：保持外包装完好，谢谢。
+				</div>
+				<div class="footerleftbottom">
+					<button class="btn btn-default btn-lg cancel">取消</button>
+					<button class="btn btn-default btn-lg editor">修改编辑</button>
+				</div>
+			</div><!--footerleft-->
+			<div class="footerright">
+				<img src="../img/fa/blueberry.jpg" alt="">
+			</div><!--footerright-->
+		</div><!--footer-->
+	</div><!--child1-->
+	
+</body>
+</html></title>
+</head>
+<body>
+	
+</body>
+</html>

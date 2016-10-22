@@ -1,0 +1,156 @@
+
+.main{
+	width: 100%;
+	min-height: 350px;
+	padding-top: 45px;
+	padding-bottom: 50px;
+	background-color: #f8f8f8;
+}
+.title{
+	width: 100%;
+	height: 120px;
+	position: relative;
+}
+.titxt{
+	width: 140px;
+	height: 52px;
+	margin: auto;
+	position: absolute;
+	top:0; left:0; bottom:0; right:0;
+	text-align: center;
+	line-height: 1.5;
+}
+.titxt h2{
+	font-size: 21px;
+	font-weight: 600;
+}
+.titxt p{
+	margin: 0;         
+	border: 0;
+	color: #909090;
+	font-size: 14px;
+}
+.gre{
+	width: 42px;
+	height: 2px;
+	background-color: #1bbc9b;
+	margin: 0 auto;
+	margin-top: 2px;
+}
+.choose{
+	width: 345px;
+	height: 27px;
+	margin: 0 auto 30px auto;
+}
+.choose ul{padding: 0;}
+.choose ul li{
+	width: 89px;
+	height: 27px;
+	color: #fff;
+	line-height: 27px;
+	text-align: center;
+	list-style: none; 
+	display: inline-block;
+	font-size: 14.15px;
+}
+/*.active,.prenews{background-color: #bfbfbf;}*/
+
+.active,.informt{margin-right: 34px;}
+/*.choose ul li:hover{
+	background-color: #1bbc9b;
+}*/
+
+.choose ul li{
+	background-color: #bfbfbf;
+	cursor: pointer;
+}
+.choose ul li.currentHref{background-color: #1bbc9b;}
+.content{
+
+	width: 1000px;
+	min-height: 600px;
+	background-color: #fff;
+	margin: 0 auto;
+	
+}
+
+.text{
+	margin-top: 20px;
+	width: 860px;
+	min-height: 500px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+.text h2{
+	color: #c9c9c9;
+	font-size: 18px;
+	margin-top: 28px;
+	margin-bottom: 6px;
+	font-weight: normal;
+}
+.text span{
+	color: #999;
+	display: inline-block;
+	font-size: 12px;
+	margin-top: 13px;
+	margin-left: 11px;
+	margin-right: 13px;
+}
+.text p{
+	color: #535353;
+	font-size: 14px;
+	text-align: left;
+	line-height: 24px;
+}
+.text p.par1{margin-top: 20px;}
+.text img{
+	width: 860px;
+	height: 258px;
+	margin: 19px 0;
+}
+.text p.par3{
+	margin-top: 16px;
+	margin-bottom: 44px;
+}
+.text a{text-decoration: none;}
+/*这个a标签还是有下划线呃、、、
+不晓得要不要在加一个鼠标放上去的效果得*/
+
+
+
+
+
+
+
+.page{
+	width: 860px;
+	height: 21px;
+	margin-top: 39px;
+	margin-bottom: 47px;
+	text-align: center;
+	line-height: 21px;
+}
+.page span{
+	color: #535353;
+	font-size: 12px;
+}
+.page span.total{color: #1bbc9b;}
+ul.pagination{
+	display: inline;
+	padding: 4px 0;
+}
+ul.pagination li{
+	display: inline-block;
+	border: 1px #c9c9c9 solid;
+}
+ul.pagination li a{
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #707070;
+	font-size: 12px;
+}
+ul.pagination li a:hover{
+	color: #1bbc9b;
+}

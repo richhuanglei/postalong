@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>NewGou</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
+</head>
+<style>
+			a:link {
+   
+    color: #ffffff;
+    background: #BFEAE1;
+   
+}
+            .title{
+                width:200px;
+                height:40px;
+                background:#21B796;
+                color:#FFFFFF;
+                line-height:40px;
+                margin-top:2px;
+                text-indent:2em;
+                cursor: pointer;
+            }
+            .content{
+                width:200px;
+                background:#BFEAE1;
+                color:#FFFFFF;             
+                display:none;
+            }
+        </style>
+<body>
+
+
+<ul id="myTab" class="nav nav-tabs" >
+
+	<li ><a href="#home" data-toggle="tab">
+		我要买</a></li>
+        <li class="active"><a href="#ios" data-toggle="tab" id="id1">我要卖</a></li>
+	
+	
+</ul>
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade" id="home">
+		
+  
+   
+        <div class="title">
+            搜索商品
+        </div><!--title-->
+        <div class="content">
+         
+  
+  	<input type="text" class="form-control" id="name" placeholder="输入商品名称" form="myform">
+	<input type="text" class="form-control" id="address" placeholder="输入商品所在地" form="myform">
+	<button class="form-control retrive" form="myform">查找</button>
+	
+  
+ 
+        </div><!--content-->
+        <div class="title">
+            发布购买需求
+        </div><!--title-->
+        <div class="content">
+            
+        </div><!--content-->
+        <div class="title">
+            我的购买记录
+        </div><!--title-->
+        <div class="content">
+        <div id="leftbox">         
+  		<p><a href="#" id="quanbu">全部</a></p> 
+  		<p><a href="#">待接单</a></p>
+  		<p><a href="#">议价中</a></p>
+  		<p><a href="#">待付款</a></p>   
+  		</div><!--leftbox-->
+  		<div id="rightbox">
+  		<p><a href="#">运送中</a></p> 
+  		<p><a href="#">已完成</a></p>
+  		<p><a href="#">已取消</a></p>
+ 	 	             
+  </div><!--rightbox-->
+        </div><!--content-->
+       
+        
+	</div><!--tab-pane fade in active-->
+	<div class="tab-pane fade in active" id="ios">
+		
+   
+ 
+        <div class="title">
+            发布商品
+        </div><!--title-->
+        <div class="content">
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+        </div><!--content-->
+        <div class="title">
+           我的卖出记录
+        </div><!--title-->
+        <div class="content">
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+            <p>bbbbbbbbbbbbbb</p>
+        </div> <!--content-->     
+	</div><!--tab-pane fade-->
+</body>
+<script src="../js/content/gou2.js"></script>
+
+</html>

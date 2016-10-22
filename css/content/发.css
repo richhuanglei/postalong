@@ -1,0 +1,472 @@
+.change{
+ margin: 50px 0;
+   position: relative;
+   display: inline-block;
+   color: #eeeeee;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   /*1*/
+   border-bottom: 35px  solid #FFB600;         
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+
+}
+.change::before {
+    border-bottom: 40px solid #FFB600; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -22.5px;
+   left: -32.5px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+
+.change::after {
+   position: absolute;
+   display: block;
+   color: #eeeeee;
+   top: 1.5px;
+   left: -52.5px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   /*3*/
+   border-bottom: 35px solid #FFB600;         
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+/*********************************************/
+
+.star-five {
+   margin: 50px 0;
+   position: relative;
+   display: inline-block;
+   color: #eeeeee;
+   width: 0px;
+   height: 0px;
+   border-right:  50px solid transparent;
+   /*1*/
+   border-bottom: 35px  solid #eeeeee;         
+   border-left:   50px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+.star-five::before {
+    border-bottom: 40px solid #eeeeee; 
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -22.5px;
+   left: -32.5px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+
+.star-five::after {
+   position: absolute;
+   display: block;
+   color: #eeeeee;
+   top: 1.5px;
+   left: -52.5px;
+   width: 0px;
+   height: 0px;
+   border-right: 50px solid transparent;
+   /*3*/
+   border-bottom: 35px solid #eeeeee;         
+   border-left: 50px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+/**************************/
+.fa{
+  width: 95%;
+  margin-right: auto;
+  margin-left:auto; 
+  vertical-align: bottom;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px black solid;
+}
+
+.fa h1{
+display: inline-block;
+
+}
+.fa p{
+display: inline-block;
+float: right;
+margin-left:-290px; 
+padding-right:120px; 
+
+}
+
+.child{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.fatag{
+  float: right;
+  margin-top: -30px;
+  display: inline-block;
+}
+.qidian h1{
+display: inline-block;
+}
+.qidian{
+  width:80%;
+  margin-right: auto;
+  margin-left:auto; 
+  vertical-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.qilist p{
+margin-top: 10px;
+}
+
+
+.zhonglist p{
+margin-top: 10px;
+}
+
+.qilist {
+display: inline-block;
+text-align: center;
+}
+
+
+.zhonglist {
+display: inline-block;
+text-align: center;
+}
+
+
+
+.qi{
+  color: green;
+  font-size: xx-large;
+  border: green 2px solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+.zhong{
+  color: red;
+  font-size: xx-large;
+  border: red 2px solid;
+  border-radius: 50%;
+   padding: 10px;
+}
+
+.zhong{
+  color: red;
+  font-size: xx-large;
+ 
+}
+.qidian hr{
+display: inline-block;
+width: 100%;
+border: 0px;
+border-top:1px; 
+border-style: dotted;
+margin-top: 40px;
+margin-left: 3%;
+margin-right: 3%;
+color: black;
+
+}
+.facon h1{
+padding-bottom: 2em;
+}
+.faprice{
+  margin-top: 1em;
+}
+.faprice h1{
+width: 100%;
+color: white;
+padding:1em;
+background-color:  #FFDA41;
+border-radius: 5px;
+}
+
+.faimage img{
+  width: 80%;
+  border-radius: 10px;
+   margin-bottom: 70px
+}
+.faimage1 img{
+  width: 80%;
+  border-radius: 10px;
+   
+}
+.faimage1 p{
+   margin-bottom: 70px
+}
+.row{
+  margin-bottom: 10px;
+
+}
+
+.quxiao{
+  width: 40%;
+  background-color: #eeeeee;
+  border: 1px white solid;
+  box-shadow: 2px 2px 5px  #0B0F0D;    
+}
+.quxiaobianji{
+  margin-left: 30px;
+  width: 40%;
+  box-shadow: 2px 2px 5px  #0B0F0D;    
+  background-color: #21b796;
+   border: 1px white solid;
+    box-shadow: 2px 2px 5px  #0B0F0D;    
+
+}
+.quxiaobianji1{
+  margin-left: 30px;
+  width: 40%;
+  box-shadow: 2px 2px 5px  #0B0F0D;    
+
+   border: 1px white solid;
+
+}
+.quxiaobianji2{
+   background-color: #21b796;
+  width: 40%;
+  box-shadow: 2px 2px 5px  #0B0F0D;    
+   border: 1px white solid;
+margin-left: 30%;
+}
+
+.quxiaobianji3{
+   background-color: transparent;
+  width: 40%;
+ color:red;
+
+ font-size: x-large;
+margin-left: 30%;
+
+}
+
+.quxiaobianji4{
+   background-color:#21b796;
+  width: 40%;
+ color:white;
+ font-size: x-large;
+margin-left: 30%;
+ box-shadow: 2px 2px 5px  #0B0F0D;    
+margin-bottom: 30px;
+ border: 1px white solid;
+}
+.facc{
+    width: 95%;
+    margin-right: auto;
+    margin-left:auto; 
+   padding-top: 20px;
+   border-top: 1px black solid;
+}
+.blackline{
+  width: 95%;
+  margin-left: 2.5%;
+  border-top: 1px black solid;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.recieveinfo{
+margin-top: -10px;
+}
+.revievephoto{
+  margin-left: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+.revievename{
+   display: inline-block;
+  border-radius: 50%;
+
+}
+.revievename h1{
+text-align: left;
+font-size: xx-large;
+margin-top: 1rem;}
+
+.revievelevel img{
+width: 40%;
+margin-top: -15px;
+}
+.revievelevel{
+margin-top: 1rem;
+text-align: left;
+
+}
+.revievephoto img{
+  width: 100%;
+
+  border-radius: 50%;
+}
+.revievelevel h4{
+  text-align: left;
+  width: 30%;
+  display: inline-block;
+  font-size: x-large;
+}
+.revieve11{
+  margin-top:3em;}
+.revieve111{
+float: right;
+margin-right: 4em;
+}
+.revieve111 h1{
+font-size: 22px;
+ margin-top:-3em;
+ color:#FFDA41;
+}
+
+.rebtn{
+  padding-top: 20px;
+  width: 95%;
+  text-align: center;
+}
+.jujue{
+  width: 30%;
+  border: lightgrey 1px solid;
+  margin-left: 20px;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+.jujue1{
+  background-color: #eeeeee;
+}
+.zhifuguanxi p{
+  display: inline-block;
+  font-size: large;
+}
+.zhifuguanxi span{
+margin-right: 40px;
+}
+.zhifufangshi{
+  width: 95%;
+  padding: 10px;
+  padding-top: 15px;
+  text-align: center;
+}
+.zhifufangshi1{
+  font-size: large;
+  font-weight: bold;
+  padding-left:3em;
+}
+input[type=radio]{
+  margin:0;}
+
+.zhifuform{
+  width: 85%;
+  background-color: #eeeeee;
+  padding:30px;
+  border-radius: 25px;
+}
+
+.zhufuchang{
+display: inline-block;
+margin-right: 40px;
+width: 55%;
+}
+.zhufuduan{
+width: 35%;
+display: inline-block;}
+
+
+.zhufuchang label{
+color:grey;
+}
+.zhufuduan label{
+  color: grey;
+}
+
+
+.songshouhuoma{
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #21b796;
+  padding: 4px 25px;
+box-shadow: 2px 2px 5px  #0B0F0D;    
+  color: white;
+  border: 1px white solid;
+}
+.songshouhuoma span{
+ 
+  color: black;
+}
+.ratelist{
+  width: 100%;
+  text-align: center;
+margin-left: auto;
+margin-right: auto;}
+.ratelist h1{
+font-size: xx-large;
+display: inline-block;
+margin:40px;
+margin-top: 0px;}
+
+.ratecomment{
+width: 80%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+
+}
+
+.ratecomment  textarea::-webkit-input-placeholder {
+color: lightgrey !important;
+text-align: center;
+ padding-top: 100px;
+}
+ 
+.ratecomment textarea:-moz-placeholder { /* Firefox 18- */
+color: lightgrey !important;  
+text-align: center;
+ padding-top: 100px;
+}
+ 
+.ratecomment textarea::-moz-placeholder {  /* Firefox 19+ */
+color:lightgrey !important;  
+text-align: center;
+ padding-top: 100px;
+}
+ 
+.ratecomment textarea:-ms-input-placeholder {  
+color: lightgrey !important;  
+text-align: center;
+ padding-top: 100px;
+}
+

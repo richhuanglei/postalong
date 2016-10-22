@@ -1,0 +1,618 @@
+#grayBack {
+    background-color:#003366;
+    z-index: 99;
+    height: 2739px;
+    width: 100%;
+    position:absolute;
+    opacity: 0.5;
+    display: none;
+}
+
+#login {
+    width: 420px;
+    height: 200px;
+    position: absolute;
+	top:50%;
+	left:50%;
+	margin-left:-210px;/*--宽--*/
+	margin-top:-100px;/*--高--*/
+    border: 1px solid #aac6eb;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: #F5FFFA;   
+    display: none;
+    font-family: "sans-serif";
+    z-index: 100;
+}
+
+#login h3{
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 13px;
+    
+}
+
+#login label{
+    font-size: 1.1em;
+}
+
+#login p{
+    margin-top: 15px;
+}
+
+#login #login_form{
+    margin-left: 30px;
+    margin-top: 23px;
+}
+
+.sub{
+    margin: 30px 279px;
+    font-size: 1.15em;
+    
+}
+
+.sub input{
+    padding: 5px 5px 5px;
+}
+
+#pass{
+    margin-left: 10px;
+}
+
+/* line 3, ../sass/index.scss */
+.pull-left img{
+  float: left;
+  width: 43%;
+}
+
+/* line 6, ../sass/index.scss */
+.pull-right img{
+  float: right;
+  width: 43%;
+}
+
+/* line 9, ../sass/index.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 16, ../sass/index.scss */
+.bantage {
+  max-width: 100%;
+  height: 450px;
+  width: auto\9;
+  font-family: "Microsoft YaHei";
+  overflow: hidden;
+  
+}
+
+/* hover test */
+
+.a1{
+	position: absolute;
+}
+
+.a2{
+	position: relative;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.a2:hover{
+	opacity: 0;
+}
+
+.advtext {
+	word-wrap: break-word;
+}
+
+/* line 21, ../sass/index.scss */
+.advantage .advWrap {
+  padding: 0 15px;
+  padding-top: 51px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 27, ../sass/index.scss */
+.advantage .advWrap .WrapHead {
+  height: 60px;
+  width: 100%;
+}
+/* line 29, ../sass/index.scss */
+.advantage .advWrap .WrapHead .textLine {
+  text-align: center;
+  float: left;
+  width: 14%; 
+}
+/* line 32, ../sass/index.scss */
+.advantage .advWrap .WrapHead .textLine #textC {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #000000;
+}
+/* line 37, ../sass/index.scss */
+.advantage .advWrap .WrapHead .textLine #textE {
+  font-size: 1em;
+  color: #7d7d7d;
+  margin-top: 8px;
+}
+/* line 43, ../sass/index.scss */
+.advantage .advWrap .WrapHead .imgLine {
+  line-height: 39px;
+}
+/* line 47, ../sass/index.scss */
+.advantage .advWrap .advBody {
+  /*height: 196px;*/
+  margin-top: 36px;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 100%;
+  margin-bottom: 60px;
+    
+}
+/* line 50, ../sass/index.scss */
+.advantage .advWrap .advBody ul li {
+  float: left;
+  text-align: center;
+}
+/* line 53, ../sass/index.scss */
+.advantage .advWrap .advBody ul li h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 31px;
+}
+/* line 58, ../sass/index.scss */
+.advantage .advWrap .advBody ul li p {
+  font-size: 1em;
+  margin-top: 12px;
+}
+/* line 63, ../sass/index.scss */
+.advantage .advWrap .advBody .advBodyFirst {
+  margin-left: 0;
+  width: 16%; 
+  min-width: 60px;
+  margin-top: 22px;
+}
+.advantage .advWrap .advBody .advBodyFirst img:hover { 
+    opacity: 0.6;
+}
+
+/* line 66, ../sass/index.scss */
+.advantage .advWrap .advBody .advBodySecond {
+  margin-left: 5%;
+  width: 16%;
+  min-width: 60px;
+  margin-top: 22px;
+}
+
+.advantage .advWrap .advBody .advBodySecond img:hover { 
+    opacity: 0.6;
+}
+
+/* line 69, ../sass/index.scss */
+.advantage .advWrap .advBody .advBodyThree {
+  margin-left: 5%;
+  width: 16%;
+  min-width: 60px;
+  margin-top: 22px;
+}
+.advantage .advWrap .advBody .advBodyThree img:hover { 
+    opacity: 0.6;
+}
+
+/* line 72, ../sass/index.scss */
+.advantage .advWrap .advBody .advBodyFour {
+  margin-left: 5%;
+  width: 16%;
+  min-width: 60px;
+  margin-top: 22px;
+}
+
+.advantage .advWrap .advBody .advBodyFour img:hover { 
+    opacity: 0.6;
+}
+
+.advantage .advWrap .advBody .advBodyFive {
+  margin-left: 5%;
+  width: 16%;
+  min-width: 60px;
+  margin-top: 22px;
+}
+
+.advantage .advWrap .advBody .advBodyFive img:hover { 
+    opacity: 0.6;
+}
+
+/* line 78, ../sass/index.scss */
+.product {
+  height: 476px;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  background-color: #f8f8f7;
+  overflow: hidden;
+}
+/* line 84, ../sass/index.scss */
+.product .proWrap {
+  /*padding: 0 15px;*/
+  padding-left: 77px;
+  padding-top: 32px;
+  max-width: 1075px;
+  width: auto;
+  height: 444px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url(../../img/home/product_03.png) no-repeat;
+  background-position: bottom right;
+}
+.product .proWrap2 {
+  /*padding: 0 15px;*/
+  padding-left: 77px;
+  padding-top: 32px;
+  max-width: 1075px;
+  width: auto;
+  height: 444px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url(../../img/home/buy.png) no-repeat;
+
+}
+/* line 94, ../sass/index.scss */
+.product .proWrap .WrapHead {
+  height: 52px;
+  min-width: 70px;
+}
+/* line 96, ../sass/index.scss */
+.product .proWrap .WrapHead .textLine {
+  text-align: center;
+  width: 100%;
+}
+/* line 99, ../sass/index.scss */
+.product .proWrap .WrapHead .textLine #textC {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  width: 40%;
+}
+/* line 104, ../sass/index.scss */
+.product .proWrap .WrapHead .textLine #textE {
+  font-size: 1.2em;
+  color: #7d7d7d;
+  margin-top: 8px;
+}
+/* line 110, ../sass/index.scss */
+.product .proWrap .WrapHead .imgLine {
+  line-height: 39px;
+}
+/* line 113, ../sass/index.scss */
+.product .proWrap .WrapHead .imgLineR {
+  margin-right: 77px;
+}
+/* line 117, ../sass/index.scss */
+.product .proWrap .proDescribe {
+  margin-top: 100px;
+}
+/* line 119, ../sass/index.scss */
+.product .proWrap .proDescribe h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 122, ../sass/index.scss */
+.product .proWrap .proDescribe h2 span {
+  color: #5ab193;
+
+  font-size: 30px;
+}
+/* line 128, ../sass/index.scss */
+.product .proWrap .proDescribe p {
+  color: #acacac;
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+/* line 136, ../sass/index.scss */
+.pay {
+  height: 476px;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  overflow: hidden;
+}
+/* line 142, ../sass/index.scss */
+.pay .payWrap {
+  max-width: 998px;
+  width: auto;
+  height: 476px;
+  margin: 0 auto;
+  padding: 0 155px;
+  overflow: hidden;
+}
+/* line 148, ../sass/index.scss */
+.pay .payWrap .payImg {
+  float: left;
+  width: 775px;
+  height: 425px;
+  margin-top: 52px;
+  margin-left: -155px;
+  background: url(../../img/home/pay.png) no-repeat;
+  position: absolute;
+  z-index: 1;
+}
+/* line 156, ../sass/index.scss */
+.pay .payWrap .payDescribe {
+  float: right;
+  margin-top: 194px;
+  z-index: 100;
+  position: relative;
+
+}
+/* line 159, ../sass/index.scss */
+.pay .payWrap .payDescribe h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 162, ../sass/index.scss */
+.pay .payWrap .payDescribe h2 span {
+  color: #5ab193;
+  font-size: 30px;
+}
+/* line 167, ../sass/index.scss */
+.pay .payWrap .payDescribe p {
+  color: #acacac;
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+/* line 175, ../sass/index.scss */
+.achieve {
+  height: 476px;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  background-color: #65b89c;
+  overflow: hidden;
+}
+/* line 181, ../sass/index.scss */
+.achieve .achWrap {
+  max-width: 998px;
+  width: auto;
+  height: 476px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+  background: url(../../img/home/achieve.png) no-repeat;
+  background-position: bottom right;
+}
+/* line 189, ../sass/index.scss */
+.achieve .achWrap .achDescribe {
+  padding-top: 182px;
+
+  color: #ffffff;
+}
+/* line 193, ../sass/index.scss */
+.achieve .achWrap .achDescribe h2 {
+
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 197, ../sass/index.scss */
+.achieve .achWrap .achDescribe h2 span {
+  color: #356e5b;
+  font-size: 30px;
+}
+/* line 201, ../sass/index.scss */
+.achieve .achWrap .achDescribe h2 span.achDesS {
+  color: #ffffff;
+
+  font-size: 24px;
+}
+/* line 207, ../sass/index.scss */
+.achieve .achWrap .achDescribe p {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+/* line 214, ../sass/index.scss */
+.trip {
+  height: 476px;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  overflow: hidden;
+}
+
+/* line 219, ../sass/index.scss */
+.trip .tripWrap {
+  max-width: 1080px;
+  width: auto;
+  height: 476px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+  background-image: url("../../img/public/map.jpg");
+}
+/* line 225, ../sass/index.scss */
+.trip .tripWrap .tripImg {
+  float: left;
+  width: 450px;
+  height: 190px;
+  margin-top: 129px;
+  margin-left: -15px;
+  z-index: 1;
+  position: absolute;
+}
+/* line 232, ../sass/index.scss */
+.trip .tripWrap .tripDescribe {
+  float: right;
+  padding-top: 182px;
+  z-index: 100;
+  position: relative;
+}
+/* line 235, ../sass/index.scss */
+.trip .tripWrap .tripDescribe h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 238, ../sass/index.scss */
+.trip .tripWrap .tripDescribe h2 span {
+  color: #5ab193;
+
+  font-size: 30px;
+}
+/* line 244, ../sass/index.scss */
+.trip .tripWrap .tripDescribe p {
+  color: #acacac;
+  margin-top: 18px;
+  margin-right: 14px;
+  font-size: 18px;
+}
+
+.serviceButton{
+    width: 60%;
+    position: relative;
+}
+.contact{
+	width: 100%;
+	height: 365px;
+	overflow: hidden;
+	text-align:center;
+}
+.contact img{
+	width: 78px;
+	height: 78px;
+}
+.contact img{margin: 0 120px;}
+.title3{
+	width: 1905px;;
+	height: 160px;
+	vertical-align:middle;
+	position: relative;
+	
+}
+#content{
+	text-align:center;
+	width: 100%;
+	height: 160px;
+	vertical-align:middle;
+	position: relative;
+	
+	
+}
+.titxt{
+	width: 500px;
+	height: 52px;
+	margin: auto;
+	position: absolute;
+	top:0; left:0; bottom:0; right:0;
+	text-align: center;
+	line-height: 1.5;
+	/* background:red; */
+}
+/* .titxt  */h2{
+	font-size: 21px;
+	font-weight: 600;
+}
+/* .titxt */ p{
+	margin: 0;         
+	border: 0;
+	color: #909090;
+	font-size: 14px;
+}
+.sign,.sign1{
+	text-align:center;
+	width: 600px;
+	height: 160px;
+	float: left;
+	text-align: center;
+}
+
+.sign{margin-right: 23px;}
+.sign p{margin-top: 24px; color: #676767;}
+.sign1 p{margin-top: 24px; color: #676767;}
+* ------------------------------以下联系人样式 ----------------------------*/
+
+
+.contact{
+	width: 100%;
+	height: 365px;
+	overflow: hidden;
+	text-align:center;
+}
+#menu{
+		width:100%;
+		height:120px;
+				}
+	
+#menu h2 , #menu p{
+	margin:auto;
+	text-align: center;
+	vertical-align:center;
+	line-height: 3em;
+	}
+#menu a{
+		color:#black;
+		border-radius:5px;
+		margin:10px 80px;
+}
+#content{
+	text-align:center;
+	
+	width:100%;
+	height: 160px;
+	vertical-align:middle;
+	position: relative;
+	}
+
+.box{
+		
+		width:100%;
+		
+		
+}
+.box .s1 p ,.box .s2 p, .box .s3 p{ 
+text-align:center;
+color: #676767;
+}
+.box .s1 img ,.box .s2 img, .box .s3 img{ 
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+/* --------------------------------------上面图片居中------------------------------------------------ */
+#country{
+		width: 70%;
+		padding-left:10%;
+		padding-right:10%;
+		text-align:center;
+	    font-size:21px;
+}
+#t{
+		width:100%;
+		height: 50px;
+}
+#content .box .s1{
+width:32%;
+height:300px;
+float:left;
+vertical-align:middle;
+}
+#content .box p{
+		margin-top:40px;
+	}
+
+#content .box .s2{
+	width:32%;
+	height:300px;
+	float:left;
+	margin:auto;
+}
+#content .box .s3{
+
+	width:32%;
+	height:300px;
+	float:left;
+	margin:auto;
+
+}
+/* --------------------------以上为联系人样式---------------------------------------- */

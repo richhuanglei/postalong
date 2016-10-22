@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>群发订单</title>
+	<link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+   <script src="../css/bootstrap/js/jquery.min.js"></script>
+<script src="../css/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/content/发布订单.css">
+<html lang="en">
+	
+</head>
+<style>
+	body{
+	background-color:rgba(0,51,102,0.4);
+    
+	}
+	.child1{
+			margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 20%;
+			right: 20%;
+			top: 2%;
+			margin-bottom: 10px;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			box-shadow: 3px 5px 3px black;	
+			}
+
+</style>
+<body>
+	
+	<div class="child1" >
+		<div class="toptitle">
+		<h2>批量发布订单</h2>
+		 
+		</div>
+
+		<form class="fapostform">
+   <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="取货时间">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="取货地点">
+  </div>
+  
+  <div class="form-group halfinput">
+    <input type="text" class="form-control formbottom" placeholder="发货人">
+  </div>
+  <div class="form-group  halfinput">
+    <input type="text" class="form-control formbottom" placeholder="电话">
+  </div>
+
+</form>
+
+<div class="fapostform fapostformb">
+ <form class="staffinfo">
+   <div class="form-group">
+    <input type="text" class="form-control shortinput" placeholder="物品名称">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control shortinput"  placeholder="物品重量">
+  </div>
+   <div class="form-group">
+    <input type="text" class="form-control longinput" placeholder="物品描述">
+  </div>
+    <br>
+  <br>
+
+  <a href="#"><p>图片添加</p></a>
+
+</form>
+  <form class="staffinfo">
+   <div class="form-group">
+    <input type="text" class="form-control" placeholder="物品价值">
+  </div>
+  <div class="staffimg1">
+  <img  src="../img/发蒙板/img.png" alt="上传图片">
+  </div>
+  
+ 
+ 
+</form>
+  
+</div>
+
+<div class="fapostform fapostformb">
+
+ <form class="staffinfo">
+  <div class="form-groupp ">
+
+      <p>请依据实际距离参考报酬:$50.00</p>
+
+  </div>
+  
+  <div class="form-group">
+    <input type="text" class="form-control longinput "  placeholder="收货人">
+  </div>
+   <div class="form-group">
+    <input type="text" class="form-control longinput" placeholder="收货时间">
+  </div>
+
+</form>
+
+  <form class="staffinfo">
+   <div class="form-group">
+    <input type="text" class="form-control longinput" placeholder="报酬">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control longinput "  placeholder="电话">
+  </div>
+  
+</form>
+
+<form class="fapostform1">
+   <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="收货地址">
+
+  </div>
+  
+</form>
+</div>
+<form class="fapostformwhite">
+  <div class="plusimg">
+   <img  src="../img/发蒙板/大加号.png" alt="上传图片" id="createnew">
+</div>
+<div class="checkbox2">
+    <label>
+      <input type="checkbox"> 我已仔细阅读使用协议
+    </label>
+  </div>
+  
+<div class="checkbox1">
+      <button type="submit" class="btn btn-default fabu2 checkbox1">取消</button>
+  </div>
+  <div class="checkbox1">
+<button type="submit" class="btn btn-success fabu3 checkbox1">推送并发布</button>
+</div>
+</form>
+
+
+
+	</div><!--child1-->
+	
+</body>
+ <!-- <script src="../js/content/fa.js"></script> -->
+ <script>
+ $('#createnew').click(function() {
+window.location.href="发布订单.html"
+ });
+// $(".fapostformwhite").prev().clone(true).insertBefore('.fapostformwhite')
+// $('string/element/array/function/jQuery object/string, context')
+ </script>
+</html>

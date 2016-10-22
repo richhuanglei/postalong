@@ -1,0 +1,344 @@
+
+*{
+
+    font-family: Arial;
+}
+input{
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    margin-right: 30px;
+}
+label{
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+img{
+    width: 100%;
+    height: 80%;
+}
+   
+    #sousuo{
+        width: 80%;
+        height: 50px;
+        line-height: 50px;
+       position: absolute;
+       top:45%;
+       left:15%;
+        
+    }
+    .search2015_btn1 {
+    float: left;
+    width: 126px;
+    height: 44px;
+    border: 0 none;
+    background: #151515 url("/Images/86new/index-search.jpg") no-repeat center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    font-size: 17px;
+}
+.btn{
+
+    width: 105px;
+    height: 35px;
+    background: #4DA8C0;
+    color: white;
+}
+
+   
+     #search{
+        width: 100%;
+        height: 400px;
+       
+        background: url(../../img/shop/earth1.jpg) no-repeat center;
+         opacity: 1;   
+         position: relative;
+          
+    }
+
+    #shang{
+        width: 100%;
+        height: 100px;
+        /*background: yellow;*/
+    }
+        #xia{
+
+        width: 100%;
+        height: 100px;
+        float: left;
+    }
+
+    #bar{
+        width: 80%;
+        /*height: 50px;*/
+        /*background: #8389AC;*/
+        position:absolute;
+    }
+
+    #button1{
+        /*width: 150px;*/
+        /*height: 50px;*/
+        /*background: #D1F2F0*/
+        color:#585E66;
+        display: inline-block;
+    }
+
+
+        #zhong{
+        width: 100%;
+        /*height: 1000px;*/
+        margin:2px auto;
+        /*position: absolute;*/
+        display: inline-block;
+        
+    }
+    #left{
+        width: 13%; 
+        /*height: 1000px;  */   
+        /*border:1px solid #107135;*/
+        /*display:inline-block;*/
+        /*vertical-align: top;*/
+        position: absolute;
+
+    }
+    #wenzi{
+
+        width: 20px;
+        display: inline-block;
+    }
+    #mid{
+        width: 73%;
+        /*height: 1000px;*/
+        margin-left: 12%;
+        vertical-align: top;
+        /*border:1px solid blue;*/
+        display:inline-block;
+        
+    }
+
+
+    .right{
+        width: 13%;
+        height: 700px;
+        /*background: #CDEDF4;*/
+        display: inline-block;
+        overflow: auto; 
+    }
+
+    .pic{
+        /*border-radius: 15%;*/
+        width: 250px;
+        height: 300px;
+        display: inline-block;
+        float: left;
+        overflow: hidden;
+        /*border:2px solid#C5823A;*/
+        margin-left :1%;
+        margin-right: 1%;
+        margin-top:30px;
+        letter-spacing: 5px;
+        text-align: 10px;
+        line-height: 15px;
+        /*box-shadow: #BDB9B9;*/
+        text-align: center;
+        vertical-align: text-bottom;
+
+    }
+
+    .ren{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        
+        margin-left: 180px;
+        margin-top: 242px;
+        /*background: #171414;*/
+        z-index: 9;
+    }
+    #wenzi-2{
+        width:10px;
+    }
+    
+
+    
+    
+    #shaixuan{
+        width: 200px;
+        height: 25px;
+        background:#E1E0E0;
+        color:grey;
+        /*margin:0 auto;*/
+        text-align: center;
+        line-height: 20px;
+    }
+
+    #shaixuan2{
+        width: 100%;
+        height: 25px;
+        color:grey;
+        background: #E1E0E0;
+        /*margin:0 auto;*/
+        text-align: center;
+        line-height: 20px;
+    }
+
+    #xuanxiang{
+        width: 200px;
+        height: 675px;
+        background:#FFFFFF;
+        color:white;
+        /*margin:0 auto;*/
+        text-align:center;
+        padding-top: 10px;
+    }
+    .sel{
+        display: block;
+        text-align: center;
+        border:1px solid red;   
+    }
+
+    #logo .logo{
+        width: 90px;
+        height: 90px;
+        background:#B81818;
+        margin-left: 10%;
+        padding-top: 7.5px;
+    }
+
+    #hudiwang{
+        width: 400px;
+        height: 80px;
+        float:left;
+    }
+    
+   
+
+    
+
+    #searchbox{
+        /*font-size: 22px;*/
+        width: 60%;
+        /*height: 50px;*/
+        padding-top:90px;
+        margin-left: 20%;
+        /*background: #CF7D79;*/
+        
+        
+    }
+
+    #searchbox .t1:hover{
+        background: #ADA0A0;
+    }
+    
+    .xuanze{
+        /*width: 88px;*/
+        /*height: 30px;*/
+        display:inline-block;    
+    }
+    
+
+
+    .right .hudibox{
+        width: 230px;
+        height: 200px;
+        /*border:1px solid red;*/
+        float: left;
+        display: inline-block;
+        /*position: absolute;*/
+        background: #C5D1CE;
+
+
+    }
+    #wenzi-r{
+        width: 100%;
+        height: 20px;
+        float: left;
+    }
+       
+    .hudibox .profile{
+        /*border-radius: 50%;*/
+        width: 100px;
+        height: 200px;
+        /*border:1px solid blue;*/
+        /*margin-left: 20px;*/
+        /*margin-top: 20px;*/
+        overflow: hidden;
+        float:left;
+        margin-top: 30px;
+         
+        
+
+
+    }
+
+    .img2{
+
+        border-radius: 50%;
+        width: 100px;
+        height:100px;     
+    }
+
+    .xinxi{
+
+    }
+
+    .xingchenginfo{
+        width: 130px;
+        height: 200px;
+        /*background: yellow;*/
+        display: inline-block;
+
+    } 
+
+    
+    #dizhi{
+        width: 230px;
+        height: 100px;
+        /*background: #E4CCF7;*/
+    }
+    
+
+    .yema{
+        width: 100%;
+        height: 50px;
+        margin:2px auto;
+        display:inline-block;
+        text-align: center;
+        
+    }
+
+    .pingjia{
+        margin-top: 10px;
+    }
+
+
+    .feiji{
+        width: 40px;
+        height: 40px;
+        margin-left: 50px;
+        padding-top: 5px;
+        /*line-height: middle;*/
+    }
+
+    .chengshi{
+        text-align: center;
+
+        margin-top:20px;
+        
+
+    }
+
+    .shijian{
+        text-align: center;
+
+    }
+
+    .dingwei{
+        float: right;
+
+
+    }

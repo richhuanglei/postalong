@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	body{	   
+   	height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+   /*display: none;*/
+	}
+	#child{
+			margin-left:10%;
+			margin-right: 10%;
+			position: absolute;
+			left: 10%;
+			right: 10%;
+			top: 15%;
+			bottom: 15%;
+			background: #FFFFFF;
+			border-radius: 10px;	
+			box-shadow: 0px 0px 30px  #0B0F0D;		
+			}
+
+</style>
+<body>	
+	<button id="show">show</button>
+	<img src="../img/1.jpg" alt="">	
+	<div id="child">
+		fffff
+	</div>
+</body>
+<script>
+	var show=document.getElementById('show')
+	var child=document.getElementById('child')
+	
+		show.onclick=function(){
+		child.style.display='none'		
+		document.body.style.backgroundColor = 'rgba(112,112,112,0.5)'	
+		body.style.zIndex=600
+	}
+</script>
+</html>

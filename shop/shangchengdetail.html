@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<style>
+
+.img1{
+	border-radius: 10%;
+	width: 400px;
+	height: 370px;
+
+}
+
+.img2{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
+.shang{
+	width: 100%;
+	height: 100px;
+	/*background: #BDB7B7;*/
+}
+.zhong{
+	width: 100%;
+	height: 900px;
+	background: #F6F6F6;
+}
+#detailbox{
+	width: 1000px;
+	height: 700px;
+	/*background:#92CDE1;*/
+	margin-left: 400px;
+	float: left;
+	margin-top: 80px;
+	
+	
+}
+
+.box1{
+	float: left;
+	width: 500px;
+	height: 700px;
+	/*border:1px solid red;*/
+	background: #D9DCDB;
+}
+
+.box2{
+	float: right;
+	width: 500px;
+	height: 700px;
+	/*border: 1px solid blue;*/
+	background: #D9DCDB;
+}
+
+
+
+.xia{
+	width: 100%;
+	height: 100px;
+	/*background: #EEF3C1;*/
+}
+
+.pic{
+	float: left;
+	width: 400px;
+	height: 350px;
+	/*background: #E8DBF4;*/
+	margin-top: 50px;
+	margin-left: 49px;
+}
+
+.profile{
+	float: left;
+	width: 400px;
+	height: 100px;
+	/*background: #F8A4B4;*/
+	margin-top: 50px;
+	margin-left: 49px;
+}
+
+.pic2{
+	float: left;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	/*background: #C2F7C8;*/
+	margin-top: 10px;
+	margin-left: 10px;
+	overflow: hidden;
+	text-align: center;
+
+
+}
+
+.contact{
+	float: right;
+	width: 400px;
+	height: 80px;
+	/*background: #CF7EE9;*/
+	margin-top: 10px;
+	margin-right: 0;
+}
+
+
+
+.list{
+	float: right;
+	width: 400px;
+	height: 300px;
+	/*background:#E0D3C4;*/
+	margin-top: 70px;
+	margin-right: 49px;
+	align:center;
+}
+
+#dengdaiyijia{
+	float:left;
+	margin-left:210px;
+	margin-top: 80px;
+}
+
+
+.qiangdan{
+	float: left;
+	width: 500px;
+	height: 50px;
+	/*background: #E6C4A5;*/
+	/*display: inline-block;*/
+	margin-top: 80px;
+	margin-left: 100px;
+
+}
+
+
+
+#pipei{
+	float:left;
+	margin-left: 150px;
+}
+	
+
+	#bangzhu{
+		/*width: 1000px;*/
+	/*height: 700px;*/
+	background: #D9DCDB;
+	margin-left: 400px;
+	float: left;
+	margin-top: 80px;
+		display: none;
+	}
+
+
+</style>
+
+
+
+<body>
+	<div class="shang">
+		<iframe name="header_frame" marginwidth=0 marginheight=0 width=100% src="header.html" frameborder=0 scrolling=no seamless></iframe>
+	</div>
+	<div class="zhong">
+		<div id="bangzhu" >
+		<button type="button" class="btn btn-default" style="float:right; margin-right:0px;" id="gb">关闭</button>
+			<div class="container">
+  <h3>您好尊敬的xxx</h3>
+  <p>以下的用户行程与您的购物信息匹配，快找他们帮忙吧！</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      <th>选择</th>
+        <th>用户名</th>
+        <th>用户信息</th>
+        <th>用户评价</th>
+        <th>用户行程</th>
+        <th>行程日期</th>
+
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>John</td>
+        <td>北京市朝阳区*********</td>
+        <td>四星用户</td>
+        <td>法国——北京</td>
+        <td>2016年6月15日</td>
+      </tr>
+      
+      <tr>
+      	<td><input type="checkbox"></td>
+        <td>Mary</td>
+        <td>北京市丰台区*********</td>
+        <td>三星用户</td>
+        <td>法国——北京</td>
+        <td>2016年6月16日</td>
+      </tr>
+      <tr>
+      	<td><input type="checkbox"></td>
+        <td>July</td>
+        <td>北京市通州区*********</td>
+        <td>三星用户</td>
+        <td>法国——北京</td>
+        <td>2016年6月18日</td>
+      </tr>
+      <tr>
+      	<td><input type="checkbox"></td>
+        <td>July</td>
+        <td>北京市丰台区*********</td>
+        <td>三星用户</td>
+        <td>法国——北京</td>
+        <td>2016年6月19日</td>
+      </tr>
+      <tr>
+      	<td><input type="checkbox"></td>
+        <td>July</td>
+        <td>北京市通州区*********</td>
+        <td>三星用户</td>
+        <td>法国——北京</td>
+        <td>2016年6月28日</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="bz">
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="height:50px; margin-left:47%; margin-bottom:50px;">找他帮忙</button>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" id="ff">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" ></button>
+          <h4 class="modal-title">Jhon</h4>
+        </div>
+        <p></p>
+        <p style="margin-left:5%;">  订单代号**********  </p>
+        <div class="modal-body" style="height:300px;">
+        
+           <div class="form-group">
+  
+  <textarea class="form-control" rows="10" id="comment"></textarea>
+
+  <div class="yijia">
+						<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" style="width:225px" value="100">
+      <div class="input-group-addon">我的报酬</div>
+    </div>
+  </div>
+  
+</form>
+					</div>
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" id="tc">发送</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+		</div>
+		<div id="detailbox">
+
+			<div class="box1">
+
+
+				
+				<div class="pic"><img class="img1"src="../img/shopdetail/2.jpg" alt=""></div>
+				<div class="profile">
+				
+				<div class="contact">
+					
+					<ul class="list-group">
+						<li class="list-group-item">订单号：FKDJFLAJF8472</li>
+  						<li class="list-group-item">店铺名称:</li>
+  						<li class="list-group-item">店铺实名地址:</li>
+  						<li class="list-group-item">店铺信誉:</li>
+						<li class="list-group-item">店铺评价:</li>
+	
+					</ul>
+				</div>
+				
+					
+				</div>
+				</div><!--box1-->
+			<div class="box2">
+			<button type="button" class="btn btn-default" style=" width:100px; float:right; margin-right:0px;" id="bb">关闭</button>
+				
+				<div class="list">
+					<ul class="list-group">
+  						<li class="list-group-item">产品名称：LV包（包正品）</li>
+  						<li class="list-group-item">原产地：法国</li>
+  						<li class="list-group-item">物品品牌:LV</li>
+  						<li class="list-group-item">款式:</li>
+  						<li class="list-group-item">物品颜色：</li>
+  						<li class="list-group-item">价格:$3000</li>
+					</ul>
+				</div>
+				<!-- <div class="xuanze"> -->
+				
+					<div id="pipei">
+						<form class="form-inline">
+    		<div class="form-group">
+    			
+    			<input type="text" class="form-control" style=" width:100px; " id="exampleInputName2" placeholder="我的城市">
+    			<button type="button" class="btn btn-info" style="width:100px;" id="pp" >匹配行程</button>
+
+  			</div>
+  			</form>
+					</div>
+
+					<div id="dengdaiyijia">
+						<a href="#">议价中 <span class="badge">10</span></a><br>
+						</div>
+						
+					<div class="qiangdan">
+						<button type="button" class="btn btn-lg btn-warning" style="width: 300px;" onclick="document.location='zhifu.html'">购买</button>
+					</div>	
+
+					
+				
+				<!-- </div> -->
+						
+				
+				</div><!--box2-->
+			</div><!--detailbox-->
+		
+	</div><!--zhong-->
+	<div class="xia">
+		<iframe name="footer_frame" marginwidth=0 marginheight=0 width=100% src="footer.html" frameborder=0 scrolling=no seamless></iframe>	
+
+	</div>
+</body>
+
+<script>
+	var bz=document.getElementById('bangzhu')
+	var a=document.getElementById('pp')
+	var c=document.getElementById('detailbox')
+	
+	a.onclick=function () {
+		 bz.style.display='block'
+		 c.style.display='none'
+
+	}
+
+	var gb=document.getElementById('gb')
+	gb.onclick=function () {
+		window.location="shangchengdetail.html"
+		 /* body... */ 
+	}
+
+	var tc=document.getElementById('tc')
+	tc.onclick=function () {
+		window.location="shangchengdetail.html"
+		 /* body... */ 
+	}
+
+	var bb2=document.getElementById('bb')
+	bb.onclick=function () {
+		window.location="shangcheng.html"
+		 // body...  
+	}
+
+</script>
+</html>

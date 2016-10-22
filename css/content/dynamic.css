@@ -1,0 +1,138 @@
+
+.title{
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
+}
+.inall{
+	width: 1049px;
+	height: 140px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.inall img{
+	width: 1049px;
+	height: 34px;
+	margin: 53px auto;
+}
+.advertise{
+	width: 100%;
+	height: 68px;
+	background-color: #65b89c;
+	text-align: center;
+	color: #fbfdfd;
+	font-size: 12px;
+}
+.advertise p{line-height: 68px;}
+.main,.main1{
+	width: 100%;
+	height: 206px;
+	position: relative;
+	overflow: hidden;
+}
+.main{
+	background-color: #f2f2f2;
+}
+.content{
+	width: 1000px;
+	height: 206px;
+	margin: 0 auto;
+}
+.content img{
+	width: 149px;
+	height: 149px;
+	margin: 30px 45px 28px 88px;
+}
+.mtxt{
+	width: 718px;
+	height: 177px;
+	float: right;
+	letter-spacing: 2.2px;
+	margin-top: 30px;
+}
+.mtxt span{display: inline-block;}
+.mtit{
+	height: 36px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 36px;
+}
+.gre{
+	height: 36px;
+	color: #65b89c;
+	font-size: 8px;
+	line-height: 36px;
+}
+.mtxt p{
+	font-size: 10px;
+	line-height: 17px;
+	overflow: hidden;
+}
+.mtxt a{
+	width: 59px;
+	height: 22px;
+	border: 0;
+	background-color: #65b89c;
+	position: absolute;
+	bottom: 38px;
+	color: #f2f2f2;
+	font-size: 10px;
+	text-align: center;
+	line-height: 22px;
+	letter-spacing:0.5px;
+}
+.bottom{
+	width: 100%;
+	height: 115px;
+}
+.btn{
+	width:399px;
+	height: 19px;
+	padding: 0;
+	margin: 40px auto 56px auto;
+}
+.btn li{
+	border:1px solid #65b89c;
+	background-color: #fff;
+	color: #65b89c;
+	font-size: 10px;
+	text-align: center;
+	/* vertical-align: middle; */
+}
+.btn ul a{
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+	color:#65b89c;
+	line-height: 19px;
+}
+.btn ul li{
+	list-style: none; 
+	display: inline-block;
+}
+.first,.last{
+	width: 28px;
+	height: 19px;
+}
+.prv,.nextpage{
+	width: 43px;
+	height: 19px;
+}
+.page1,.page2,.page3,.page4,.page5,.page6{
+	width: 15px;
+	height: 19px;
+}
+.btn li:hover{
+	background-color: #65b89c;
+	color: #fff;
+}
+.first{margin-right: 5px;}
+.prv{margin-right: 10px;}
+.page1{margin-right: 11px;}
+.page2{margin-right: 12px;}
+.page3{margin-right: 13px;}
+.page4{margin-right: 14px;}
+.page5{margin-right: 15px;}
+.page6{margin-right: 11px;}
+.nextpage{margin-right: 9px;}
+/* .last{margin-right: 7px;} */
